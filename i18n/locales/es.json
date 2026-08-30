@@ -1,0 +1,2746 @@
+{
+  "seo": {
+    "title": "Hamster Software — Soluciones de datos a tu medida | Popayán, Colombia",
+    "description": "En Popayán transformamos datos en decisiones inteligentes: pipelines de datos, machine learning, desarrollo web y móvil, ciberseguridad y más. +50 proyectos entregados."
+  },
+  "nav": {
+    "soluciones": "Soluciones",
+    "servicios": "Servicios",
+    "industrias": "Industrias",
+    "proceso": "Proceso",
+    "contacto": "Contacto",
+    "contactSales": "Contactar Ventas",
+    "notFoundTitle": "¿No encuentras lo que buscas?",
+    "notFoundDesc": "Cuéntanos tu idea y te proponemos la solución.",
+    "letsTalk": "Hablemos",
+    "changeLanguage": "Cambiar idioma",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "hero": {
+    "eyebrow": "Empresa de desarrollo de software",
+    "titleA": "Construimos el",
+    "titleHighlight": "software",
+    "titleB": "que tu empresa necesita",
+    "subtitle": "Somos una empresa de desarrollo de software en Popayán, Colombia.",
+    "description": "Creamos aplicaciones web, móviles, sistemas de datos e inteligencia artificial para empresas que quieren crecer con tecnología. Desde la idea hasta la implementación.",
+    "ctaPrimary": "Agendar Consulta Gratis",
+    "ctaSecondary": "Ver Servicios",
+    "badges": [
+      "+50 proyectos entregados",
+      "100% a tiempo",
+      "Equipos dedicados"
+    ],
+    "serviceCards": [
+      {
+        "icon": "globe",
+        "title": "Páginas Web y Apps",
+        "desc": "Sitios web, tiendas online y aplicaciones web a la medida."
+      },
+      {
+        "icon": "smartphone",
+        "title": "Apps Móviles",
+        "desc": "Aplicaciones para iPhone y Android para tu negocio."
+      },
+      {
+        "icon": "database",
+        "title": "Datos e IA",
+        "desc": "Dashboards, análisis de datos y modelos de inteligencia artificial."
+      },
+      {
+        "icon": "shield",
+        "title": "Ciberseguridad",
+        "desc": "Protegemos tu empresa de vulnerabilidades y ataques."
+      }
+    ]
+  },
+  "stats": [
+    {
+      "value": 50,
+      "suffix": "+",
+      "label": "Proyectos Entregados",
+      "icon": "rocket"
+    },
+    {
+      "value": 100,
+      "suffix": "+",
+      "label": "Clientes Satisfechos",
+      "icon": "users"
+    },
+    {
+      "value": 22,
+      "suffix": "",
+      "label": "Servicios Especializados",
+      "icon": "layers"
+    },
+    {
+      "value": 100,
+      "suffix": "%",
+      "label": "Tasa de Satisfacción",
+      "icon": "star"
+    }
+  ],
+  "servicesSection": {
+    "eyebrow": "Nuestros Servicios",
+    "title": "Todo lo que necesitas para",
+    "titleHighlight": "impulsar tu negocio",
+    "description": "Desde pipelines de datos hasta apps móviles, cubrimos el ciclo completo de tu transformación digital.",
+    "cta": "Solicitar Cotización",
+    "viewMore": "Conocer más"
+  },
+  "services": [
+    {
+      "id": "ingenieria-de-datos",
+      "icon": "database",
+      "title": "Ingeniería de Datos",
+      "description": "Arquitectamos e implementamos pipelines de datos robustos y escalables que son la columna vertebral de tu estrategia de datos.",
+      "features": [
+        "Diseño e implementación de pipelines de datos",
+        "Procesamiento en tiempo real y por lotes",
+        "Migración a data warehouse en la nube",
+        "Integración con Apache Spark y Kafka",
+        "Marcos de calidad y gobernanza de datos"
+      ],
+      "slug": "data-engineering",
+      "overview": "Diseñamos la columna vertebral de tu estrategia de datos: pipelines robustos y escalables que llevan información desde cualquier fuente hasta donde tu negocio la necesita. Procesamiento en tiempo real o por lotes, gobernanza y calidad de datos como parte del diseño, no como una ocurrencia tardía.",
+      "benefits": [
+        {
+          "icon": "database",
+          "title": "Pipelines confiables",
+          "text": "Flujos de datos que no se caen y se recuperan solos."
+        },
+        {
+          "icon": "zap",
+          "title": "Tiempo real o por lotes",
+          "text": "La velocidad que tu negocio necesita, ni más ni menos."
+        },
+        {
+          "icon": "database",
+          "title": "En la nube",
+          "text": "Arquitecturas modernas en AWS, GCP y Azure."
+        },
+        {
+          "icon": "shield",
+          "title": "Calidad y gobernanza",
+          "text": "Datos limpios, trazables y con dueño definido."
+        }
+      ],
+      "tech": [
+        "Apache Spark",
+        "Kafka",
+        "Airflow",
+        "dbt",
+        "BigQuery",
+        "Snowflake"
+      ],
+      "faq": [
+        {
+          "q": "¿Qué fuentes pueden integrar?",
+          "a": "Bases de datos, APIs, archivos, SaaS, logs y streaming: prácticamente cualquier fuente con datos."
+        },
+        {
+          "q": "¿Cuánto tarda un pipeline de datos?",
+          "a": "Un pipeline típico se entrega en 2 a 4 semanas, incluyendo monitoreo y documentación."
+        },
+        {
+          "q": "¿Migran mi infraestructura actual a la nube?",
+          "a": "Sí, planificamos y ejecutamos la migración sin interrumpir tu operación."
+        }
+      ]
+    },
+    {
+      "id": "extraccion-datos-etl",
+      "icon": "refresh",
+      "title": "Extracción de Datos / ETL",
+      "description": "Extraemos datos de cualquier fuente y los transformamos en formatos limpios y estructurados listos para análisis.",
+      "features": [
+        "Integración de datos multi-fuente",
+        "Ingestión de APIs y webhooks",
+        "Migración de sistemas heredados",
+        "Estrategias incrementales y de carga completa",
+        "Programación y monitoreo automatizado"
+      ],
+      "slug": "data-extraction-etl",
+      "overview": "Extraemos datos de cualquier fuente y los transformamos en formatos limpios y estructurados, listos para analizar. Integraciones multi-fuente, ingestión de APIs y webhooks, y migración de sistemas heredados con estrategias que respetan el volumen y la criticidad de tu información.",
+      "benefits": [
+        {
+          "icon": "filter",
+          "title": "Multi-fuente",
+          "text": "Conectamos bases de datos, APIs, archivos y SaaS."
+        },
+        {
+          "icon": "refresh",
+          "title": "Automatizado",
+          "text": "Procesos programados que corren solos y se monitorean."
+        },
+        {
+          "icon": "box",
+          "title": "Datos limpios",
+          "text": "Normalización y limpieza que eliminan ruido y duplicados."
+        },
+        {
+          "icon": "trending-up",
+          "title": "Listo para analizar",
+          "text": "Tu equipo recibe datos directamente utilizables."
+        }
+      ],
+      "tech": [
+        "Python",
+        "Airbyte",
+        "dbt",
+        "Apache Airflow",
+        "PostgreSQL",
+        "REST APIs"
+      ],
+      "faq": [
+        {
+          "q": "¿Pueden extraer de sistemas que no tienen API?",
+          "a": "Sí, usamos técnicas como lectura de archivos, scraping controlado y conectores a bases de datos."
+        },
+        {
+          "q": "¿Qué pasa durante una migración?",
+          "a": "Ejecutamos migraciones incrementales con validación continua y plan de rollback."
+        },
+        {
+          "q": "¿Qué entregables incluye?",
+          "a": "Documentación, monitoreo, validaciones y capacitación de tu equipo."
+        }
+      ]
+    },
+    {
+      "id": "visualizacion-de-datos",
+      "icon": "chart-bar",
+      "title": "Visualización de Datos",
+      "description": "Transformamos datos complejos en visuales claros y convincentes que empoderan decisiones rápidas basadas en evidencia.",
+      "features": [
+        "Dashboards interactivos (Tableau, Power BI, D3.js)",
+        "Sistemas de reportes ejecutivos",
+        "Monitoreo de KPIs en tiempo real",
+        "Componentes de gráficos personalizados",
+        "Visualización geoespacial y de redes"
+      ],
+      "slug": "data-visualization",
+      "overview": "Convertimos datos complejos en visuales claros que empoderan decisiones rápidas. Dashboards interactivos, reportes ejecutivos y monitoreo de KPIs en tiempo real, construidos con las mejores herramientas del mercado o con componentes completamente personalizados.",
+      "benefits": [
+        {
+          "icon": "monitor",
+          "title": "Dashboards interactivos",
+          "text": "Explora, filtra y profundiza sin depender de un analista."
+        },
+        {
+          "icon": "zap",
+          "title": "KPIs en tiempo real",
+          "text": "Tu operación monitoreada al segundo, no al cierre de mes."
+        },
+        {
+          "icon": "puzzle",
+          "title": "A tu medida",
+          "text": "Visualizaciones únicas cuando la herramienta estándar no alcanza."
+        },
+        {
+          "icon": "users",
+          "title": "Para tu audiencia",
+          "text": "Reportes ejecutivos que tu junta directiva entiende."
+        }
+      ],
+      "tech": [
+        "Tableau",
+        "Power BI",
+        "D3.js",
+        "Looker Studio",
+        "ECharts",
+        "Vue.js"
+      ],
+      "faq": [
+        {
+          "q": "¿Qué herramienta me recomiendan?",
+          "a": "Evaluamos tu caso: Power BI o Tableau para la mayoría, D3.js o ECharts para visuales a medida."
+        },
+        {
+          "q": "¿Los dashboards son móviles?",
+          "a": "Sí, los optimizamos para verse bien en celular y tablet."
+        },
+        {
+          "q": "¿Pueden conectarse a varias fuentes?",
+          "a": "Sí, un dashboard puede combinar bases de datos, APIs y hojas de cálculo en una sola vista."
+        }
+      ]
+    },
+    {
+      "id": "mineria-y-gestion-de-datos",
+      "icon": "filter",
+      "title": "Minería y Gestión de Datos",
+      "description": "Descubrimos insights ocultos en tus datos con soluciones de minería y gestión que te dan visibilidad y control total.",
+      "features": [
+        "Detección de patrones y anomalías",
+        "Segmentación y clustering de clientes",
+        "Minería de reglas de asociación",
+        "Gestión de datos maestros (MDM)",
+        "Catálogo de datos y seguimiento de linaje"
+      ],
+      "slug": "data-mining-management",
+      "overview": "Descubrimos los insights ocultos en tus datos. Aplicamos minería de datos para detectar patrones y anomalías, segmentar clientes y descubrir reglas de asociación; y gestionamos la calidad con catálogos de datos y linaje que te dan visibilidad y control total.",
+      "benefits": [
+        {
+          "icon": "brain",
+          "title": "Insights ocultos",
+          "text": "Patrones y anomalías que no se ven a simple vista."
+        },
+        {
+          "icon": "users",
+          "title": "Segmentación",
+          "text": "Conoce y agrupa a tus clientes para campañas efectivas."
+        },
+        {
+          "icon": "folder",
+          "title": "Catálogo de datos",
+          "text": "Sabes qué datos tienes, dónde están y quién los usa."
+        },
+        {
+          "icon": "shield",
+          "title": "Gobernanza",
+          "text": "Control sobre la calidad y el uso de tu información."
+        }
+      ],
+      "tech": [
+        "Python",
+        "scikit-learn",
+        "pandas",
+        "SQL",
+        "Atlas",
+        "dbt"
+      ],
+      "faq": [
+        {
+          "q": "¿Qué es el linaje de datos?",
+          "a": "Es el rastreo del recorrido de cada dato: de dónde viene, cómo se transforma y dónde se usa."
+        },
+        {
+          "q": "¿Pueden detectar fraude con esto?",
+          "a": "Sí, la detección de anomalías es clave para identificar comportamientos inusuales."
+        },
+        {
+          "q": "¿Necesito muchos datos para empezar?",
+          "a": "Trabajamos con los datos que tienes; la escala crece contigo."
+        }
+      ]
+    },
+    {
+      "id": "software-de-escritorio",
+      "icon": "monitor",
+      "title": "Software de Escritorio",
+      "description": "Construimos aplicaciones de escritorio nativas con el rendimiento y la seguridad de nivel empresarial.",
+      "features": [
+        "Aplicaciones para Windows, macOS y Linux",
+        "Apps multiplataforma con Electron y Tauri",
+        "Integraciones con ERP y CRM",
+        "Arquitectura offline-first",
+        "Sistemas de actualización y despliegue automático"
+      ],
+      "slug": "desktop-software",
+      "overview": "Construimos aplicaciones de escritorio nativas con rendimiento y seguridad de nivel empresarial, para Windows, macOS y Linux. Aplicaciones offline-first, integraciones con ERP y CRM, y sistemas de actualización automática que mantienen a tu equipo siempre en la última versión.",
+      "benefits": [
+        {
+          "icon": "monitor",
+          "title": "Multiplataforma",
+          "text": "Una sola app para Windows, macOS y Linux."
+        },
+        {
+          "icon": "zap",
+          "title": "Rendimiento nativo",
+          "text": "Velocidad y fluidez que las apps web no igualan."
+        },
+        {
+          "icon": "box",
+          "title": "Offline-first",
+          "text": "Trabaja sin conexión y sincroniza cuando vuelvas."
+        },
+        {
+          "icon": "refresh",
+          "title": "Actualizaciones automáticas",
+          "text": "Tu equipo siempre con la última versión."
+        }
+      ],
+      "tech": [
+        "Electron",
+        "Tauri",
+        "C#",
+        "Java",
+        "Python",
+        "SQLite"
+      ],
+      "faq": [
+        {
+          "q": "¿Electron o Tauri?",
+          "a": "Depende del caso: Tauri es más ligero, Electron tiene mayor ecosistema. Evaluamos contigo cuál conviene."
+        },
+        {
+          "q": "¿Funciona sin internet?",
+          "a": "Sí, diseñamos arquitecturas offline-first que sincronizan al reconectarse."
+        },
+        {
+          "q": "¿Se integra con mi ERP?",
+          "a": "Sí, integramos con SAP, Odoo, Microsoft Dynamics y sistemas propios."
+        }
+      ]
+    },
+    {
+      "id": "machine-learning",
+      "icon": "cpu",
+      "title": "Machine Learning",
+      "description": "Desplegamos sistemas inteligentes de ML que automatizan decisiones complejas — desde pronósticos hasta procesamiento de documentos.",
+      "features": [
+        "Analítica predictiva y pronósticos",
+        "Modelos de NLP y visión por computadora",
+        "Fine-tuning de LLMs y pipelines RAG",
+        "MLOps y gestión del ciclo de vida de modelos",
+        "Frameworks de A/B testing y experimentación"
+      ],
+      "slug": "machine-learning",
+      "overview": "Desplegamos sistemas inteligentes que automatizan decisiones complejas. Analítica predictiva, modelos de NLP y visión por computadora, fine-tuning de LLMs con RAG y MLOps completo para que tus modelos pasen del laboratorio a producción y se mantengan saludables.",
+      "benefits": [
+        {
+          "icon": "brain",
+          "title": "Predicción",
+          "text": "Pronósticos de demanda, riesgo y comportamiento."
+        },
+        {
+          "icon": "zap",
+          "title": "Automatización",
+          "text": "Decisiones repetitivas resueltas por modelos, sin errores humanos."
+        },
+        {
+          "icon": "monitor",
+          "title": "MLOps real",
+          "text": "Monitoreo, versionado y reentrenamiento continuo."
+        },
+        {
+          "icon": "trending-up",
+          "title": "Ventaja competitiva",
+          "text": "Capacidades que tu competencia aún no tiene."
+        }
+      ],
+      "tech": [
+        "Python",
+        "PyTorch",
+        "scikit-learn",
+        "LangChain",
+        "Hugging Face",
+        "Vertex AI"
+      ],
+      "faq": [
+        {
+          "q": "¿Qué problemas resuelve bien el ML?",
+          "a": "Predicción, clasificación, detección de anomalías, procesamiento de lenguaje y visión: si tienes datos históricos, probablemente hay un caso."
+        },
+        {
+          "q": "¿Cuántos datos necesito?",
+          "a": "Depende del problema; evaluamos tu caso y te decimos si hay suficiente señal en tus datos."
+        },
+        {
+          "q": "¿Los modelos se actualizan solos?",
+          "a": "Con MLOps sí: monitoreamos su desempeño y los reentrenamos automáticamente."
+        }
+      ]
+    },
+    {
+      "id": "desarrollo-movil",
+      "icon": "smartphone",
+      "title": "Desarrollo Móvil",
+      "description": "Creamos aplicaciones móviles pulidas y de alto rendimiento para iOS y Android que los usuarios usan cada día.",
+      "features": [
+        "iOS (Swift / SwiftUI) y Android (Kotlin)",
+        "Multiplataforma con React Native y Flutter",
+        "PWAs con capacidad offline",
+        "Notificaciones push y compras in-app",
+        "Optimización para App Store y Play Store"
+      ],
+      "slug": "mobile-development",
+      "overview": "Creamos aplicaciones móviles pulidas y de alto rendimiento para iOS y Android. Desarrollo nativo con Swift y Kotlin, multiplataforma con React Native y Flutter, PWAs con capacidad offline, notificaciones push y optimización completa para las tiendas de aplicaciones.",
+      "benefits": [
+        {
+          "icon": "smartphone",
+          "title": "Nativo o multiplataforma",
+          "text": "La tecnología correcta según tu presupuesto y objetivo."
+        },
+        {
+          "icon": "zap",
+          "title": "Alto rendimiento",
+          "text": "Apps rápidas y fluidas que los usuarios aman usar."
+        },
+        {
+          "icon": "trending-up",
+          "title": "Monetización",
+          "text": "Compras in-app, suscripciones y anuncios integrados."
+        },
+        {
+          "icon": "star",
+          "title": "Lista para publicar",
+          "text": "Optimización de ASO para App Store y Play Store."
+        }
+      ],
+      "tech": [
+        "Swift",
+        "Kotlin",
+        "React Native",
+        "Flutter",
+        "Firebase",
+        "GraphQL"
+      ],
+      "faq": [
+        {
+          "q": "¿Cuánto cuesta una app móvil?",
+          "a": "Depende del alcance; te presentamos una propuesta clara con fases y costos después de una consulta."
+        },
+        {
+          "q": "¿Cuánto tarda el desarrollo?",
+          "a": "Un MVP típico se entrega en 6 a 12 semanas; apps complejas en 3 a 6 meses."
+        },
+        {
+          "q": "¿La publican en las tiendas?",
+          "a": "Sí, gestionamos la publicación en App Store y Play Store, incluyendo cuentas y revisión."
+        }
+      ]
+    },
+    {
+      "id": "sistemas-bajo-demanda",
+      "icon": "rocket",
+      "title": "Sistemas Bajo Demanda",
+      "description": "¿Necesitas una solución personalizada — rápido? Arquitectamos y entregamos sistemas adaptados a tus requisitos y plazos.",
+      "features": [
+        "Prototipado rápido y entrega de MVPs",
+        "Arquitectura de microservicios y serverless",
+        "Ingeniería de plataformas SaaS",
+        "Diseño API-first y GraphQL",
+        "Configuración de DevOps y pipelines CI/CD"
+      ],
+      "slug": "on-demand-systems",
+      "overview": "¿Necesitas una solución personalizada, rápido? Arquitectamos y entregamos sistemas adaptados a tus requisitos y plazos: prototipado rápido y MVPs, arquitecturas de microservicios y serverless, plataformas SaaS, diseño API-first y DevOps completo con CI/CD.",
+      "benefits": [
+        {
+          "icon": "rocket",
+          "title": "Velocidad",
+          "text": "Prototipos en días y MVPs en semanas, sin perder calidad."
+        },
+        {
+          "icon": "zap",
+          "title": "Moderno",
+          "text": "Microservicios y serverless que escalan con tu demanda."
+        },
+        {
+          "icon": "repeat",
+          "title": "SaaS",
+          "text": "Construimos tu producto como servicio, multi-tenant."
+        },
+        {
+          "icon": "monitor",
+          "title": "DevOps incluido",
+          "text": "CI/CD, monitoreo y despliegues automáticos desde el día uno."
+        }
+      ],
+      "tech": [
+        "Node.js",
+        "AWS Lambda",
+        "Docker",
+        "Kubernetes",
+        "GraphQL",
+        "GitHub Actions"
+      ],
+      "faq": [
+        {
+          "q": "¿Qué es un MVP?",
+          "a": "Un producto mínimo viable: la versión más pequeña que resuelve el problema y valida el mercado."
+        },
+        {
+          "q": "¿Pueden mantener el sistema después?",
+          "a": "Sí, ofrecemos soporte continuo y evoluciones con metodología ágil."
+        },
+        {
+          "q": "¿Trabajan con mi stack?",
+          "a": "Nos adaptamos a tu tecnología o te recomendamos la más adecuada para el proyecto."
+        }
+      ]
+    },
+    {
+      "id": "desarrollo-web",
+      "icon": "globe",
+      "title": "Desarrollo Web",
+      "description": "Diseñamos experiencias web de alto rendimiento — desde landing pages hasta plataformas empresariales complejas.",
+      "features": [
+        "Frontends con React, Next.js y Vue.js",
+        "Backends con Laravel, Node.js y Django",
+        "Plataformas de e-commerce y marketplaces",
+        "Optimización de rendimiento (Core Web Vitals)",
+        "Integraciones con CMS headless y APIs"
+      ],
+      "slug": "web-development",
+      "overview": "Diseñamos experiencias web de alto rendimiento: desde landing pages que convierten hasta plataformas empresariales complejas. Frontends con React, Next.js y Vue.js; backends con Laravel, Node.js y Django; e-commerce y marketplaces, optimización de Core Web Vitals e integraciones con CMS headless.",
+      "benefits": [
+        {
+          "icon": "zap",
+          "title": "Rendimiento",
+          "text": "Sitios rápidos que Google y tus usuarios premian."
+        },
+        {
+          "icon": "trending-up",
+          "title": "Conversión",
+          "text": "Diseño y UX pensados para convertir visitas en clientes."
+        },
+        {
+          "icon": "cart",
+          "title": "E-commerce",
+          "text": "Tiendas completas con pagos, envíos y catálogo."
+        },
+        {
+          "icon": "monitor",
+          "title": "Escalable",
+          "text": "De landing page a plataforma empresarial sin reescribir."
+        }
+      ],
+      "tech": [
+        "React",
+        "Next.js",
+        "Vue.js",
+        "Laravel",
+        "Node.js",
+        "Django"
+      ],
+      "faq": [
+        {
+          "q": "¿Cuánto cuesta un sitio web?",
+          "a": "Depende del alcance: una landing page profesional desde un monto accesible; te cotizamos sin compromiso en 48 horas."
+        },
+        {
+          "q": "¿Qué es un CMS headless?",
+          "a": "Un sistema donde el contenido se administra por separado y se sirve a cualquier plataforma: web, móvil, kioscos."
+        },
+        {
+          "q": "¿Hacen mantenimiento?",
+          "a": "Sí, ofrecemos planes de mantenimiento, monitoreo, seguridad y mejoras continuas."
+        }
+      ]
+    },
+    {
+      "id": "modelos-lenguaje-pequeno",
+      "icon": "brain",
+      "title": "Modelos de Lenguaje Pequeño (SLMs)",
+      "description": "Desplegamos modelos de IA compactos, rápidos y eficientes para ejecutarse en tus propios servidores o en local con total privacidad de datos.",
+      "features": [
+        "Modelos compactos de alta precisión (Phi-3, Gemma, LLaMA 3 8B, Qwen)",
+        "Despliegue local y on-premise con 100% de privacidad",
+        "Fine-tuning especializado para tu negocio y terminología",
+        "Inferencia ultra-rápida y optimización con cuantización (GGUF, AWQ)",
+        "Integración RAG local (Retrieval-Augmented Generation) sin costos por token"
+      ],
+      "slug": "small-language-models",
+      "overview": "Implementamos Modelos de Lenguaje Pequeño (SLMs) diseñados para resolver tareas específicas de tu negocio con máxima velocidad, bajo consumo de recursos y total soberanía sobre tus datos. A diferencia de los grandes LLMs en la nube, los SLMs se ejecutan en tu propia infraestructura o dispositivos locales, eliminando costos recurrentes de API por token, reduciendo la latencia a milisegundos y garantizando que tu información confidencial nunca salga de tu empresa.",
+      "benefits": [
+        {
+          "icon": "shield",
+          "title": "Privacidad y Soberanía",
+          "text": "Tus datos confidenciales nunca salen de tu red ni tocan APIs de terceros."
+        },
+        {
+          "icon": "zap",
+          "title": "Baja Latencia",
+          "text": "Respuestas instantáneas en milisegundos sin depender de conexión a internet."
+        },
+        {
+          "icon": "trending-up",
+          "title": "Cero Costos por Token",
+          "text": "Elimina facturas mensuales de API ejecutando modelos en tu propio hardware."
+        },
+        {
+          "icon": "cpu",
+          "title": "Especialización a Medida",
+          "text": "Fine-tuning ajustado al vocabulario técnico, documentos y flujos de tu empresa."
+        }
+      ],
+      "tech": [
+        "Ollama",
+        "vLLM",
+        "Hugging Face",
+        "PyTorch",
+        "GGUF / llama.cpp",
+        "LangChain / LlamaIndex"
+      ],
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre un SLM y un LLM tradicional?",
+          "a": "Un SLM (Small Language Model) tiene entre 1B y 8B parámetros, lo que permite ejecutarlo en hardware accesible (GPUs modestas o CPUs modernas) con un rendimiento igual o superior en tareas especializadas, sin el alto costo ni los riesgos de privacidad de un LLM gigante."
+        },
+        {
+          "q": "¿Qué hardware necesito para ejecutar un SLM en mi empresa?",
+          "a": "Gracias a técnicas de cuantización (GGUF, 4-bit/8-bit), muchos modelos corren eficientemente en servidores estándar, mini PCs o estaciones de trabajo con GPUs comerciales (como NVIDIA RTX) o incluso procesadores modernos con RAM suficiente."
+        },
+        {
+          "q": "¿Se puede conectar a nuestras bases de datos y documentos internos?",
+          "a": "Sí. Implementamos arquitecturas RAG (Generación Aumentada por Recuperación) y conectores a tus bases de datos, PDFs, ERP y CRMs para que el modelo responda con información interna precisa y actualizada."
+        }
+      ]
+    },
+    {
+      "id": "bases-datos-vectoriales",
+      "icon": "database",
+      "title": "Bases de Datos Vectoriales",
+      "description": "Implementamos y optimizamos bases de datos vectoriales para búsqueda semántica, sistemas de recomendación y pipelines RAG de alta escala.",
+      "features": [
+        "Índices de similitud vectorial (HNSW, IVF-PQ, ScaNN)",
+        "Embeddings de alta dimensionalidad para texto, imágenes y audio",
+        "Integración con frameworks de IA (LangChain, LlamaIndex, Haystack)",
+        "Escalabilidad horizontal y baja latencia en consultas (sub-10ms)",
+        "Almacenamiento híbrido: vectorial + metadatos relacionales"
+      ],
+      "slug": "vector-databases",
+      "overview": "Diseñamos e implementamos arquitecturas de almacenamiento y búsqueda vectorial para potenciar aplicaciones de inteligencia artificial generativa, búsqueda semántica y recuperación contextual de información. Integramos bases de datos vectoriales líderes para que tus modelos y aplicaciones encuentren datos relevantes en milisegundos a partir de millones de documentos, imágenes o productos.",
+      "benefits": [
+        {
+          "icon": "zap",
+          "title": "Búsqueda Semántica Real",
+          "text": "Encuentra información por significado y contexto, no solo palabras clave exactas."
+        },
+        {
+          "icon": "database",
+          "title": "Escalabilidad Masiva",
+          "text": "Soporta millones de vectores de alta dimensión con índices optimizados."
+        },
+        {
+          "icon": "shield",
+          "title": "Cero Alucinaciones en IA",
+          "text": "Recuperación de contexto exacto y verificable para tus pipelines RAG."
+        },
+        {
+          "icon": "cpu",
+          "title": "Baja Latencia",
+          "text": "Respuestas sub-10ms incluso con alta concurrencia de usuarios."
+        }
+      ],
+      "tech": [
+        "Qdrant",
+        "Milvus",
+        "Chroma",
+        "Pinecone",
+        "pgvector (PostgreSQL)",
+        "Weaviate"
+      ],
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre una base de datos vectorial y una tradicional?",
+          "a": "Las bases de datos tradicionales buscan coincidencias exactas en filas y columnas. Las vectoriales almacenan representaciones matemáticas (embeddings) que permiten buscar por similitud semántica y concepto."
+        },
+        {
+          "q": "¿Cuándo conviene usar pgvector vs una base de datos dedicada como Qdrant?",
+          "a": "pgvector es ideal si ya usas PostgreSQL y manejas hasta unos cientos de miles de vectores. Para millones de vectores o latencias extremas, recomendamos motores dedicados como Qdrant o Milvus."
+        },
+        {
+          "q": "¿Se puede integrar con nuestros sistemas actuales?",
+          "a": "Sí, creamos conectores y pipelines automáticos que transforman tus datos existentes en embeddings y los mantienen sincronizados."
+        }
+      ]
+    },
+    {
+      "id": "chatbots-asistentes",
+      "icon": "bot",
+      "title": "Chatbots y Asistentes Virtuales",
+      "description": "Desarrollamos chatbots inteligentes y agentes conversacionales multicanal con IA generativa, integrados a tus bases de datos y WhatsApp.",
+      "features": [
+        "Agentes conversacionales con memoria y contexto de cliente",
+        "Integración con WhatsApp Business API, Web, Telegram y CRM",
+        "RAG conectado a inventario, catálogos y políticas internas",
+        "Derivación inteligente a agentes humanos ante casos complejos",
+        "Analítica de conversaciones, sentimiento y tasas de resolución"
+      ],
+      "slug": "chatbots",
+      "overview": "Construimos asistentes virtuales y chatbots con inteligencia artificial capaces de atender clientes 24/7, resolver consultas complejas, agendar citas y cerrar ventas en tiempo real. Conectamos los chatbots a tus bases de datos, ERP y canales de mensajería favoritos sin respuestas genéricas ni frustrantes.",
+      "benefits": [
+        {
+          "icon": "clock",
+          "title": "Atención 24/7",
+          "text": "Respuestas inmediatas a cualquier hora del día sin tiempos de espera."
+        },
+        {
+          "icon": "trending-up",
+          "title": "Más Ventas y Conversión",
+          "text": "Guía a tus clientes en su proceso de compra y califica leads automáticamente."
+        },
+        {
+          "icon": "whatsapp",
+          "title": "WhatsApp Oficial",
+          "text": "Conexión directa con la API oficial de WhatsApp Business y Meta."
+        },
+        {
+          "icon": "shield",
+          "title": "Respuestas Confiables",
+          "text": "Información basada 100% en los datos y catálogos reales de tu negocio."
+        }
+      ],
+      "tech": [
+        "WhatsApp Cloud API",
+        "LangChain",
+        "OpenAI / Ollama",
+        "FastAPI",
+        "WebSockets",
+        "Vue.js"
+      ],
+      "faq": [
+        {
+          "q": "¿Por qué canales pueden responder los chatbots?",
+          "a": "En WhatsApp, páginas web, Facebook Messenger, Instagram Direct, Telegram y aplicaciones móviles propias."
+        },
+        {
+          "q": "¿Qué pasa si el chatbot no sabe una respuesta?",
+          "a": "Configuramos reglas de derivación automática para transferir la conversación a un agente humano de tu equipo con todo el historial."
+        },
+        {
+          "q": "¿Se integra con nuestro software de gestión o CRM?",
+          "a": "Sí, nos conectamos vía API con tu CRM, sistema de facturación, pasarela de pagos o bases de datos."
+        }
+      ]
+    },
+    {
+      "id": "redes-neuronales",
+      "icon": "brain",
+      "title": "Redes Neuronales y Deep Learning",
+      "description": "Diseñamos, entrenamos y desplegamos arquitecturas de redes neuronales profundas para visión artificial, NLP, clasificación y detección de anomalías.",
+      "features": [
+        "Arquitecturas CNN, RNN, Transformers y Autoencoders",
+        "Visión por computadora (detección de objetos, segmentación y OCR)",
+        "Modelos de series temporales y procesamiento de señales",
+        "Optimización y cuantización para inferencia en tiempo real",
+        "Pipelines de entrenamiento distribuido en GPU / TPU"
+      ],
+      "slug": "neural-networks",
+      "overview": "Desarrollamos modelos de Deep Learning a la medida para resolver problemas de alta complejidad perceptual y analítica. Desde sistemas de visión computacional para inspección de calidad y control de acceso, hasta procesamiento de lenguaje y series temporales complejas con arquitecturas de última generación.",
+      "benefits": [
+        {
+          "icon": "brain",
+          "title": "Alta Precisión",
+          "text": "Rendimiento de nivel industrial en datos no estructurados complejos."
+        },
+        {
+          "icon": "zap",
+          "title": "Automatización Visual",
+          "text": "Inspección de calidad y reconocimiento visual sin fatiga humana."
+        },
+        {
+          "icon": "cpu",
+          "title": "Inferencia Rápida",
+          "text": "Modelos optimizados con TensorRT y ONNX para ejecutarse en tiempo real."
+        },
+        {
+          "icon": "shield",
+          "title": "Propiedad Intelectual",
+          "text": "Los pesos, modelos y código entrenado pertenecen 100% a tu empresa."
+        }
+      ],
+      "tech": [
+        "PyTorch",
+        "TensorFlow",
+        "TensorRT",
+        "OpenCV",
+        "Hugging Face",
+        "ONNX"
+      ],
+      "faq": [
+        {
+          "q": "¿Cuándo conviene usar Deep Learning vs Machine Learning tradicional?",
+          "a": "Deep Learning es superior cuando se trabaja con datos no estructurados (imágenes, video, audio, texto libre) o patrones extremadamente complejos que los algoritmos tradicionales no logran capturar."
+        },
+        {
+          "q": "¿Cuántas imágenes o datos se necesitan para entrenar una red neuronal?",
+          "a": "Aplicamos técnicas de Transfer Learning y Fine-Tuning sobre modelos base pre-entrenados, lo que permite obtener alta precisión con cientos de ejemplos en lugar de millones."
+        },
+        {
+          "q": "¿Pueden correr en dispositivos locales o cámaras?",
+          "a": "Sí, optimizamos y cuantizamos modelos para ejecutarse en hardware embebido como NVIDIA Jetson, Raspberry Pi o servidores locales."
+        }
+      ]
+    },
+    {
+      "id": "analitica-avanzada",
+      "icon": "chart-bar",
+      "title": "Analítica Avanzada de Negocios",
+      "description": "Modelado estadístico, análisis de cohortes, modelos de propensión y analítica prescriptiva para acelerar la toma de decisiones empresariales.",
+      "features": [
+        "Modelado predictivo de ventas, abandono (churn) y demanda",
+        "Segmentación comportamental y análisis de Lifetime Value (LTV)",
+        "Cuadros de mando ejecutivos y tableros interactivos",
+        "Detección de patrones de compra y recomendaciones",
+        "Análisis de atribución de marketing y optimización de CAC"
+      ],
+      "slug": "advanced-analytics",
+      "overview": "Llevamos a tu empresa más allá de los reportes tradicionales. Aplicamos analítica descriptiva, predictiva y prescriptiva para identificar oportunidades de crecimiento, optimizar precios y predecir el comportamiento de tus clientes antes de que ocurra.",
+      "benefits": [
+        {
+          "icon": "trending-up",
+          "title": "Decisiones con Datos",
+          "text": "Respaldadas por modelos estadísticos sólidos en lugar de suposiciones."
+        },
+        {
+          "icon": "users",
+          "title": "Retención de Clientes",
+          "text": "Detecta clientes en riesgo de abandono antes de que se marchen."
+        },
+        {
+          "icon": "zap",
+          "title": "Optimización de Ingresos",
+          "text": "Identifica los productos, canales y segmentos más rentables."
+        },
+        {
+          "icon": "monitor",
+          "title": "Claridad Ejecutiva",
+          "text": "Tableros visuales intuitivos listos para la junta directiva."
+        }
+      ],
+      "tech": [
+        "Python",
+        "R",
+        "DuckDB",
+        "Polars",
+        "scikit-learn",
+        "Power BI",
+        "Metabase"
+      ],
+      "faq": [
+        {
+          "q": "¿En qué se diferencia de la reportería básica?",
+          "a": "La reportería básica te dice qué pasó; la analítica avanzada te explica por qué pasó, predice qué pasará y prescribe qué acción debes tomar para maximizar resultados."
+        },
+        {
+          "q": "¿Qué fuentes de datos se pueden conectar?",
+          "a": "ERPs, bases de datos SQL/NoSQL, hojas de cálculo, herramientas de marketing, pasarelas de pago y Google Analytics."
+        },
+        {
+          "q": "¿Cuánto tarda en verse el primer tablero analítico?",
+          "a": "Entregamos un primer MVP funcional con datos iniciales en 1 a 2 semanas."
+        }
+      ]
+    },
+    {
+      "id": "gestion-de-activos",
+      "icon": "folder",
+      "title": "Gestión de Activos de TI",
+      "description": "Sistemas centralizados para inventario, ciclo de vida, licencias, mantenimiento y auditoría de activos tecnológicos y empresariales.",
+      "features": [
+        "Inventario automatizado de hardware, servidores y dispositivos",
+        "Control de licencias de software y fechas de renovación",
+        "Historial de mantenimiento, garantías y depreciación contable",
+        "Códigos QR / RFID y asignación a empleados por departamento",
+        "Auditorías de cumplimiento y reportes de seguridad"
+      ],
+      "slug": "asset-management",
+      "overview": "Implementamos plataformas de Gestión de Activos Tecnológicos (ITAM) para que tengas control absoluto de tus servidores, equipos, licencias y software en un solo lugar. Evita sobrecostos por licencias no utilizadas, optimiza el ciclo de vida de los activos y cumple con estándares de auditoría.",
+      "benefits": [
+        {
+          "icon": "shield",
+          "title": "Control y Visibilidad 100%",
+          "text": "Conoce en tiempo real qué equipos tienes, dónde están y quién los usa."
+        },
+        {
+          "icon": "trending-up",
+          "title": "Ahorro en Licencias",
+          "text": "Elimina gastos recurrentes en software inactivo o duplicado."
+        },
+        {
+          "icon": "clock",
+          "title": "Renovaciones a Tiempo",
+          "text": "Alertas automáticas de vencimiento de garantías y licencias."
+        },
+        {
+          "icon": "check",
+          "title": "Auditorías sin Estrés",
+          "text": "Trazabilidad completa para inspecciones fiscales y de seguridad."
+        }
+      ],
+      "tech": [
+        "Snipe-IT",
+        "PostgreSQL",
+        "Docker",
+        "REST APIs",
+        "QR/RFID Scanner",
+        "Vue.js"
+      ],
+      "faq": [
+        {
+          "q": "¿Se puede integrar con Active Directory o Google Workspace?",
+          "a": "Sí, sincronizamos usuarios y departamentos automáticamente con tu directorio corporativo."
+        },
+        {
+          "q": "¿Podemos importar nuestro inventario actual desde Excel?",
+          "a": "Sí, limpiamos, estructuramos y migramos tus hojas de cálculo existentes al nuevo sistema."
+        },
+        {
+          "q": "¿Permite gestionar tanto activos físicos como digitales?",
+          "a": "Sí, administra hardware (laptops, servidores, routers) y activos digitales (licencias, dominios, certificados SSL)."
+        }
+      ]
+    },
+    {
+      "id": "automatizacion-empresarial",
+      "icon": "zap",
+      "title": "Automatización Empresarial (RPA)",
+      "description": "Automatizamos flujos de trabajo repetitivos, integración de sistemas y procesos manuales con bots RPA y orquestadores modernos.",
+      "features": [
+        "Bots de automatización de tareas administrativas y financieras",
+        "Extracción y procesamiento inteligente de facturas y documentos",
+        "Sincronización automática entre ERPs, CRMs y bancos",
+        "Workflows impulsados por eventos y webhooks en tiempo real",
+        "Trazabilidad y monitoreo continuo de ejecuciones"
+      ],
+      "slug": "enterprise-automation",
+      "overview": "Eliminamos el trabajo manual tedioso mediante la automatización de procesos empresariales. Conectamos tus herramientas de facturación, bancos, inventarios y sistemas internos para que operen de forma sincronizada y automática sin errores humanos.",
+      "benefits": [
+        {
+          "icon": "clock",
+          "title": "90% Ahorro de Tiempo",
+          "text": "Tareas que tomaban horas ahora se procesan en segundos."
+        },
+        {
+          "icon": "shield",
+          "title": "Cero Errores Manuales",
+          "text": "Procesamiento exacto y validación de datos sin equivocaciones."
+        },
+        {
+          "icon": "users",
+          "title": "Equipo Más Productivo",
+          "text": "Tu personal se enfoca en labores estratégicas de alto valor."
+        },
+        {
+          "icon": "refresh",
+          "title": "Operación 24/7",
+          "text": "Flujos de trabajo que corren de día y de noche de manera continua."
+        }
+      ],
+      "tech": [
+        "n8n",
+        "Apache Airflow",
+        "Python",
+        "Playwright",
+        "REST Webhooks",
+        "Celery"
+      ],
+      "faq": [
+        {
+          "q": "¿Qué tipo de procesos se pueden automatizar?",
+          "a": "Generación y envío de facturas, conciliación bancaria, carga de inventarios, reportes periódicos, alta de usuarios y sincronización entre plataformas."
+        },
+        {
+          "q": "¿Qué pasa si un sistema externo cambia su interfaz o API?",
+          "a": "Nuestros flujos cuentan con manejo de errores, reintentos automáticos y alertas inmediatas para realizar ajustes sin pérdida de datos."
+        },
+        {
+          "q": "¿En cuánto tiempo se ve el retorno de inversión?",
+          "a": "La mayoría de nuestros clientes recuperan la inversión en menos de 3 meses gracias al ahorro de horas hombre."
+        }
+      ]
+    },
+    {
+      "id": "operaciones-de-negocios",
+      "icon": "briefcase",
+      "title": "Operaciones de Negocios (BPM)",
+      "description": "Diseño, digitalización y optimización de flujos operativos empresariales (BPM) para aumentar la eficiencia y reducir cuellos de botella.",
+      "features": [
+        "Mapeo y rediseño de procesos de negocio (BPMN 2.0)",
+        "Portales de autoservicio y aprobaciones multinivel",
+        "Dashboards de cuellos de botella y tiempos de ciclo (SLA)",
+        "Gestión documental y firma digital integrada",
+        "Integración con sistemas de contabilidad y recursos humanos"
+      ],
+      "slug": "business-operations",
+      "overview": "Transformamos procesos manuales y desordenados en flujos de trabajo digitales estandarizados. Desde la solicitud de un cliente hasta la entrega final y facturación, aseguramos visibilidad completa, cumplimiento de tiempos (SLAs) y control en cada etapa de la operación.",
+      "benefits": [
+        {
+          "icon": "layers",
+          "title": "Control de Extremo a Extremo",
+          "text": "Visualiza el estado exacto de cada solicitud o trámite en tiempo real."
+        },
+        {
+          "icon": "zap",
+          "title": "Cero Cuellos de Botella",
+          "text": "Identifica y resuelve atascos en flujos operativos rápidamente."
+        },
+        {
+          "icon": "star",
+          "title": "Calidad Estandarizada",
+          "text": "Mismos estándares de excelencia en todas tus áreas y sucursales."
+        },
+        {
+          "icon": "chart-bar",
+          "title": "Métricas Operativas",
+          "text": "Tiempos de respuesta y cumplimiento de SLAs medidos al segundo."
+        }
+      ],
+      "tech": [
+        "Camunda",
+        "Node.js",
+        "PostgreSQL",
+        "Docker",
+        "Tailwind CSS",
+        "Vue.js"
+      ],
+      "faq": [
+        {
+          "q": "¿Cómo se garantiza que el equipo adopte los nuevos procesos?",
+          "a": "Diseñamos interfaces intuitivas que simplifican el trabajo diario y capacitamos a los líderes y colaboradores en sesiones prácticas."
+        },
+        {
+          "q": "¿Funciona para empresas con múltiples sedes?",
+          "a": "Sí, centraliza la operación permitiendo acceso seguro y roles diferenciados por sucursal."
+        },
+        {
+          "q": "¿Incluye aprobaciones móviles?",
+          "a": "Sí, los directores y supervisores pueden aprobar solicitudes directamente desde su celular o correo."
+        }
+      ]
+    },
+    {
+      "id": "nube-arquitectura-cloud",
+      "icon": "cloud",
+      "title": "Nube y Arquitectura Cloud",
+      "description": "Migración, diseño y optimización de arquitecturas en la nube (AWS, GCP, Azure, Cloudflare) con alta disponibilidad y costos controlados.",
+      "features": [
+        "Arquitecturas serverless y basadas en microservicios",
+        "Migración segura de infraestructura on-premise a la nube",
+        "Optimización de costos cloud (FinOps) y reducción de facturación",
+        "Redundancia multi-zona y alta disponibilidad (99.99%)",
+        "Estrategias de respaldo automatizado y Disaster Recovery"
+      ],
+      "slug": "cloud-computing",
+      "overview": "Diseñamos e implementamos infraestructura en la nube moderna, resiliente y escalable. Te ayudamos a migrar tus sistemas a AWS, Google Cloud, Azure o Cloudflare, optimizando costos y garantizando que tu aplicación soporte picos de tráfico masivo sin caídas.",
+      "benefits": [
+        {
+          "icon": "cloud",
+          "title": "Escalabilidad Dinámica",
+          "text": "Tu plataforma crece automáticamente según la demanda de usuarios."
+        },
+        {
+          "icon": "trending-up",
+          "title": "Ahorro con FinOps",
+          "text": "Reduce tu factura cloud eliminando recursos ociosos o sobre-dimensionados."
+        },
+        {
+          "icon": "shield",
+          "title": "Alta Disponibilidad (99.99%)",
+          "text": "Arquitecturas redundantes diseñadas para no caerse nunca."
+        },
+        {
+          "icon": "refresh",
+          "title": "Disaster Recovery",
+          "text": "Respaldos continuos y recuperación ante desastres en minutos."
+        }
+      ],
+      "tech": [
+        "AWS",
+        "Google Cloud Platform",
+        "Azure",
+        "Cloudflare Workers",
+        "Terraform",
+        "Docker"
+      ],
+      "faq": [
+        {
+          "q": "¿Qué proveedor de nube recomiendan?",
+          "a": "Evaluamos tu caso: AWS o GCP para cargas avanzadas, Cloudflare para máxima velocidad y bajo costo, o arquitecturas multi-cloud híbridas."
+        },
+        {
+          "q": "¿Cómo evitan facturas sorpresa en la nube?",
+          "a": "Implementamos alertas de presupuesto, límites de gasto (hard caps) y políticas de apagado automático de entornos no productivos."
+        },
+        {
+          "q": "¿Se interrumpe la operación durante una migración?",
+          "a": "Planificamos migraciones incrementales con replicación de datos en paralelo para lograr un cambio de tráfico con cero tiempo de inactividad."
+        }
+      ]
+    },
+    {
+      "id": "computacion-y-servidores",
+      "icon": "server",
+      "title": "Computación y Servidores",
+      "description": "Configuración, administración y virtualización de servidores Linux/Windows, bare metal, clústeres y almacenamiento de alto rendimiento.",
+      "features": [
+        "Aprovisionamiento de servidores dedicados y VPS (Linux / Windows)",
+        "Virtualización con Proxmox, VMware y KVM",
+        "Hardening de seguridad de sistemas operativos y firewalls",
+        "Configuración de almacenamiento en red (NAS/SAN, ZFS, Ceph)",
+        "Monitoreo 24/7 de CPU, memoria, disco y red con alertas"
+      ],
+      "slug": "servers-computing",
+      "overview": "Gestionamos la infraestructura de cómputo y servidores que soporta tus aplicaciones críticas. Desde servidores locales on-premise y centros de datos hasta entornos virtualizados de alta densidad, aseguramos rendimiento óptimo, seguridad de red y máxima estabilidad.",
+      "benefits": [
+        {
+          "icon": "server",
+          "title": "Rendimiento Dedicado",
+          "text": "Aprovecha al 100% la potencia de tu hardware sin cuellos de botella."
+        },
+        {
+          "icon": "shield",
+          "title": "Seguridad Blindada",
+          "text": "Hardening de kernel, firewalls estrictos y aislamiento de servicios."
+        },
+        {
+          "icon": "monitor",
+          "title": "Monitoreo Proactivo",
+          "text": "Detección temprana de fallas en disco, RAM o temperatura."
+        },
+        {
+          "icon": "repeat",
+          "title": "Virtualización Flexible",
+          "text": "Múltiples entornos aislados sobre el mismo hardware con Proxmox o KVM."
+        }
+      ],
+      "tech": [
+        "Linux (Ubuntu/Debian/Rocky)",
+        "Proxmox VE",
+        "Nginx",
+        "HAProxy",
+        "ZFS",
+        "Grafana / Prometheus"
+      ],
+      "faq": [
+        {
+          "q": "¿Administran servidores tanto en la nube como en nuestras oficinas?",
+          "a": "Sí, gestionamos servidores físicos on-premise, en centros de datos locales y en proveedores de VPS/dedicados."
+        },
+        {
+          "q": "¿Cómo protegen los servidores ante ciberataques?",
+          "a": "Aplicamos autenticación con llaves SSH, Fail2ban, firewalls UFW/iptables, VPNs privadas y monitoreo constante de accesos."
+        },
+        {
+          "q": "¿Ofrecen planes de soporte y mantenimiento mensual?",
+          "a": "Sí, tenemos planes de administración continua con aplicación de parches, optimización y resolución de emergencias 24/7."
+        }
+      ]
+    },
+    {
+      "id": "devops-ci-cd",
+      "icon": "git-branch",
+      "title": "DevOps y CI/CD",
+      "description": "Pipelines de integración y despliegue continuo (CI/CD), infraestructura como código (IaC) y observabilidad para lanzar software más rápido y sin errores.",
+      "features": [
+        "Pipelines automatizados de CI/CD (GitHub Actions, GitLab CI)",
+        "Infraestructura como código con Terraform y Ansible",
+        "Orquestación de contenedores con Kubernetes y Docker Swarm",
+        "Estrategias de despliegue sin tiempo de inactividad (Blue-Green / Canary)",
+        "Monitoreo de logs y métricas centralizadas (Prometheus, Grafana, ELK)"
+      ],
+      "slug": "devops",
+      "overview": "Implementamos prácticas de DevOps para que tu equipo publique software con rapidez, seguridad y consistencia. Automatizamos desde las pruebas de código y construcción de imágenes hasta el despliegue en producción con cero tiempo de inactividad.",
+      "benefits": [
+        {
+          "icon": "rocket",
+          "title": "Despliegues en Minutos",
+          "text": "Lanza nuevas funcionalidades a producción de forma automática y segura."
+        },
+        {
+          "icon": "shield",
+          "title": "Menos Errores en Producción",
+          "text": "Pruebas automáticas que detienen fallas antes de que lleguen a los usuarios."
+        },
+        {
+          "icon": "refresh",
+          "title": "Rollback Inmediato",
+          "text": "Revierte cualquier cambio problemático con un solo clic en segundos."
+        },
+        {
+          "icon": "monitor",
+          "title": "Observabilidad Total",
+          "text": "Logs y métricas en tiempo real para entender el estado de tu software."
+        }
+      ],
+      "tech": [
+        "GitHub Actions",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "Ansible",
+        "Prometheus"
+      ],
+      "faq": [
+        {
+          "q": "¿Se puede implementar DevOps en un equipo pequeño?",
+          "a": "Totalmente. Empezamos con pipelines sencillos de CI/CD que ahorran tiempo de inmediato y van escalando con el equipo."
+        },
+        {
+          "q": "¿Qué es la Infraestructura como Código (IaC)?",
+          "a": "Es definir tus servidores, redes y bases de datos en archivos versionados con Git (Terraform), permitiendo recrear todo el entorno en minutos."
+        },
+        {
+          "q": "¿Cómo evita el tiempo de inactividad al actualizar?",
+          "a": "Usamos despliegues Blue-Green o Rolling Updates, donde la nueva versión se verifica antes de redirigir el tráfico de los usuarios."
+        }
+      ]
+    },
+    {
+      "id": "automatizacion-de-ti",
+      "icon": "cpu",
+      "title": "Automatización de TI",
+      "description": "Scripts, herramientas de auto-remediación y gestión centralizada para automatizar la administración de sistemas y soporte técnico.",
+      "features": [
+        "Aprovisionamiento desatendido de estaciones de trabajo y servidores",
+        "Scripts de mantenimiento preventivo y limpieza automatizada",
+        "Auto-reparación de servicios caídos y alertas en tiempo real",
+        "Gestión masiva de parches de seguridad y actualizaciones",
+        "Backups programados y pruebas automáticas de restauración"
+      ],
+      "slug": "it-automation",
+      "overview": "Transformamos la gestión del departamento de TI eliminando las tareas manuales repetitivas. Creamos scripts, agentes y orquestadores que monitorean tu infraestructura, aplican actualizaciones, reinician servicios caídos y generan reportes sin intervención humana.",
+      "benefits": [
+        {
+          "icon": "clock",
+          "title": "Menos Carga Operativa",
+          "text": "El equipo de TI se libera de tareas rutinarias de soporte y configuración."
+        },
+        {
+          "icon": "zap",
+          "title": "Auto-Remediación",
+          "text": "Servicios que se recuperan automáticamente ante caídas inesperadas."
+        },
+        {
+          "icon": "shield",
+          "title": "Sistemas Siempre al Día",
+          "text": "Parches y actualizaciones de seguridad aplicados sin descuidos."
+        },
+        {
+          "icon": "check",
+          "title": "Estandarización de TI",
+          "text": "Configuraciones homogéneas y seguras en todos los puestos de trabajo."
+        }
+      ],
+      "tech": [
+        "Python",
+        "Bash",
+        "PowerShell",
+        "Ansible",
+        "Cron / Systemd",
+        "Zabbix"
+      ],
+      "faq": [
+        {
+          "q": "¿Funciona en entornos mixtos con Windows y Linux?",
+          "a": "Sí, combinamos PowerShell para ecosistemas Windows y Bash/Python para servidores Linux y dispositivos de red."
+        },
+        {
+          "q": "¿Es seguro ejecutar scripts automáticos en producción?",
+          "a": "Sí, implementamos validaciones previas, registros de auditoría y mecanismos de contención ante anomalías."
+        },
+        {
+          "q": "¿Cómo se reciben las alertas de fallas?",
+          "a": "Configuramos notificaciones instantáneas por Telegram, WhatsApp, Slack, correo o SMS según la criticidad."
+        }
+      ]
+    },
+    {
+      "id": "middleware-integracion",
+      "icon": "puzzle",
+      "title": "Middleware e Integración de Sistemas",
+      "description": "Conectores, buses de eventos y capas de integración para comunicar sistemas heterogéneos, ERPs, APIs y bases de datos sin fricción.",
+      "features": [
+        "Arquitecturas dirigidas por eventos (Event-Driven) con Kafka y RabbitMQ",
+        "APIs REST y GraphQL unificadas sobre sistemas legados",
+        "Transformación y mapeo de datos en tiempo real entre sistemas",
+        "Gestión de colas, reintentos y tolerancia a fallos",
+        "Monitoreo de transacciones y auditoría de mensajes"
+      ],
+      "slug": "middleware",
+      "overview": "Conectamos tus aplicaciones existentes para que hablen el mismo idioma. Desarrollamos middleware y capas de integración de alto rendimiento que permiten sincronizar datos entre ERPs (SAP, Odoo), plataformas de e-commerce, pasarelas de pago y sistemas bancarios de forma confiable e instantánea.",
+      "benefits": [
+        {
+          "icon": "puzzle",
+          "title": "Sistemas Conectados",
+          "text": "Flujo de datos continuo entre plataformas sin duplicación manual."
+        },
+        {
+          "icon": "zap",
+          "title": "Cero Pérdida de Mensajes",
+          "text": "Colas persistentes y reintentos automáticos ante caídas de sistemas."
+        },
+        {
+          "icon": "layers",
+          "title": "Arquitectura Desacoplada",
+          "text": "Modifica o reemplaza sistemas individuales sin romper el resto de la empresa."
+        },
+        {
+          "icon": "shield",
+          "title": "Trazabilidad Transaccional",
+          "text": "Auditoría completa del recorrido de cada mensaje, orden o pago."
+        }
+      ],
+      "tech": [
+        "Apache Kafka",
+        "RabbitMQ",
+        "Redis",
+        "Node.js",
+        "Go",
+        "REST / GraphQL"
+      ],
+      "faq": [
+        {
+          "q": "¿Se puede integrar un software antiguo que no tiene API?",
+          "a": "Sí, podemos conectar a través de bases de datos compartidas, archivos planos (CSV/XML), colas intermedias o conectores a medida."
+        },
+        {
+          "q": "¿Qué pasa si uno de los sistemas receptores se cae?",
+          "a": "El middleware retiene los mensajes en una cola segura (RabbitMQ/Kafka) y los entrega automáticamente en cuanto el sistema vuelve a estar en línea."
+        },
+        {
+          "q": "¿Cómo garantizan la seguridad de los datos en tránsito?",
+          "a": "Cifrado TLS/SSL de extremo a extremo, tokens de autenticación JWT y firmas criptográficas de mensajes."
+        }
+      ]
+    }
+  ],
+  "security": {
+    "eyebrow": "Ciberseguridad y Monitoreo",
+    "title": "Monitoreo proactivo de amenazas y vulnerabilidades",
+    "description": "Ofrecemos monitoreo proactivo de amenazas y consulta pública de las vulnerabilidades y fallas más recientes (CVE).",
+    "features": [
+      "Monitoreo en tiempo real de CVEs",
+      "Auditorías de código y análisis estático",
+      "Pruebas de penetración (Pen Testing)",
+      "Implementación de DevSecOps"
+    ],
+    "cta": "Explorar Vulnerabilidades",
+    "feedTitle": "Monitoreo CVE en tiempo real",
+    "feedSource": "Fuente: NVD · Actualizado ahora",
+    "live": "LIVE",
+    "updatedNote": "Actualizado en tiempo real",
+    "monitoredToday": "+128 CVEs monitoreados hoy",
+    "feed": [
+      {
+        "id": "CVE-2026-4821",
+        "title": "Ejecución remota de código en servidores Apache",
+        "severity": "critical",
+        "time": "hace 2 min"
+      },
+      {
+        "id": "CVE-2026-4730",
+        "title": "Escalada de privilegios en kernel Linux",
+        "severity": "high",
+        "time": "hace 18 min"
+      },
+      {
+        "id": "CVE-2026-4602",
+        "title": "XSS almacenado en panel de gestión",
+        "severity": "medium",
+        "time": "hace 1 h"
+      },
+      {
+        "id": "CVE-2026-4518",
+        "title": "Fuga de información en API REST",
+        "severity": "high",
+        "time": "hace 3 h"
+      }
+    ]
+  },
+  "severity": {
+    "critical": "CRÍTICA",
+    "high": "ALTA",
+    "medium": "MEDIA",
+    "low": "BAJA"
+  },
+  "products": [
+    {
+      "name": "Vulnerabilidades",
+      "icon": "shield-alert",
+      "subtitle": "Pentesting y auditorías",
+      "slug": "vulnerabilities",
+      "description": "Auditorías de seguridad y pruebas de penetración para encontrar y corregir vulnerabilidades antes que los atacantes.",
+      "overview": "Identificamos las debilidades de tu infraestructura, aplicaciones web y móviles antes de que alguien las explote. Ejecutamos pentesting controlado, escaneo de vulnerabilidades y auditorías de configuración, y entregamos un plan de remediación priorizado con evidencia y recomendaciones accionables.",
+      "features": [
+        "Pruebas de penetración en aplicaciones web, móviles y APIs",
+        "Escaneo y correlación de vulnerabilidades (CVE)",
+        "Auditoría de configuración de servidores y redes",
+        "Análisis según OWASP Top 10 y estándares de la industria",
+        "Informes ejecutivos con plan de remediación priorizado",
+        "Re-testing para validar las correcciones aplicadas"
+      ],
+      "benefits": [
+        {
+          "icon": "shield",
+          "title": "Prevén brechas de seguridad",
+          "text": "Detecta y corrige fallas antes de que se conviertan en incidentes costosos."
+        },
+        {
+          "icon": "scale",
+          "title": "Cumplimiento normativo",
+          "text": "Documentación de auditorías que respalda certificaciones y regulaciones."
+        },
+        {
+          "icon": "trending-up",
+          "title": "Riesgos priorizados",
+          "text": "Sabes exactamente qué corregir primero según el impacto real en tu negocio."
+        },
+        {
+          "icon": "users",
+          "title": "Confianza del cliente",
+          "text": "Protege la información de tus usuarios y fortalece tu reputación."
+        }
+      ],
+      "tech": [
+        "Nmap",
+        "Burp Suite",
+        "OWASP ZAP",
+        "Metasploit",
+        "Wireshark",
+        "Nikto"
+      ],
+      "faq": [
+        {
+          "q": "¿Cuánto dura un pentesting?",
+          "a": "Depende del alcance: una auditoría de aplicación web típica toma de 1 a 3 semanas, incluyendo el informe y la validación de correcciones."
+        },
+        {
+          "q": "¿Es seguro hacer una prueba de penetración?",
+          "a": "Sí. Trabajamos con alcances y reglas de compromiso definidos por escrito, en entornos controlados y sin afectar la operación."
+        },
+        {
+          "q": "¿Qué entregamos al final?",
+          "a": "Un informe ejecutivo y uno técnico con hallazgos, severidad, evidencia y un plan de remediación priorizado, además de re-testing de las correcciones."
+        }
+      ]
+    },
+    {
+      "name": "Monitoreo Sísmico",
+      "icon": "activity",
+      "subtitle": "Estaciones sísmicas en tiempo real",
+      "slug": "seismic-monitoring",
+      "description": "Red de estaciones sísmicas con datos en tiempo real para alertar, analizar y visualizar actividad telúrica.",
+      "overview": "Construimos redes de estaciones sísmicas que capturan, transmiten y visualizan datos en tiempo real. Diseñamos el hardware, el firmware y la plataforma web para que equipos de protección civil, universidades y empresas reciban alertas tempranas y analicen el comportamiento sísmico desde un solo dashboard.",
+      "features": [
+        "Ingesta de datos desde estaciones y sensores (Raspberry Pi, acelerómetros)",
+        "Visualización en tiempo real con series temporales y mapas geoespaciales",
+        "Alertas automáticas por umbrales de magnitud e intensidad",
+        "Almacenamiento de historial y análisis de eventos",
+        "API de datos abierta para integraciones externas",
+        "Dashboard con acceso multiusuario y roles"
+      ],
+      "benefits": [
+        {
+          "icon": "zap",
+          "title": "Alertas tempranas",
+          "text": "Notificaciones automáticas que reducen tiempos de reacción ante eventos."
+        },
+        {
+          "icon": "chart-bar",
+          "title": "Decisiones con datos",
+          "text": "Historial y análisis que respaldan estudios e informes técnicos."
+        },
+        {
+          "icon": "globe",
+          "title": "Acceso remoto",
+          "text": "Monitorea todas tus estaciones desde cualquier lugar, en tiempo real."
+        },
+        {
+          "icon": "database",
+          "title": "Cero pérdida de datos",
+          "text": "Arquitectura tolerante a fallos con almacenamiento redundante."
+        }
+      ],
+      "tech": [
+        "Python",
+        "Node.js",
+        "InfluxDB",
+        "MQTT",
+        "Grafana",
+        "WebSockets"
+      ],
+      "faq": [
+        {
+          "q": "¿Qué hardware necesito para una estación sísmica?",
+          "a": "Trabajamos con sensores comerciales (acelerómetros, geófonos) y placas como Raspberry Pi o ESP32; nosotros diseñamos la integración y el firmware."
+        },
+        {
+          "q": "¿Puedo integrar estaciones que ya tengo?",
+          "a": "Sí. Si tus estaciones ya generan datos (JSON, MQTT, CSV), los integramos a la plataforma sin reemplazar el hardware."
+        },
+        {
+          "q": "¿Las alertas llegan por WhatsApp o correo?",
+          "a": "Configuramos los canales que necesites: WhatsApp, correo, SMS, webhooks o aplicación móvil."
+        }
+      ]
+    },
+    {
+      "name": "Resultados Deportivos",
+      "icon": "trophy",
+      "subtitle": "Plataforma live score",
+      "slug": "sports-results",
+      "description": "Plataforma live score con resultados en tiempo real, estadísticas y notificaciones para ligas y torneos.",
+      "overview": "Desarrollamos plataformas de resultados deportivos en tiempo real: marcadores en vivo, estadísticas por partido, tablas de posiciones y notificaciones push. Diseñadas para ligas locales, torneos escolares y medios deportivos que quieren mantener a su audiencia informada al segundo.",
+      "features": [
+        "Marcadores en vivo con actualización en tiempo real",
+        "Estadísticas por equipo, jugador y temporada",
+        "Notificaciones push de goles y resultados",
+        "Historial de partidos y tablas de posiciones",
+        "API para integración con apps y sitios existentes",
+        "Panel de administración para gestionar torneos"
+      ],
+      "benefits": [
+        {
+          "icon": "users",
+          "title": "Más interacción",
+          "text": "Mantén a tu audiencia enganchada durante todo el partido."
+        },
+        {
+          "icon": "trending-up",
+          "title": "Nuevos ingresos",
+          "text": "Espacios publicitarios y planes premium dentro de la plataforma."
+        },
+        {
+          "icon": "zap",
+          "title": "Tiempo real real",
+          "text": "Latencia de segundos gracias a WebSockets y caché distribuida."
+        },
+        {
+          "icon": "smartphone",
+          "title": "Multiplataforma",
+          "text": "Web, iOS y Android desde una sola base de código."
+        }
+      ],
+      "tech": [
+        "WebSockets",
+        "Redis",
+        "Node.js",
+        "Flutter",
+        "Firebase",
+        "PostgreSQL"
+      ],
+      "faq": [
+        {
+          "q": "¿De dónde salen los datos de los partidos?",
+          "a": "De tus propios operadores (panel de administración) o de APIs externas de datos deportivos; los integramos y normalizamos."
+        },
+        {
+          "q": "¿Cuántos usuarios simultáneos soporta?",
+          "a": "La arquitectura escala horizontalmente; para ligas locales manejamos miles de usuarios simultáneos sin problema."
+        },
+        {
+          "q": "¿Puedo tener una app móvil propia?",
+          "a": "Sí. Generamos apps para iOS y Android con tu marca, disponibles en las tiendas."
+        }
+      ]
+    },
+    {
+      "name": "Análisis de Ventas",
+      "icon": "chart-bar",
+      "subtitle": "Dashboards y métricas",
+      "slug": "sales-analytics",
+      "description": "Dashboards y métricas que transforman tus datos de ventas en decisiones accionables.",
+      "overview": "Convertimos los datos de tus ventas en dashboards claros y en tiempo real: ingresos, productos más vendidos, canales, regiones y pronósticos. Integramos tus fuentes (POS, ERP, e-commerce, hojas de cálculo) y automatizamos los reportes que hoy consumes horas en preparar.",
+      "features": [
+        "Dashboards ejecutivos con KPIs de ventas",
+        "Monitoreo de métricas en tiempo real",
+        "Segmentación por producto, canal, vendedor y región",
+        "Pronósticos de ventas con modelos estadísticos",
+        "Integración con POS, ERP y plataformas de e-commerce",
+        "Exportación y reportes programados"
+      ],
+      "benefits": [
+        {
+          "icon": "brain",
+          "title": "Decisiones con datos",
+          "text": "Deja de decidir por intuición: visualiza qué funciona y qué no."
+        },
+        {
+          "icon": "trending-up",
+          "title": "Oportunidades visibles",
+          "text": "Detecta tendencias, estacionalidad y productos de bajo desempeño."
+        },
+        {
+          "icon": "clock",
+          "title": "Ahorro de tiempo",
+          "text": "Reportes automáticos que se generan solos, sin intervención manual."
+        },
+        {
+          "icon": "monitor",
+          "title": "Claridad visual",
+          "text": "Dashboards intuitivos que todo tu equipo entiende de un vistazo."
+        }
+      ],
+      "tech": [
+        "Power BI",
+        "Tableau",
+        "D3.js",
+        "Looker Studio",
+        "PostgreSQL",
+        "Python"
+      ],
+      "faq": [
+        {
+          "q": "¿Con qué fuentes de datos se conecta?",
+          "a": "Con casi cualquier fuente: Excel, Google Sheets, POS, ERP, bases de datos y APIs. Centralizamos todo en un solo lugar."
+        },
+        {
+          "q": "¿Los dashboards se actualizan solos?",
+          "a": "Sí. La actualización es automática en tiempo real o por lotes según tu necesidad."
+        },
+        {
+          "q": "¿Necesito un equipo de datos para usarlo?",
+          "a": "No. Entregamos dashboards listos para usar y capacitamos a tu equipo en su operación."
+        }
+      ]
+    },
+    {
+      "name": "Radio Streaming",
+      "icon": "radio",
+      "subtitle": "Infraestructura de audio",
+      "slug": "radio-streaming",
+      "description": "Infraestructura de audio para transmisión en vivo y bajo demanda con alta disponibilidad.",
+      "overview": "Montamos la infraestructura completa de streaming para tu emisora: servidores de audio, codificación, transmisión en vivo, podcasts y estadísticas de audiencia. Entregamos web player, apps móviles y paneles de control para que tu señal llegue al mundo entero sin caídas.",
+      "features": [
+        "Transmisión en vivo con alta disponibilidad",
+        "Reproducción bajo demanda (podcasts y programas)",
+        "Web player personalizable con la marca de la emisora",
+        "Estadísticas de oyentes en tiempo real",
+        "Grabación y publicación automática de podcasts",
+        "Apps móviles para iOS y Android"
+      ],
+      "benefits": [
+        {
+          "icon": "globe",
+          "title": "Alcance global",
+          "text": "Transmite para cualquier audiencia del mundo, sin límites geográficos."
+        },
+        {
+          "icon": "trending-up",
+          "title": "Monetización",
+          "text": "Espacios publicitarios, suscripciones y reportes de audiencia para tus clientes."
+        },
+        {
+          "icon": "zap",
+          "title": "Estabilidad",
+          "text": "Redundancia de servidores para evitar cortes de señal."
+        },
+        {
+          "icon": "users",
+          "title": "Audiencia medida",
+          "text": "Conoce a tus oyentes: dónde están, cuándo escuchan y qué consumen."
+        }
+      ],
+      "tech": [
+        "Icecast",
+        "Liquidsoap",
+        "HLS",
+        "FFmpeg",
+        "WebRTC",
+        "React"
+      ],
+      "faq": [
+        {
+          "q": "¿Puedo transmitir con mi equipo actual?",
+          "a": "Sí. Nos integramos a tus consolas, micrófonos y software existentes; no necesitas cambiar tu estudio."
+        },
+        {
+          "q": "¿Cuántos oyentes simultáneos soporta?",
+          "a": "La infraestructura escala según tu audiencia; desde decenas hasta decenas de miles de oyentes."
+        },
+        {
+          "q": "¿Incluye la app móvil?",
+          "a": "Sí, desarrollamos apps para iOS y Android con tu marca, publicadas en las tiendas."
+        }
+      ]
+    },
+    {
+      "name": "Sistema Telemedicina",
+      "icon": "heart-pulse",
+      "subtitle": "Consultas y expedientes",
+      "slug": "telemedicine",
+      "description": "Plataforma de consultas médicas virtuales con expedientes clínicos digitales seguros.",
+      "overview": "Construimos plataformas de telemedicina que conectan pacientes con médicos mediante videollamadas seguras, expedientes clínicos digitales, agendamiento de citas y recetas electrónicas. Diseñadas para clínicas, consultorios y empresas de salud que buscan ampliar su alcance sin sacrificar la seguridad de los datos.",
+      "features": [
+        "Videollamadas seguras médico-paciente",
+        "Expedientes clínicos electrónicos (EHR)",
+        "Agendamiento de citas en línea",
+        "Recetas electrónicas y órdenes médicas",
+        "Recordatorios automáticos de citas",
+        "Roles y permisos para médicos, pacientes y administradores"
+      ],
+      "benefits": [
+        {
+          "icon": "globe",
+          "title": "Acceso remoto",
+          "text": "Atiende pacientes en cualquier lugar, ampliando tu cobertura."
+        },
+        {
+          "icon": "folder",
+          "title": "Continuidad del cuidado",
+          "text": "Historial clínico completo y accesible en cada consulta."
+        },
+        {
+          "icon": "clock",
+          "title": "Eficiencia clínica",
+          "text": "Menos papeleo y más tiempo para la atención del paciente."
+        },
+        {
+          "icon": "shield",
+          "title": "Seguridad de datos",
+          "text": "Cifrado y control de acceso para proteger la información médica."
+        }
+      ],
+      "tech": [
+        "WebRTC",
+        "Node.js",
+        "PostgreSQL",
+        "AES-256",
+        "React Native",
+        "Docker"
+      ],
+      "faq": [
+        {
+          "q": "¿Es segura la información médica?",
+          "a": "Sí. Aplicamos cifrado en tránsito y en reposo, control de acceso por roles y registros de auditoría, alineados a normativas de salud."
+        },
+        {
+          "q": "¿Se integra con mi sistema actual?",
+          "a": "Sí. Integramos el sistema con tu EHR, agenda y pasarelas de pago existentes."
+        },
+        {
+          "q": "¿Los pacientes necesitan instalar algo?",
+          "a": "No. La consulta se realiza desde el navegador; la app móvil es opcional y gratuita para el paciente."
+        }
+      ]
+    },
+    {
+      "name": "Reserva y Boletos",
+      "icon": "ticket",
+      "subtitle": "Ticketing avanzado",
+      "slug": "ticketing",
+      "description": "Plataforma de ticketing avanzado para eventos, transporte y espectáculos.",
+      "overview": "Desarrollamos plataformas de venta de boletos con mapa de asientos, códigos QR validables, pasarelas de pago y control de aforo. Desde conciertos y teatro hasta transporte y parques de atracciones: vendemos tus boletos en línea y controlamos el acceso desde un panel central.",
+      "features": [
+        "Venta de boletos en línea con múltiples pasarelas de pago",
+        "Códigos QR dinámicos para validación de acceso",
+        "Mapa de asientos interactivo con selección visual",
+        "Control de aforo y tipos de entrada",
+        "Panel de administración con reportes de ventas",
+        "Integración con puntos de venta físicos"
+      ],
+      "benefits": [
+        {
+          "icon": "zap",
+          "title": "Menos filas",
+          "text": "Tus asistentes compran en segundos y entran escaneando su código."
+        },
+        {
+          "icon": "shield",
+          "title": "Control de fraude",
+          "text": "Códigos dinámicos que evitan la reventa y falsificación."
+        },
+        {
+          "icon": "chart-bar",
+          "title": "Reportes claros",
+          "text": "Ventas, ocupación y recaudo en tiempo real."
+        },
+        {
+          "icon": "smartphone",
+          "title": "Experiencia móvil",
+          "text": "Compra desde cualquier dispositivo, sin descargar apps."
+        }
+      ],
+      "tech": [
+        "Node.js",
+        "Stripe",
+        "PostgreSQL",
+        "React",
+        "QR",
+        "Redis"
+      ],
+      "faq": [
+        {
+          "q": "¿Qué pasarelas de pago usa?",
+          "a": "Stripe, PayPal, Wompi y las principales pasarelas locales; también soporta pagos en efectivo y puntos físicos."
+        },
+        {
+          "q": "¿Cómo valido los boletos en el evento?",
+          "a": "Con la app de validación escaneas el código QR desde el celular o con lector láser; la validación es instantánea y segura."
+        },
+        {
+          "q": "¿Puedo vender en taquilla también?",
+          "a": "Sí, integramos el punto de venta físico con la misma plataforma y el mismo inventario."
+        }
+      ]
+    },
+    {
+      "name": "Sistema Odoo CRM",
+      "icon": "layers",
+      "subtitle": "Implementación ERP",
+      "slug": "odoo-erp",
+      "description": "Implementación y personalización de Odoo para integrar CRM, ventas, inventario y contabilidad.",
+      "overview": "Implementamos Odoo para unificar la operación de tu empresa: CRM, ventas, compras, inventario, facturación y contabilidad en un solo sistema. Configuramos los módulos, migramos tus datos, personalizamos lo necesario y capacitamos a tu equipo para que la transición sea sin fricción.",
+      "features": [
+        "Implementación modular de Odoo (CRM, ventas, inventario, contabilidad)",
+        "Personalización de módulos y flujos de trabajo",
+        "Migración de datos desde sistemas legados y Excel",
+        "Integraciones con pasarelas de pago y plataformas externas",
+        "Capacitación de tu equipo en operación diaria",
+        "Soporte y mantenimiento continuo"
+      ],
+      "benefits": [
+        {
+          "icon": "layers",
+          "title": "Un solo sistema",
+          "text": "Todos tus procesos conectados, sin hojas sueltas ni doble digitación."
+        },
+        {
+          "icon": "zap",
+          "title": "Automatización",
+          "text": "Flujos que se ejecutan solos: cotizaciones, órdenes y facturación."
+        },
+        {
+          "icon": "trending-up",
+          "title": "Escalable",
+          "text": "Crece con tu empresa: añade módulos cuando los necesites."
+        },
+        {
+          "icon": "receipt",
+          "title": "Menos costos",
+          "text": "Licenciamiento abierto y control total sobre tu sistema."
+        }
+      ],
+      "tech": [
+        "Odoo",
+        "Python",
+        "PostgreSQL",
+        "XML-RPC",
+        "Docker",
+        "JavaScript"
+      ],
+      "faq": [
+        {
+          "q": "¿Cuánto tarda una implementación?",
+          "a": "Una implementación de CRM + ventas típica toma de 4 a 8 semanas, incluyendo migración y capacitación."
+        },
+        {
+          "q": "¿Migran mis datos actuales?",
+          "a": "Sí. Migramos clientes, productos, historial de ventas y saldos desde Excel, sistemas legados u otras herramientas."
+        },
+        {
+          "q": "¿Necesito comprar la licencia de Odoo?",
+          "a": "No necesariamente. Odoo Community es gratuito y cubre la mayoría de casos; evaluamos contigo si la versión Enterprise aporta valor."
+        }
+      ]
+    },
+    {
+      "name": "Plugins WordPress",
+      "icon": "puzzle",
+      "subtitle": "Desarrollo a medida",
+      "slug": "wordpress-plugins",
+      "description": "Desarrollo de plugins y temas WordPress a medida para llevar tu sitio al siguiente nivel.",
+      "overview": "Creamos plugins y temas WordPress totalmente personalizados: funcionalidades únicas, integraciones con APIs externas, optimización de rendimiento y seguridad. Si tu negocio necesita algo que ningún plugin de catálogo hace, lo construimos a tu medida.",
+      "features": [
+        "Plugins WordPress a medida",
+        "Temas personalizados y adaptación de diseños",
+        "Integración con APIs y servicios externos",
+        "Optimización de rendimiento y Core Web Vitals",
+        "Hardening de seguridad y buenas prácticas",
+        "Mantenimiento y actualizaciones continuas"
+      ],
+      "benefits": [
+        {
+          "icon": "puzzle",
+          "title": "Funcionalidad única",
+          "text": "Tu sitio hace exactamente lo que tu negocio necesita, sin parches."
+        },
+        {
+          "icon": "trending-up",
+          "title": "Mejor SEO",
+          "text": "Código limpio y rendimiento optimizado que los buscadores premian."
+        },
+        {
+          "icon": "zap",
+          "title": "Rendimiento",
+          "text": "Plugins ligeros que no frenan la velocidad de tu página."
+        },
+        {
+          "icon": "shield",
+          "title": "Seguridad",
+          "text": "Desarrollo siguiendo las mejores prácticas de WordPress."
+        }
+      ],
+      "tech": [
+        "PHP",
+        "WordPress",
+        "WooCommerce",
+        "REST API",
+        "MySQL",
+        "JavaScript"
+      ],
+      "faq": [
+        {
+          "q": "¿Pueden integrar mi sitio con otro sistema?",
+          "a": "Sí. Conectamos WordPress con CRMs, pasarelas de pago, ERPs y cualquier API mediante plugins personalizados."
+        },
+        {
+          "q": "¿Mantienen mis plugins actualizados?",
+          "a": "Ofrecemos planes de mantenimiento que incluyen actualizaciones, respaldos y monitoreo de seguridad."
+        },
+        {
+          "q": "¿Trabajan con WooCommerce?",
+          "a": "Sí, desarrollamos sobre WooCommerce: plugins de envío, pasarelas, cupones avanzados y reportes personalizados."
+        }
+      ]
+    },
+    {
+      "name": "IoT Internet de las Cosas",
+      "icon": "chip",
+      "subtitle": "Hardware y sensores",
+      "slug": "iot",
+      "description": "Hardware y sensores conectados con software para monitorear y automatizar en tiempo real.",
+      "overview": "Diseñamos soluciones IoT de principio a fin: seleccionamos o diseñamos el hardware, escribimos el firmware, implementamos la conectividad y construimos la plataforma web donde visualizas y controlas todo en tiempo real. Desde agricultura y logística hasta industria y hogar inteligente.",
+      "features": [
+        "Diseño y selección de hardware y sensores",
+        "Desarrollo de firmware para microcontroladores",
+        "Conectividad MQTT, LoRaWAN y redes celulares",
+        "Plataforma IoT con dashboards en tiempo real",
+        "Alertas y automatización basadas en reglas",
+        "Integración con sistemas y APIs existentes"
+      ],
+      "benefits": [
+        {
+          "icon": "monitor",
+          "title": "Monitoreo 24/7",
+          "text": "Visibilidad total de tus equipos y sensores desde cualquier lugar."
+        },
+        {
+          "icon": "zap",
+          "title": "Automatización",
+          "text": "Reglas que activan acciones automáticas ante eventos."
+        },
+        {
+          "icon": "trending-up",
+          "title": "Ahorro real",
+          "text": "Detecta fallas y desperdicios antes de que se conviertan en costos."
+        },
+        {
+          "icon": "cpu",
+          "title": "Escalable",
+          "text": "Añade cientos o miles de dispositivos sin cambiar la arquitectura."
+        }
+      ],
+      "tech": [
+        "ESP32",
+        "Raspberry Pi",
+        "MQTT",
+        "Node-RED",
+        "AWS IoT",
+        "C++"
+      ],
+      "faq": [
+        {
+          "q": "¿Ya tengo sensores, pueden conectarlos?",
+          "a": "Sí. Si tus sensores se comunican por protocolos comunes (MQTT, Modbus, HTTP), los integramos a la plataforma."
+        },
+        {
+          "q": "¿Qué pasa si pierdo conectividad?",
+          "a": "Los dispositivos almacenan datos localmente y los sincronizan al reconectarse; no pierdes información."
+        },
+        {
+          "q": "¿El hardware lo proveen ustedes?",
+          "a": "Podemos diseñar y ensamblar el hardware o trabajar con el tuyo; te asesoramos en la opción más rentable."
+        }
+      ]
+    },
+    {
+      "name": "Precios Medicamentos",
+      "icon": "pill",
+      "subtitle": "Comparador farmacéutico",
+      "slug": "medicine-prices",
+      "description": "Comparador farmacéutico con precios actualizados de medicamentos en múltiples farmacias.",
+      "overview": "Construimos comparadores de precios de medicamentos que ayudan a los usuarios a encontrar dónde comprar más barato. Recopilamos precios de múltiples farmacias, los normalizamos y los mostramos en una interfaz clara con búsqueda por principio activo, marca o laboratorio.",
+      "features": [
+        "Base de datos de medicamentos y precios actualizada",
+        "Búsqueda por nombre, principio activo y laboratorio",
+        "Comparación de precios entre farmacias y zonas",
+        "Alertas de cambio de precio para los usuarios",
+        "Panel para que farmacias administren sus precios",
+        "API para integrar el comparador en otros sitios"
+      ],
+      "benefits": [
+        {
+          "icon": "trending-up",
+          "title": "Ahorro para usuarios",
+          "text": "Encuentran el mejor precio en segundos y ahorran cada mes."
+        },
+        {
+          "icon": "chart-bar",
+          "title": "Datos de mercado",
+          "text": "Farmacias acceden a estadísticas de precios y competencia."
+        },
+        {
+          "icon": "users",
+          "title": "Tráfico y confianza",
+          "text": "Una herramienta útil que atrae y retiene usuarios."
+        },
+        {
+          "icon": "refresh",
+          "title": "Siempre actualizado",
+          "text": "Recolección y validación de precios automatizada."
+        }
+      ],
+      "tech": [
+        "Web scraping",
+        "Node.js",
+        "PostgreSQL",
+        "React",
+        "Redis",
+        "Docker"
+      ],
+      "faq": [
+        {
+          "q": "¿Cómo actualizan los precios?",
+          "a": "Con procesos automatizados de recolección desde fuentes públicas y con el panel de las farmacias participantes."
+        },
+        {
+          "q": "¿Los precios son confiables?",
+          "a": "Sí, aplicamos validación y marcas de tiempo; siempre mostramos la fecha de la última actualización."
+        },
+        {
+          "q": "¿Puedo integrarlo a mi web de salud?",
+          "a": "Sí, ofrecemos una API pública para incrustar el comparador en otros portales."
+        }
+      ]
+    },
+    {
+      "name": "OpenClaw",
+      "icon": "gamepad",
+      "subtitle": "Control de hardware arcade",
+      "slug": "openclaw",
+      "description": "Software de control para hardware arcade: máquinas, juegos y gestión de fichas.",
+      "overview": "Desarrollamos el software que controla el hardware arcade: gestión de máquinas, créditos y fichas, selección de juegos, dashboards de ingresos y mantenimiento remoto. Ideal para operadores de salas de juegos que quieren medir cada máquina y optimizar su rentabilidad.",
+      "features": [
+        "Control y monitoreo de máquinas arcade",
+        "Gestión de créditos, fichas y tarjetas",
+        "Dashboard de ingresos por máquina y por día",
+        "Selección y actualización de juegos",
+        "Diagnóstico y mantenimiento remoto",
+        "Reportes de uso y rentabilidad"
+      ],
+      "benefits": [
+        {
+          "icon": "chart-bar",
+          "title": "Ingresos medibles",
+          "text": "Sabes exactamente cuánto genera cada máquina cada día."
+        },
+        {
+          "icon": "zap",
+          "title": "Menos tiempo muerto",
+          "text": "Detección remota de fallas y mantenimiento proactivo."
+        },
+        {
+          "icon": "monitor",
+          "title": "Gestión central",
+          "text": "Controla todas tus sucursales desde un solo panel."
+        },
+        {
+          "icon": "trending-up",
+          "title": "Rentabilidad",
+          "text": "Identifica juegos y máquinas de alto desempeño para optimizar tu operación."
+        }
+      ],
+      "tech": [
+        "C++",
+        "Raspberry Pi",
+        "Python",
+        "MQTT",
+        "Node.js",
+        "SQLite"
+      ],
+      "faq": [
+        {
+          "q": "¿Qué hardware arcade controla?",
+          "a": "Trabajamos con placas basadas en Raspberry Pi, PC embebidos y controladores JAMMA; integramos el control sobre tu gabinete."
+        },
+        {
+          "q": "¿Los clientes pagan con tarjeta o fichas?",
+          "a": "Soportamos fichas físicas, tarjetas recargables y códigos QR de pago, según el modelo de tu sala."
+        },
+        {
+          "q": "¿Puedo monitorear varias sucursales?",
+          "a": "Sí, el panel central agrega todas tus máquinas y sucursales en tiempo real."
+        }
+      ]
+    },
+    {
+      "name": "Reserva Barbería",
+      "icon": "scissors",
+      "subtitle": "Sistema para peluquerías",
+      "slug": "barbershop-booking",
+      "description": "Sistema de reservas para barberías y peluquerías con recordatorios automáticos.",
+      "overview": "Implementamos sistemas de reservas para barberías y peluquerías: agenda en línea, elección de barbero y servicio, recordatorios automáticos por WhatsApp y gestión de clientes. Tu equipo se enfoca en cortar el pelo, no en contestar llamadas ni cuadrar la agenda.",
+      "features": [
+        "Agenda en línea con disponibilidad en tiempo real",
+        "Elección de barbero, servicio y horario por el cliente",
+        "Recordatorios automáticos por WhatsApp y correo",
+        "Pagos en línea y reserva con anticipo",
+        "Base de datos de clientes e historial",
+        "Reportes de ingresos, servicios y ocupación"
+      ],
+      "benefits": [
+        {
+          "icon": "clock",
+          "title": "Menos ausencias",
+          "text": "Recordatorios automáticos que reducen las citas perdidas."
+        },
+        {
+          "icon": "trending-up",
+          "title": "Más reservas",
+          "text": "Tus clientes reservan a cualquier hora, incluso cuando estás cerrado."
+        },
+        {
+          "icon": "zap",
+          "title": "Ahorro de tiempo",
+          "text": "Adiós a las llamadas de agenda y a la doble reserva."
+        },
+        {
+          "icon": "star",
+          "title": "Imagen profesional",
+          "text": "Tus clientes perciben un negocio moderno y organizado."
+        }
+      ],
+      "tech": [
+        "Node.js",
+        "React Native",
+        "Firebase",
+        "WhatsApp API",
+        "Stripe"
+      ],
+      "faq": [
+        {
+          "q": "¿Los clientes necesitan crear cuenta?",
+          "a": "No es obligatorio; pueden reservar en segundos con su nombre y celular. La cuenta es opcional."
+        },
+        {
+          "q": "¿Se conecta con el WhatsApp de la barbería?",
+          "a": "Sí, los recordatorios y confirmaciones se envían automáticamente por WhatsApp desde tu número."
+        },
+        {
+          "q": "¿Funciona en el celular del cliente?",
+          "a": "Sí, es una web app responsive: el cliente reserva desde el navegador sin instalar nada."
+        }
+      ]
+    },
+    {
+      "name": "Limpieza Facial",
+      "icon": "sparkles",
+      "subtitle": "Sistema para spas y clínicas",
+      "slug": "facial-cleaning",
+      "description": "Sistema para spas y clínicas estéticas: citas, expedientes y tratamiento de clientes.",
+      "overview": "Desarrollamos sistemas para spas, centros estéticos y clínicas de limpieza facial: agendamiento de tratamientos, expedientes de pacientes, historial de procedimientos, control de productos y recordatorios. Una experiencia premium para tus clientes y control total para tu equipo.",
+      "features": [
+        "Agendamiento de tratamientos y servicios",
+        "Expedientes digitales de pacientes",
+        "Historial de tratamientos y fotos de evolución",
+        "Control de productos y consumo por tratamiento",
+        "Recordatorios automáticos de citas",
+        "Reportes de ingresos, servicios y ocupación"
+      ],
+      "benefits": [
+        {
+          "icon": "sparkles",
+          "title": "Experiencia premium",
+          "text": "Un proceso digital impecable que complementa tu servicio."
+        },
+        {
+          "icon": "box",
+          "title": "Control de inventario",
+          "text": "Sabes qué productos se consumen y cuándo reponerlos."
+        },
+        {
+          "icon": "users",
+          "title": "Fidelización",
+          "text": "Historial completo para recomendar tratamientos y retener clientes."
+        },
+        {
+          "icon": "folder",
+          "title": "Organización total",
+          "text": "Toda la información de tus pacientes en un solo lugar."
+        }
+      ],
+      "tech": [
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "Tailwind",
+        "Docker"
+      ],
+      "faq": [
+        {
+          "q": "¿Guarda fotos del antes y después?",
+          "a": "Sí, el expediente incluye galerías de fotos con control de acceso privado para el paciente."
+        },
+        {
+          "q": "¿Sirve para clínicas con varios especialistas?",
+          "a": "Sí, cada especialista tiene su agenda y sus pacientes; el panel central administra todo."
+        },
+        {
+          "q": "¿El paciente puede ver su historial?",
+          "a": "Sí, con un portal de paciente puede consultar sus tratamientos, citas y recomendaciones."
+        }
+      ]
+    },
+    {
+      "name": "Plataformas LMS y Moodle",
+      "icon": "graduation",
+      "subtitle": "Cursos para escuelas y empresas",
+      "slug": "lms-moodle",
+      "description": "Plataformas de aprendizaje para escuelas y empresas con Moodle y desarrollos a medida.",
+      "overview": "Implementamos plataformas LMS para escuelas, universidades y empresas: cursos en línea, evaluaciones, certificaciones y seguimiento del progreso. Trabajamos con Moodle y con desarrollos a medida para que la experiencia de aprendizaje lleve tu marca.",
+      "features": [
+        "Implementación de Moodle y LMS a medida",
+        "Cursos con multimedia, cuestionarios y tareas",
+        "Evaluaciones y certificaciones automáticas",
+        "Gamificación y badges de logro",
+        "Roles de docente, estudiante y administrador",
+        "Integración con SSO, videoconferencia y pagos"
+      ],
+      "benefits": [
+        {
+          "icon": "graduation",
+          "title": "Escalable",
+          "text": "Capacita a cientos o miles de estudiantes sin límites de aula."
+        },
+        {
+          "icon": "chart-bar",
+          "title": "Seguimiento real",
+          "text": "Mide avance, calificaciones y finalización de cada curso."
+        },
+        {
+          "icon": "globe",
+          "title": "Accesible",
+          "text": "Tus estudiantes aprenden desde cualquier dispositivo y lugar."
+        },
+        {
+          "icon": "puzzle",
+          "title": "Con tu marca",
+          "text": "Personalizamos la plataforma con la identidad de tu institución."
+        }
+      ],
+      "tech": [
+        "Moodle",
+        "PHP",
+        "MySQL",
+        "SCORM",
+        "React",
+        "Docker"
+      ],
+      "faq": [
+        {
+          "q": "¿Moodle o plataforma a medida?",
+          "a": "Depende de tu necesidad: Moodle es ideal para la mayoría; si necesitas algo muy específico, lo desarrollamos a medida."
+        },
+        {
+          "q": "¿Puedo vender cursos en línea?",
+          "a": "Sí, integramos pasarelas de pago, cupones y acceso por suscripción o curso individual."
+        },
+        {
+          "q": "¿Incluye certificados?",
+          "a": "Sí, emitimos certificados automáticos al aprobar cada curso, con diseño personalizable."
+        }
+      ]
+    },
+    {
+      "name": "Alquiler Lavadoras",
+      "icon": "washer",
+      "subtitle": "Gestión de rentas",
+      "slug": "laundry-rentals",
+      "description": "Gestión de rentas de lavadoras: máquinas, pagos, contratos y mantenimiento.",
+      "overview": "Construimos plataformas para empresas que alquilan lavadoras y secadoras: gestión de máquinas por ubicación, contratos de alquiler, facturación automática recurrente, pagos en línea y control de mantenimiento. Tu flota de máquinas, controlada desde un solo panel.",
+      "features": [
+        "Gestión de máquinas y ubicaciones",
+        "Contratos de alquiler con facturación automática",
+        "Cobros recurrentes y pagos en línea",
+        "Estado de mantenimiento y alertas de servicio",
+        "Panel para clientes con su facturación",
+        "Reportes de ingresos, morosidad y uso"
+      ],
+      "benefits": [
+        {
+          "icon": "repeat",
+          "title": "Ingresos recurrentes",
+          "text": "Facturación automática que cobra a tiempo, todos los meses."
+        },
+        {
+          "icon": "trending-up",
+          "title": "Control total",
+          "text": "Sabes qué máquina, en qué ubicación, genera qué ingreso."
+        },
+        {
+          "icon": "zap",
+          "title": "Automatización",
+          "text": "Contratos, cobros y recordatorios que se ejecutan solos."
+        },
+        {
+          "icon": "users",
+          "title": "Mejor soporte",
+          "text": "Tus clientes consultan facturas y reportan novedades en línea."
+        }
+      ],
+      "tech": [
+        "React",
+        "Node.js",
+        "PostgreSQL",
+        "Stripe",
+        "Docker"
+      ],
+      "faq": [
+        {
+          "q": "¿Cómo se facturan los alquileres?",
+          "a": "Generamos facturas automáticas con frecuencia mensual o personalizada, con cobro recurrente por tarjeta o PSE."
+        },
+        {
+          "q": "¿Pueden mis clientes ver sus facturas?",
+          "a": "Sí, cada cliente tiene un portal con sus facturas, pagos y estado de cuenta."
+        },
+        {
+          "q": "¿Se integra con mi contabilidad?",
+          "a": "Sí, exportamos la facturación a tu contador o la integramos con tu sistema contable."
+        }
+      ]
+    }
+  ],
+  "casesSection": {
+    "eyebrow": "Casos de Éxito",
+    "title": "Transformando ideas en",
+    "titleHighlight": "experiencias digitales",
+    "description": "Conoce algunas de las soluciones de software y aplicaciones que hemos construido para llevar a nuestros clientes al siguiente nivel.",
+    "cta": "Quiero un proyecto similar"
+  },
+  "cases": [
+    {
+      "id": "rentaya-web",
+      "category": "Plataforma Web",
+      "title": "Portal Web Inmobiliario & Automotriz",
+      "description": "Compra, vende o alquila con total confianza. Conexión directa con propietarios y concesionarios mediante WhatsApp sin intermediarios innecesarios.",
+      "tags": [
+        "Plataforma Web",
+        "WhatsApp Direct",
+        "Inmuebles & Autos",
+        "Filtros Avanzados"
+      ],
+      "stat": "100% Verificado",
+      "visualType": "web",
+      "image": "/images/rentaya-web.png"
+    },
+    {
+      "id": "rentaya-app",
+      "category": "Mobile App",
+      "title": "App Móvil de Clasificados & Renta",
+      "description": "Compra, vende o alquila con total confianza. Conexión directa con propietarios y concesionarios mediante WhatsApp sin intermediarios innecesarios.",
+      "tags": [
+        "Mobile App",
+        "Experiencia Rápida",
+        "WhatsApp Direct",
+        "Geolocalización"
+      ],
+      "stat": "Trato Directo",
+      "visualType": "app",
+      "image": "/images/rentaya-app.png"
+    }
+  ],
+  "industriesSection": {
+    "eyebrow": "Industrias",
+    "title": "Experiencia en",
+    "titleHighlight": "todas las industrias",
+    "description": "Desde fintech hasta salud, hemos construido soluciones para empresas en todos los sectores."
+  },
+  "industries": [
+    {
+      "name": "SaaS",
+      "icon": "layers"
+    },
+    {
+      "name": "Micro SaaS",
+      "icon": "zap"
+    },
+    {
+      "name": "B2B",
+      "icon": "users"
+    },
+    {
+      "name": "Developer Tools",
+      "icon": "cpu"
+    },
+    {
+      "name": "IA / Chatbots",
+      "icon": "chip"
+    },
+    {
+      "name": "Ciberseguridad",
+      "icon": "shield"
+    },
+    {
+      "name": "Fintech",
+      "icon": "trending-up"
+    },
+    {
+      "name": "Banca",
+      "icon": "landmark"
+    },
+    {
+      "name": "Seguros",
+      "icon": "shield-alert"
+    },
+    {
+      "name": "Facturación",
+      "icon": "receipt"
+    },
+    {
+      "name": "Clínica Médica",
+      "icon": "heart-pulse"
+    },
+    {
+      "name": "Farmacia",
+      "icon": "pill"
+    },
+    {
+      "name": "Odontología",
+      "icon": "smile"
+    },
+    {
+      "name": "Veterinaria",
+      "icon": "paw"
+    },
+    {
+      "name": "Salud Mental",
+      "icon": "brain"
+    },
+    {
+      "name": "E-commerce",
+      "icon": "cart"
+    },
+    {
+      "name": "Marketplace",
+      "icon": "external"
+    },
+    {
+      "name": "Suscripciones",
+      "icon": "repeat"
+    },
+    {
+      "name": "Delivery",
+      "icon": "truck"
+    },
+    {
+      "name": "Restaurantes",
+      "icon": "utensils"
+    },
+    {
+      "name": "Hoteles",
+      "icon": "building"
+    },
+    {
+      "name": "Belleza / Spa",
+      "icon": "sparkles"
+    },
+    {
+      "name": "Servicios Legales",
+      "icon": "scale"
+    },
+    {
+      "name": "Reservas",
+      "icon": "ticket"
+    },
+    {
+      "name": "Portafolio",
+      "icon": "briefcase"
+    },
+    {
+      "name": "Agencia",
+      "icon": "rocket"
+    },
+    {
+      "name": "Gaming",
+      "icon": "gamepad"
+    },
+    {
+      "name": "Streaming",
+      "icon": "radio"
+    },
+    {
+      "name": "Hábitos",
+      "icon": "clock"
+    },
+    {
+      "name": "Recetas",
+      "icon": "book"
+    },
+    {
+      "name": "Meditación",
+      "icon": "leaf"
+    },
+    {
+      "name": "Web3 / NFT",
+      "icon": "box"
+    },
+    {
+      "name": "Computación Cuántica",
+      "icon": "atom"
+    },
+    {
+      "name": "Drones Autónomos",
+      "icon": "plane"
+    }
+  ],
+  "processSection": {
+    "eyebrow": "Cómo Trabajamos",
+    "title": "Tres pasos hacia tu",
+    "titleHighlight": "transformación digital",
+    "description": "Un proceso simple, transparente y eficiente para llevar tu proyecto de la idea a la realidad."
+  },
+  "process": [
+    {
+      "number": "01",
+      "title": "Consulta",
+      "description": "Escuchamos tus necesidades, analizamos tu situación actual y definimos juntos los objetivos del proyecto.",
+      "icon": "phone"
+    },
+    {
+      "number": "02",
+      "title": "Diseño & Desarrollo",
+      "description": "Arquitectamos la solución, diseñamos prototipos y construimos con metodología ágil — con entregas iterativas.",
+      "icon": "code"
+    },
+    {
+      "number": "03",
+      "title": "Entrega & Soporte",
+      "description": "Desplegamos tu solución, capacitamos a tu equipo y ofrecemos soporte continuo para garantizar el éxito.",
+      "icon": "rocket"
+    }
+  ],
+  "contact": {
+    "eyebrow": "Contacto",
+    "titleStart": "¿Listo para llevar tus datos al",
+    "titleHighlight": "siguiente nivel?",
+    "description": "Agenda una consulta gratuita con nuestro equipo. Analizamos tu caso y te presentamos una propuesta personalizada en 48 horas.",
+    "assurances": [
+      "Sin compromiso",
+      "Respuesta en 24h",
+      "100% confidencial"
+    ],
+    "whatsappCta": "Contactar por WhatsApp",
+    "whatsappGreeting": "Hola {name} 👋, me gustaría agendar una consulta.",
+    "fieldName": "Nombre",
+    "fieldEmail": "Email",
+    "fieldCompany": "Empresa",
+    "fieldService": "Servicio",
+    "fieldMessage": "Mensaje",
+    "emailLabel": "Email",
+    "nameLabel": "Nombre completo *",
+    "namePlaceholder": "Tu nombre",
+    "emailPlaceholder": "tu\\@empresa.com",
+    "companyLabel": "Empresa",
+    "companyPlaceholder": "Nombre de tu empresa",
+    "serviceLabel": "Servicio de interés",
+    "servicePlaceholder": "Selecciona un servicio",
+    "otherOption": "Otra consulta",
+    "projectLabel": "Cuéntanos tu proyecto *",
+    "messagePlaceholder": "Describe brevemente tu idea, objetivos o problema…",
+    "submit": "Agendar Consulta",
+    "formNote": "Al enviar, se abrirá WhatsApp con tu mensaje prellenado. Respuesta en 24h.",
+    "successTitle": "¡Mensaje listo!",
+    "successText": "Abrimos WhatsApp con tu consulta prellenada. Si no se abrió, escríbenos directamente a {number}.",
+    "resend": "Enviar otro mensaje"
+  },
+  "mockup": {
+    "dashboard": "Panel de ventas",
+    "summary": "Resumen del mes",
+    "live": "En vivo",
+    "revenue": "Ingresos",
+    "orders": "Pedidos",
+    "conversion": "Conversión",
+    "performance": "Rendimiento de ventas",
+    "week": "Semana",
+    "month": "Mes",
+    "seismic": "Monitoreo sísmico",
+    "seismicSub": "Estación activa · en vivo",
+    "cve": "CVE detectado",
+    "cveSub": "Parche sugerido en 2h"
+  },
+  "footer": {
+    "tagline": "Desde Popayán, transformamos datos en decisiones inteligentes. Soluciones de software con la energía y dedicación de un hámster en su rueda.",
+    "legal": "Razón social legalmente constituida y registrada en la Cámara de Comercio del Cauca. Registro Único Empresarial y Social (RUES).",
+    "navTitle": "Navegación",
+    "servicesTitle": "Servicios",
+    "solutionsTitle": "Soluciones",
+    "rights": "Todos los derechos reservados.",
+    "services": [
+      "Ingeniería de Datos",
+      "Extracción de Datos / ETL",
+      "Visualización de Datos",
+      "Minería y Gestión de Datos",
+      "Software de Escritorio",
+      "Machine Learning",
+      "Desarrollo Móvil",
+      "IoT Internet de las Cosas",
+      "Precios Medicamentos",
+      "Sistemas Bajo Demanda",
+      "Desarrollo Web",
+      "Modelos de Lenguaje Pequeño (SLMs)",
+      "Bases de Datos Vectoriales",
+      "Chatbots y Asistentes Virtuales",
+      "Redes Neuronales y Deep Learning",
+      "Analítica Avanzada de Negocios",
+      "Gestión de Activos de TI",
+      "Automatización Empresarial (RPA)",
+      "Operaciones de Negocios (BPM)",
+      "Nube y Arquitectura Cloud",
+      "Computación y Servidores",
+      "DevOps y CI/CD",
+      "Automatización de TI",
+      "Middleware e Integración de Sistemas"
+    ]
+  },
+  "error": {
+    "title404": "Página no encontrada",
+    "title500": "Error interno del servidor",
+    "title403": "Acceso denegado",
+    "titleDefault": "Algo salió mal",
+    "desc404": "La página que buscas no existe o fue movida. Vuelve al inicio o contáctanos para encontrarla juntos.",
+    "desc500": "Ocurrió un error inesperado. Nuestro equipo de hámsters ya está trabajando en ello — intenta de nuevo en unos minutos.",
+    "desc403": "No tienes permisos para acceder a esta página.",
+    "descDefault": "Algo salió mal. Intenta de nuevo o contáctanos para ayudarte.",
+    "backHome": "Volver al inicio",
+    "contact": "Contactar Ventas",
+    "hint404": "Revisa que la dirección esté bien escrita."
+  },
+  "chat": {
+    "online": "En línea · Asistente",
+    "greeting": "¡Hola! 👋 Soy el asistente virtual de Hamster Software. Puedo contarte sobre nuestros servicios de software, soluciones y cómo contactarnos. ¿En qué puedo ayudarte hoy?",
+    "placeholder": "Escribe tu pregunta…",
+    "error": "Lo siento, tuve un problema al responder. Escríbenos directamente por WhatsApp al +57 302 579 0274.",
+    "poweredBy": "Asistente Virtual · Hamster Software",
+    "quickQuestions": [
+      "¿Qué servicios ofrecen?",
+      "¿Desarrollan apps móviles?",
+      "¿Cómo puedo contactarlos?",
+      "¿Cuánto cuesta un desarrollo web?"
+    ]
+  },
+  "solutionsSection": {
+    "eyebrow": "Soluciones",
+    "title": "Soluciones que",
+    "titleHighlight": "transforman negocios",
+    "description": "Productos y plataformas listas para implementar en tu empresa, construidas con la energía y dedicación de un hámster en su rueda.",
+    "viewAll": "Ver todas las soluciones"
+  },
+  "detail": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbProducts": "Soluciones",
+    "breadcrumbServices": "Servicios",
+    "featuresTitle": "Qué incluye",
+    "benefitsTitle": "Beneficios",
+    "techTitle": "Tecnologías y herramientas",
+    "faqTitle": "Preguntas frecuentes",
+    "ctaTitle": "¿Listo para llevar esta solución a tu negocio?",
+    "ctaText": "Agenda una consulta gratuita y recibe una propuesta personalizada en 48 horas. Sin compromiso.",
+    "ctaPrimary": "Agendar consulta",
+    "ctaWhatsapp": "Contactar por WhatsApp",
+    "relatedProducts": "Otras soluciones",
+    "relatedServices": "Otros servicios",
+    "viewAllProducts": "Ver todas las soluciones",
+    "viewAllServices": "Ver todos los servicios",
+    "backHome": "Volver al inicio"
+  },
+  "common": {
+    "viewMore": "Ver más"
+  }
+}

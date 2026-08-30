@@ -1,0 +1,12 @@
+name = "hamstersoftware-app"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-08-13"
+compatibility_flags = ["nodejs_compat"]
+
+
+# Variables de entorno públicas del Worker
+# IMPORTANTE: CLOUDFLARE_API_TOKEN debe configurarse como Secret en el
+# dashboard de Cloudflare Pages → Settings → Environment Variables
+[vars]
+CLOUDFLARE_ACCOUNT_ID = "0a752097fea8d3d143836ffcb796bdc1"
+NUXT_PUBLIC_SITE_URL = "https://hamstersoftware.com"

@@ -1,0 +1,22 @@
+# Artefactos locales que no deben subirse a Cloud Build
+node_modules
+.output
+.nuxt
+.nitro
+.data
+.cache
+dist
+
+# Control de versiones y sistema
+.git
+.gitignore
+.DS_Store
+.idea
+.fleet
+
+# Logs y variables de entorno
+logs
+*.log
+.env
+.env.*
+!.env.example
