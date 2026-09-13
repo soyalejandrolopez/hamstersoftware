@@ -14,7 +14,7 @@ const severityStyles: Record<SeverityKey, string> = {
 </script>
 
 <template>
-  <section id="seguridad" class="relative scroll-mt-24 overflow-hidden bg-ink-950 py-20 text-white sm:py-28">
+  <section class="relative overflow-hidden bg-ink-950 py-20 text-white sm:py-28">
     <div class="pointer-events-none absolute inset-0 bg-grid-dark" />
     <div
       class="pointer-events-none absolute right-0 top-0 h-[32rem] w-[32rem] -translate-y-1/3 translate-x-1/3 rounded-full bg-brand-600/25 blur-3xl"

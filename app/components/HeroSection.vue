@@ -41,7 +41,7 @@ const cardStyles = [
 </script>
 
 <template>
-  <section id="hero" class="relative scroll-mt-24">
+  <section class="relative">
     <!-- ===== Top: Hero Banner (Con imagen de fondo) ===== -->
     <div class="relative overflow-hidden bg-slate-950 text-white">
       <!-- ── Hero Background Image ── -->

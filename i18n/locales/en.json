@@ -2396,6 +2396,68 @@
           "a": "Yes, we export billing to your accountant or integrate it with your accounting system."
         }
       ]
+    },
+    {
+      "name": "IaaS Infrastructure",
+      "icon": "server",
+      "subtitle": "Proxmox & ZSVirt Virtualization",
+      "slug": "iaas-proxmox-zsvirt",
+      "description": "Infrastructure as a Service (IaaS) implementation, high-performance enterprise virtualization with Proxmox VE and ZSVirt, clustering and high availability.",
+      "overview": "We engineer and deploy private and hybrid Infrastructure as a Service (IaaS) solutions for organizations demanding technology sovereignty, massive cost reductions over public clouds, and total control. We set up enterprise virtualization clusters powered by Proxmox VE and ZSVirt, integrating Ceph/ZFS distributed storage, software-defined networking (SDN), load balancing, continuous backup automation, and seamless VM and LXC container orchestration.",
+      "features": [
+        "Deployment and fine-tuning of Proxmox VE High Availability (HA) clusters",
+        "Implementation and provisioning of ZSVirt enterprise virtualization environments",
+        "High-performance Software-Defined Storage (SDS) utilizing ZFS and Ceph",
+        "Software-Defined Networking (SDN), VLAN segregation, and perimeter firewalls",
+        "Automated backups, live replication, and Disaster Recovery Planning (DRP)",
+        "Proactive telemetry and real-time monitoring of CPU, RAM, IOPS, and network bandwidth"
+      ],
+      "benefits": [
+        {
+          "icon": "shield",
+          "title": "Data Sovereignty & Security",
+          "text": "Complete control of your data on dedicated on-premise hardware or private datacenters without vendor lock-in."
+        },
+        {
+          "icon": "zap",
+          "title": "Maximum Throughput & Ultra-Low Latency",
+          "text": "Direct hardware access with bare-metal KVM and lightweight LXC containers for critical enterprise workloads."
+        },
+        {
+          "icon": "layers",
+          "title": "Real High Availability",
+          "text": "Automated node failover guaranteeing non-stop uptime for your mission-critical applications."
+        },
+        {
+          "icon": "trending-up",
+          "title": "Drastic License Cost Reductions",
+          "text": "Enterprise-grade open-source virtualization alternative to expensive legacy solutions like VMware."
+        }
+      ],
+      "tech": [
+        "Proxmox VE",
+        "ZSVirt",
+        "KVM",
+        "LXC",
+        "Ceph",
+        "ZFS",
+        "Open vSwitch",
+        "Debian Linux"
+      ],
+      "faq": [
+        {
+          "q": "What are the advantages of Proxmox VE and ZSVirt over public cloud providers like AWS or Azure?",
+          "a": "It eliminates volatile egress fees and expensive monthly resource billings, offering superior dedicated hardware throughput, absolute privacy, and total hypervisor governance."
+        },
+        {
+          "q": "Can existing virtual machines be migrated from VMware ESXi or Hyper-V?",
+          "a": "Yes, we apply zero-loss migration strategies with minimal downtime windows, converting virtual disks and network topology to Proxmox VE and ZSVirt seamlessly."
+        },
+        {
+          "q": "How is high availability and hardware fault tolerance ensured?",
+          "a": "We configure quorum clustering (Corosync), replicated shared storage pools (Ceph/ZFS), and automated HA managers that restore and boot instances on healthy nodes in seconds."
+        }
+      ]
     }
   ],
   "casesSection": {
@@ -2751,96 +2813,5 @@
     "copyUrl": "Copy page link",
     "copied": "Link copied!",
     "scrollTop": "Scroll to top"
-  },
-  "signalBeacon": {
-    "badge": "ACTIVE SIGNAL",
-    "detected": "Section detected",
-    "close": "Hide panel",
-    "toggle": "Toggle section radar",
-    "jump": "Jump to section",
-    "home": {
-      "hero": {
-        "title": "Hamster Software — Digital Innovation",
-        "tag": "Introduction & Mission",
-        "desc": "We build custom web apps, mobile apps, and enterprise data & AI solutions tailored to your business goals."
-      },
-      "estadisticas": {
-        "title": "Our Track Record & Outcomes",
-        "tag": "Verified Metrics",
-        "desc": "+50 delivered projects with 100% on-time delivery and dedicated engineering teams committed to code quality."
-      },
-      "servicios": {
-        "title": "Comprehensive Service Catalog",
-        "tag": "22 Technical Disciplines",
-        "desc": "Custom software development, mobile apps, data pipelines, cybersecurity, and cloud DevOps to scale your company."
-      },
-      "soluciones": {
-        "title": "Turnkey Platforms & Solutions",
-        "tag": "16 Ready Systems",
-        "desc": "Ready-to-deploy platforms: ERPs, clinical management, electronic invoicing, seismic monitoring, and AzuraCast audio streaming."
-      },
-      "seguridad": {
-        "title": "Bank-Grade Security Architecture",
-        "tag": "Protection & Audit",
-        "desc": "We safeguard your digital assets against vulnerabilities, DDoS attacks, and data breaches adhering to OWASP best practices."
-      },
-      "casos": {
-        "title": "Proven Customer Success Stories",
-        "tag": "Case Studies",
-        "desc": "Discover how we automate operations, boost revenues, and cut overhead for real enterprises in Colombia and abroad."
-      },
-      "industrias": {
-        "title": "Industries We Transform",
-        "tag": "Cross-Industry Expertise",
-        "desc": "Healthcare, retail, agritech, financial services, education, and supply chain enhanced with modern technology."
-      },
-      "proceso": {
-        "title": "Agile Delivery Lifecycle",
-        "tag": "Step-by-Step",
-        "desc": "From requirement gathering and interactive prototypes to production deployments with continuous monitoring and SLA support."
-      },
-      "contacto": {
-        "title": "Ready to launch your next project?",
-        "tag": "Direct Assistance",
-        "desc": "Let's talk with no obligation about your technical goals. We analyze your requirements and deliver an actionable blueprint within 48 hours."
-      }
-    },
-    "detail": {
-      "hero": {
-        "title": "Overview & Architectural Focus",
-        "tag": "Value Proposition",
-        "desc": "Modern architecture, clean codebase, and end-to-end support engineered to tackle the exact challenges of this service or solution."
-      },
-      "incluye": {
-        "title": "What's Included",
-        "tag": "Scope & Deliverables",
-        "desc": "Core capabilities, guaranteed deliverables, and technical modules designed to maximize productivity."
-      },
-      "beneficios": {
-        "title": "High-Impact Advantages",
-        "tag": "Measurable ROI",
-        "desc": "Reduced manual overhead, heightened security, and rock-solid scalability for your organization."
-      },
-      "tecnologias": {
-        "title": "Modern Technology Stack",
-        "tag": "Battle-Tested Tools",
-        "desc": "Global industry standard languages, frameworks, and cloud architectures built for speed and uptime."
-      },
-      "faq": {
-        "title": "Frequently Asked Questions",
-        "tag": "Direct Answers",
-        "desc": "Clear answers regarding implementation timelines, rollout procedures, pricing structures, and integration options."
-      },
-      "relacionados": {
-        "title": "Complementary Ecosystem",
-        "tag": "Related Solutions",
-        "desc": "Explore additional services and software modules that further amplify and extend your platform's capabilities."
-      },
-      "contacto": {
-        "title": "Get in Touch",
-        "tag": "Talk with Engineers",
-        "desc": "Request a tailored live demo or receive a custom quote directly from our engineering team."
-      }
-    }
   }
 }

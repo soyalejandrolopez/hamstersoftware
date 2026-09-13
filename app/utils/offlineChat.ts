@@ -176,6 +176,13 @@ export function getOfflineChatReply(query: string, locale: string = 'es'): strin
       : "Desarrollamos soluciones como RentaYa (Portal de Clasificados Inmobiliarios y Vehículos con conexión directa por WhatsApp), integraciones Odoo ERP y plataformas LMS.\n\nEscríbenos por WhatsApp al +57 302 579 0274 para diseñar tu plataforma."
   }
 
+  // 24. Infraestructura IaaS / Proxmox / ZSVirt / Virtualización
+  if (q.includes('iaas') || q.includes('proxmox') || q.includes('zsvirt') || q.includes('virtualiza') || q.includes('hypervisor') || q.includes('cluster') || q.includes('ceph') || q.includes('vmware')) {
+    return isEn
+      ? "We implement enterprise IaaS infrastructure with Proxmox VE and ZSVirt, high-availability clustering, Ceph/ZFS software-defined storage, and VM migrations without vendor lock-in.\n\nContact us on WhatsApp at +57 302 579 0274 to evaluate your infrastructure."
+      : "Implementamos infraestructura IaaS empresarial con Proxmox VE y ZSVirt, clústeres en alta disponibilidad, almacenamiento Ceph/ZFS y migración de máquinas virtuales con soberanía total y sin costos imprevistos.\n\nEscríbenos por WhatsApp al +57 302 579 0274 para cotizar tu infraestructura."
+  }
+
   // Fallback amigable
   return isEn
     ? "Thanks for reaching out! To give you the exact details and a personalized quote for your project, chat directly with our team on WhatsApp: +57 302 579 0274 or email us at info@hamstersoftware.com."

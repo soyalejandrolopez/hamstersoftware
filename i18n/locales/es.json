@@ -2396,6 +2396,68 @@
           "a": "Sí, exportamos la facturación a tu contador o la integramos con tu sistema contable."
         }
       ]
+    },
+    {
+      "name": "Infraestructura IaaS",
+      "icon": "server",
+      "subtitle": "Virtualización Proxmox & ZSVirt",
+      "slug": "iaas-proxmox-zsvirt",
+      "description": "Implementación de infraestructura como servicio (IaaS), virtualización empresarial de alto rendimiento con Proxmox VE y ZSVirt, clustering y alta disponibilidad.",
+      "overview": "Diseñamos e implementamos plataformas de Infraestructura como Servicio (IaaS) privadas e híbridas para empresas que requieren soberanía tecnológica, reducción drástica de costes frente a nubes públicas y control absoluto. Desplegamos clústeres de virtualización empresarial basados en Proxmox VE y ZSVirt, integrando almacenamiento distribuido Ceph/ZFS, redes definidas por software (SDN), balanceo de cargas, copias de seguridad continuas y orquestación integral de máquinas virtuales y contenedores LXC.",
+      "features": [
+        "Despliegue y configuración de clústeres Proxmox VE en alta disponibilidad (HA)",
+        "Implementación y aprovisionamiento de virtualización ZSVirt para entornos empresariales",
+        "Almacenamiento definido por software (SDS) de alto desempeño con ZFS y Ceph",
+        "Redes definidas por software (SDN), VLANs, aislamiento y cortafuegos perimetrales",
+        "Automatización de backups, replicación continua y planes de recuperación ante desastres (DRP)",
+        "Monitoreo proactivo de recursos (CPU, RAM, IOPS, Red) y telemetría en tiempo real"
+      ],
+      "benefits": [
+        {
+          "icon": "shield",
+          "title": "Soberanía y Seguridad de Datos",
+          "text": "Control total de tus datos en hardware propio o datacenter privado, sin vendor lock-in ni costos imprevistos."
+        },
+        {
+          "icon": "zap",
+          "title": "Máximo Rendimiento y Baja Latencia",
+          "text": "Acceso directo al hardware con KVM y contenedores LXC ultralivianos para cargas de trabajo críticas."
+        },
+        {
+          "icon": "layers",
+          "title": "Alta Disponibilidad Real",
+          "text": "Failover automático entre nodos para garantizar que tus servicios permanezcan siempre en línea."
+        },
+        {
+          "icon": "trending-up",
+          "title": "Reducción de Costes de Licenciamiento",
+          "text": "Alternativa de nivel empresarial y código abierto frente a soluciones tradicionales como VMware."
+        }
+      ],
+      "tech": [
+        "Proxmox VE",
+        "ZSVirt",
+        "KVM",
+        "LXC",
+        "Ceph",
+        "ZFS",
+        "Open vSwitch",
+        "Debian Linux"
+      ],
+      "faq": [
+        {
+          "q": "¿Qué ventajas tiene implementar Proxmox VE y ZSVirt frente a nubes públicas como AWS o Azure?",
+          "a": "Permite reducir drásticamente los costes mensuales fijos y de transferencia de datos, brindando un rendimiento dedicado superior, privacidad absoluta y control total sobre el hipervisor sin tarifas ocultas."
+        },
+        {
+          "q": "¿Es posible migrar máquinas virtuales existentes desde VMware ESXi o Hyper-V?",
+          "a": "Sí, contamos con metodologías probadas de migración en caliente o con ventanas mínimas de inactividad, convirtiendo discos virtuales y configuraciones a Proxmox VE y ZSVirt sin pérdida de datos."
+        },
+        {
+          "q": "¿Cómo se garantiza la alta disponibilidad y la protección ante caídas de hardware?",
+          "a": "Configuramos clústeres con quórum (Corosync), almacenamiento replicado compartido (Ceph/ZFS) y políticas de failover automático que reubican y levantan las máquinas en nodos sanos en segundos."
+        }
+      ]
     }
   ],
   "casesSection": {
@@ -2751,96 +2813,5 @@
     "copyUrl": "Copiar enlace de página",
     "copied": "¡Enlace copiado!",
     "scrollTop": "Subir al inicio"
-  },
-  "signalBeacon": {
-    "badge": "SEÑAL ACTIVA",
-    "detected": "Sección detectada",
-    "close": "Ocultar panel",
-    "toggle": "Alternar radar de sección",
-    "jump": "Ir a la sección",
-    "home": {
-      "hero": {
-        "title": "Hamster Software — Innovación Digital",
-        "tag": "Presentación & Misión",
-        "desc": "Construimos aplicaciones web, apps móviles y soluciones avanzadas de datos e inteligencia artificial adaptadas a tus objetivos empresariales."
-      },
-      "estadisticas": {
-        "title": "Nuestra Trayectoria y Resultados",
-        "tag": "Métricas Verificadas",
-        "desc": "+50 proyectos entregados con 100% de cumplimiento a tiempo y equipos dedicados a la calidad de tu software."
-      },
-      "servicios": {
-        "title": "Catálogo Integral de Servicios",
-        "tag": "22 Especialidades Técnicas",
-        "desc": "Desarrollo web a la medida, aplicaciones móviles, pipelines de datos, ciberseguridad y DevOps para escalar tu negocio."
-      },
-      "soluciones": {
-        "title": "Soluciones y Productos Listos",
-        "tag": "16 Plataformas Propias",
-        "desc": "Sistemas listos para implementar: ERPs, gestión clínica, facturación electrónica, monitoreo sísmico y streaming con AzuraCast."
-      },
-      "seguridad": {
-        "title": "Seguridad de Grado Bancario",
-        "tag": "Protección & Auditoría",
-        "desc": "Blindamos tu infraestructura digital contra vulnerabilidades, ataques DDoS y riesgos de fuga de datos con estándares OWASP."
-      },
-      "casos": {
-        "title": "Historias de Éxito Reales",
-        "tag": "Casos de Estudio",
-        "desc": "Conoce cómo automatizamos procesos, aumentamos ventas y reducimos costos operativos para empresas reales en Colombia y la región."
-      },
-      "industrias": {
-        "title": "Sectores que Transformamos",
-        "tag": "Enfoque Multidisciplinario",
-        "desc": "Salud, retail, agroindustria, finanzas, educación y logística potenciados con herramientas tecnológicas a medida."
-      },
-      "proceso": {
-        "title": "Metodología de Trabajo Ágil",
-        "tag": "Paso a Paso",
-        "desc": "Desde el levantamiento de requerimientos y prototipado hasta el despliegue en producción con soporte y monitoreo continuo."
-      },
-      "contacto": {
-        "title": "¿Empezamos tu próximo proyecto?",
-        "tag": "Atención Inmediata",
-        "desc": "Conversemos sin compromiso sobre tu idea técnica. Te asesoramos y te entregamos un plan de acción en menos de 48 horas."
-      }
-    },
-    "detail": {
-      "hero": {
-        "title": "Visión General y Enfoque",
-        "tag": "Propuesta de Valor",
-        "desc": "Arquitectura moderna, código limpio y soporte integral diseñado para resolver el desafío específico de este servicio o solución."
-      },
-      "incluye": {
-        "title": "¿Qué incluye esta solución?",
-        "tag": "Alcance Detallado",
-        "desc": "Funcionalidades clave, entregables garantizados y módulos técnicos diseñados para maximizar la productividad."
-      },
-      "beneficios": {
-        "title": "Beneficios de Alto Impacto",
-        "tag": "Retorno de Inversión",
-        "desc": "Reducción de tiempos manuales, mayor seguridad y escalabilidad garantizada para tu organización."
-      },
-      "tecnologias": {
-        "title": "Stack Tecnológico de Vanguardia",
-        "tag": "Herramientas Robustas",
-        "desc": "Lenguajes, frameworks e infraestructuras cloud probadas mundialmente en rendimiento y confiabilidad."
-      },
-      "faq": {
-        "title": "Preguntas Frecuentes",
-        "tag": "Respuestas Claras",
-        "desc": "Despejamos las dudas habituales sobre tiempos de entrega, despliegue, costos y metodologías de integración."
-      },
-      "relacionados": {
-        "title": "Ecosistema Complementario",
-        "tag": "Soluciones Relacionadas",
-        "desc": "Descubre módulos y servicios adicionales que potencian y expanden las capacidades de tu plataforma."
-      },
-      "contacto": {
-        "title": "Ponte en Contacto",
-        "tag": "Hablemos de tu Proyecto",
-        "desc": "Solicita una demo o cotización personalizada directamente con nuestro equipo de ingenieros."
-      }
-    }
   }
 }
