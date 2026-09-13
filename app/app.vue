@@ -43,6 +43,7 @@ useHead({
     <AppFooter />
     <ChatWidget />
     <ClientOnly>
+      <ScrollSignalBeacon />
       <ContextMenu />
     </ClientOnly>
   </div>

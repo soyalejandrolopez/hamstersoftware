@@ -32,7 +32,7 @@ const cardAccents = [
 </script>
 
 <template>
-  <section class="relative border-y border-slate-200/70 bg-gradient-to-b from-white via-slate-50/50 to-white py-16 lg:py-20">
+  <section id="estadisticas" class="relative scroll-mt-24 border-y border-slate-200/70 bg-gradient-to-b from-white via-slate-50/50 to-white py-16 lg:py-20">
     <div class="container-site">
       <div class="grid grid-cols-2 gap-5 lg:grid-cols-4">
         <div v-for="(s, i) in stats" :key="s.label">

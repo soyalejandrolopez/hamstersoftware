@@ -119,7 +119,7 @@ useHead(() => ({
 <template>
   <div>
     <!-- Hero -->
-    <section class="relative overflow-hidden bg-ink-950 pt-24 pb-16 text-white sm:pt-28 sm:pb-20 lg:pt-32">
+    <section id="detalle-hero" class="relative scroll-mt-24 overflow-hidden bg-ink-950 pt-24 pb-16 text-white sm:pt-28 sm:pb-20 lg:pt-32">
       <div class="pointer-events-none absolute inset-0 bg-grid-dark opacity-35" />
       <div
         class="pointer-events-none absolute -right-20 -top-20 h-80 w-80 rounded-full bg-brand-600/25 blur-3xl"
@@ -139,14 +139,13 @@ useHead(() => ({
           <span class="font-medium text-slate-300">{{ title }}</span>
         </nav>
 
-        <div class="mt-8 flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
-          <div class="max-w-2xl">
-            <span
-              class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-500 to-indigo-700 text-white shadow-relief-btn-primary"
-            >
-              <AppIcon :name="item.icon" class="h-7 w-7 drop-shadow" />
+        <div class="mt-8 grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
+          <div>
+            <span class="inline-flex items-center gap-2 rounded-full border border-brand-400/25 bg-brand-500/10 px-3.5 py-1 text-xs font-semibold text-brand-300 shadow-sm backdrop-blur-md">
+              <span class="h-1.5 w-1.5 rounded-full bg-brand-400 animate-pulse" />
+              {{ parentLabel }}
             </span>
-            <h1 class="mt-6 font-display text-3xl font-bold tracking-tight sm:text-4xl lg:text-[2.85rem] lg:leading-[1.1]">
+            <h1 class="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
               {{ title }}
             </h1>
             <p class="mt-3 text-base font-semibold text-brand-300 sm:text-lg">{{ subtitle }}</p>
@@ -229,7 +228,7 @@ useHead(() => ({
     </section>
 
     <!-- Qué incluye -->
-    <section class="bg-white py-16 sm:py-20">
+    <section id="detalle-incluye" class="scroll-mt-24 bg-white py-16 sm:py-20">
       <div class="container-site grid gap-12 lg:grid-cols-2 lg:items-start">
         <div>
           <span class="eyebrow">{{ parentLabel }}</span>
@@ -275,7 +274,7 @@ useHead(() => ({
     </section>
 
     <!-- Tecnologías -->
-    <section class="bg-gradient-to-b from-slate-50 to-white py-16 sm:py-20 border-y border-slate-200/60">
+    <section id="detalle-tecnologias" class="scroll-mt-24 bg-gradient-to-b from-slate-50 to-white py-16 sm:py-20 border-y border-slate-200/60">
       <div class="container-site">
         <div class="max-w-2xl">
           <span class="eyebrow">{{ t('detail.techTitle') }}</span>
@@ -295,7 +294,7 @@ useHead(() => ({
     </section>
 
     <!-- FAQ -->
-    <section v-if="item.faq?.length" class="bg-white py-16 sm:py-20">
+    <section v-if="item.faq?.length" id="detalle-faq" class="scroll-mt-24 bg-white py-16 sm:py-20">
       <div class="container-site mx-auto max-w-3xl">
         <div class="text-center">
           <span class="eyebrow">FAQ</span>
@@ -324,7 +323,7 @@ useHead(() => ({
     </section>
 
     <!-- Relacionados -->
-    <section class="bg-slate-50 py-16 sm:py-20 border-t border-slate-200/60">
+    <section id="detalle-relacionados" class="scroll-mt-24 bg-slate-50 py-16 sm:py-20 border-t border-slate-200/60">
       <div class="container-site">
         <div class="flex flex-wrap items-end justify-between gap-4">
           <div>
@@ -368,7 +367,7 @@ useHead(() => ({
     </section>
 
     <!-- CTA final -->
-    <section class="relative overflow-hidden bg-ink-950 py-20 text-white sm:py-24">
+    <section id="detalle-contacto" class="relative scroll-mt-24 overflow-hidden bg-ink-950 py-20 text-white sm:py-24">
       <div class="pointer-events-none absolute inset-0 bg-grid-dark opacity-35" />
       <div
         class="pointer-events-none absolute -bottom-24 left-1/2 h-72 w-[36rem] -translate-x-1/2 rounded-full bg-brand-600/25 blur-3xl"

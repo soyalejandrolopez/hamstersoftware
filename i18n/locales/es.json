@@ -2751,5 +2751,96 @@
     "copyUrl": "Copiar enlace de página",
     "copied": "¡Enlace copiado!",
     "scrollTop": "Subir al inicio"
+  },
+  "signalBeacon": {
+    "badge": "SEÑAL ACTIVA",
+    "detected": "Sección detectada",
+    "close": "Ocultar panel",
+    "toggle": "Alternar radar de sección",
+    "jump": "Ir a la sección",
+    "home": {
+      "hero": {
+        "title": "Hamster Software — Innovación Digital",
+        "tag": "Presentación & Misión",
+        "desc": "Construimos aplicaciones web, apps móviles y soluciones avanzadas de datos e inteligencia artificial adaptadas a tus objetivos empresariales."
+      },
+      "estadisticas": {
+        "title": "Nuestra Trayectoria y Resultados",
+        "tag": "Métricas Verificadas",
+        "desc": "+50 proyectos entregados con 100% de cumplimiento a tiempo y equipos dedicados a la calidad de tu software."
+      },
+      "servicios": {
+        "title": "Catálogo Integral de Servicios",
+        "tag": "22 Especialidades Técnicas",
+        "desc": "Desarrollo web a la medida, aplicaciones móviles, pipelines de datos, ciberseguridad y DevOps para escalar tu negocio."
+      },
+      "soluciones": {
+        "title": "Soluciones y Productos Listos",
+        "tag": "16 Plataformas Propias",
+        "desc": "Sistemas listos para implementar: ERPs, gestión clínica, facturación electrónica, monitoreo sísmico y streaming con AzuraCast."
+      },
+      "seguridad": {
+        "title": "Seguridad de Grado Bancario",
+        "tag": "Protección & Auditoría",
+        "desc": "Blindamos tu infraestructura digital contra vulnerabilidades, ataques DDoS y riesgos de fuga de datos con estándares OWASP."
+      },
+      "casos": {
+        "title": "Historias de Éxito Reales",
+        "tag": "Casos de Estudio",
+        "desc": "Conoce cómo automatizamos procesos, aumentamos ventas y reducimos costos operativos para empresas reales en Colombia y la región."
+      },
+      "industrias": {
+        "title": "Sectores que Transformamos",
+        "tag": "Enfoque Multidisciplinario",
+        "desc": "Salud, retail, agroindustria, finanzas, educación y logística potenciados con herramientas tecnológicas a medida."
+      },
+      "proceso": {
+        "title": "Metodología de Trabajo Ágil",
+        "tag": "Paso a Paso",
+        "desc": "Desde el levantamiento de requerimientos y prototipado hasta el despliegue en producción con soporte y monitoreo continuo."
+      },
+      "contacto": {
+        "title": "¿Empezamos tu próximo proyecto?",
+        "tag": "Atención Inmediata",
+        "desc": "Conversemos sin compromiso sobre tu idea técnica. Te asesoramos y te entregamos un plan de acción en menos de 48 horas."
+      }
+    },
+    "detail": {
+      "hero": {
+        "title": "Visión General y Enfoque",
+        "tag": "Propuesta de Valor",
+        "desc": "Arquitectura moderna, código limpio y soporte integral diseñado para resolver el desafío específico de este servicio o solución."
+      },
+      "incluye": {
+        "title": "¿Qué incluye esta solución?",
+        "tag": "Alcance Detallado",
+        "desc": "Funcionalidades clave, entregables garantizados y módulos técnicos diseñados para maximizar la productividad."
+      },
+      "beneficios": {
+        "title": "Beneficios de Alto Impacto",
+        "tag": "Retorno de Inversión",
+        "desc": "Reducción de tiempos manuales, mayor seguridad y escalabilidad garantizada para tu organización."
+      },
+      "tecnologias": {
+        "title": "Stack Tecnológico de Vanguardia",
+        "tag": "Herramientas Robustas",
+        "desc": "Lenguajes, frameworks e infraestructuras cloud probadas mundialmente en rendimiento y confiabilidad."
+      },
+      "faq": {
+        "title": "Preguntas Frecuentes",
+        "tag": "Respuestas Claras",
+        "desc": "Despejamos las dudas habituales sobre tiempos de entrega, despliegue, costos y metodologías de integración."
+      },
+      "relacionados": {
+        "title": "Ecosistema Complementario",
+        "tag": "Soluciones Relacionadas",
+        "desc": "Descubre módulos y servicios adicionales que potencian y expanden las capacidades de tu plataforma."
+      },
+      "contacto": {
+        "title": "Ponte en Contacto",
+        "tag": "Hablemos de tu Proyecto",
+        "desc": "Solicita una demo o cotización personalizada directamente con nuestro equipo de ingenieros."
+      }
+    }
   }
 }
