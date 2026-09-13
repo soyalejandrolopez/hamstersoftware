@@ -16,6 +16,10 @@ const route = useRoute()
 const basePath = computed(() => (props.kind === 'product' ? 'soluciones' : 'servicios'))
 const isProduct = computed(() => props.kind === 'product')
 
+const imageSrc = computed(() => {
+  return props.item.image || `/images/${basePath.value}/${props.item.slug}.jpg`
+})
+
 const title = computed(() => ('name' in props.item ? props.item.name : props.item.title))
 const subtitle = computed(() =>
   'subtitle' in props.item ? props.item.subtitle : props.item.description
@@ -160,15 +164,64 @@ useHead(() => ({
             </div>
           </div>
 
-          <!-- Mini badges with dark glass relief -->
-          <div class="hidden shrink-0 grid-cols-2 gap-4 lg:grid">
+          <!-- Showcase visual with realistic relief & glassmorphism -->
+          <div class="relative w-full max-w-lg lg:max-w-md xl:max-w-lg">
             <div
-              v-for="(b, i) in item.benefits.slice(0, 2)"
-              :key="i"
-              class="w-44 rounded-2xl border border-white/15 bg-white/5 p-4 shadow-relief-dark backdrop-blur-md"
+              class="relative overflow-hidden rounded-3xl border border-white/20 bg-slate-900/80 p-2 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.7),inset_0_1px_0_rgba(255,255,255,0.2)] backdrop-blur-xl transition-transform duration-500 hover:scale-[1.02]"
             >
-              <AppIcon :name="b.icon" class="h-5 w-5 text-brand-400" />
-              <p class="mt-2.5 text-xs font-bold text-white">{{ b.title }}</p>
+              <!-- Browser / window top header -->
+              <div class="flex items-center justify-between border-b border-white/10 bg-slate-950/60 px-4 py-2.5 rounded-t-2xl">
+                <div class="flex items-center gap-1.5">
+                  <span class="h-2.5 w-2.5 rounded-full bg-rose-500/90 shadow-sm" />
+                  <span class="h-2.5 w-2.5 rounded-full bg-amber-500/90 shadow-sm" />
+                  <span class="h-2.5 w-2.5 rounded-full bg-emerald-500/90 shadow-sm" />
+                </div>
+                <div class="flex items-center gap-1.5 rounded-md bg-white/5 px-2.5 py-0.5 text-[10px] font-mono text-slate-400 border border-white/5">
+                  <AppIcon name="lock" class="h-2.5 w-2.5 text-emerald-400" />
+                  <span>hamstersoftware.com/{{ basePath }}/{{ item.slug }}</span>
+                </div>
+              </div>
+
+              <!-- Main showcase photo -->
+              <div class="relative aspect-[16/10] w-full overflow-hidden rounded-b-2xl bg-slate-950">
+                <img
+                  :src="imageSrc"
+                  :alt="title"
+                  class="h-full w-full object-cover object-center transition-transform duration-700 hover:scale-105"
+                  loading="eager"
+                />
+                <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />
+                
+                <!-- Floating badge on the image -->
+                <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between gap-2 rounded-xl border border-white/15 bg-ink-950/85 p-2.5 backdrop-blur-md shadow-relief-dark">
+                  <div class="flex items-center gap-2">
+                    <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-brand-600 text-white shadow-sm">
+                      <AppIcon :name="item.icon" class="h-4 w-4" />
+                    </span>
+                    <span class="font-display text-xs font-bold text-white truncate max-w-[180px] sm:max-w-[220px]">
+                      {{ title }}
+                    </span>
+                  </div>
+                  <span class="inline-flex items-center gap-1 rounded-full bg-emerald-500/20 px-2 py-0.5 text-[10px] font-semibold text-emerald-300">
+                    <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                    {{ isProduct ? 'Solución Lista' : 'Servicio Activo' }}
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mini stats/benefits overlay pill below image -->
+            <div class="mt-4 grid grid-cols-2 gap-3">
+              <div
+                v-for="(b, i) in item.benefits.slice(0, 2)"
+                :key="i"
+                class="flex items-center gap-2.5 rounded-2xl border border-white/10 bg-white/[0.04] p-3 shadow-relief-dark backdrop-blur-md"
+              >
+                <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-brand-500/20 text-brand-400">
+                  <AppIcon :name="b.icon" class="h-4 w-4" />
+                </span>
+                <span class="text-xs font-bold text-slate-200 line-clamp-1">{{ b.title }}</span>
+              </div>
             </div>
           </div>
         </div>

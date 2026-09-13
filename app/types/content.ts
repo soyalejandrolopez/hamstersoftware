@@ -16,6 +16,7 @@ export interface Service {
   title: string
   description: string
   overview: string
+  image?: string
   features: string[]
   benefits: Benefit[]
   tech: string[]
@@ -29,6 +30,7 @@ export interface Product {
   subtitle: string
   description: string
   overview: string
+  image?: string
   features: string[]
   benefits: Benefit[]
   tech: string[]
