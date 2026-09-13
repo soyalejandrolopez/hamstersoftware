@@ -5,6 +5,7 @@ const { t } = useI18n()
 const localePath = useLocalePath()
 const router = useRouter()
 
+const isMounted = ref(false)
 const visible = ref(false)
 const x = ref(0)
 const y = ref(0)
@@ -80,6 +81,7 @@ function onKeyDown(e: KeyboardEvent) {
 }
 
 onMounted(() => {
+  isMounted.value = true
   window.addEventListener('contextmenu', onContextMenu)
   window.addEventListener('click', onGlobalClick)
   window.addEventListener('scroll', closeMenu, { passive: true })
@@ -95,7 +97,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <Teleport to="body">
+  <Teleport v-if="isMounted" to="body">
     <Transition
       enter-active-class="transition duration-150 ease-out"
       enter-from-class="scale-95 opacity-0"
