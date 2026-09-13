@@ -44,7 +44,7 @@ const accents = [
 
             <div class="flex items-start justify-between">
               <span
-                class="flex h-12 w-12 items-center justify-center rounded-xl border border-slate-100 shadow-inner transition-all duration-300 group-hover:scale-105 group-hover:shadow-md"
+                class="flex h-12 w-12 items-center justify-center rounded-xl border border-slate-100 shadow-inner transition-all duration-300 group-hover:scale-105 group-hover:shadow-md group-hover:!text-white"
                 :class="[
                   accents[i % accents.length].iconBg,
                   accents[i % accents.length].iconColor,
@@ -52,7 +52,7 @@ const accents = [
                   accents[i % accents.length].hoverShadow
                 ]"
               >
-                <AppIcon :name="service.icon" class="h-6 w-6" />
+                <AppIcon :name="service.icon" class="h-6 w-6 transition-colors duration-300 group-hover:text-white" />
               </span>
               <span
                 class="rounded-lg border border-slate-200/60 bg-slate-50/80 px-2.5 py-1 font-display text-xs font-bold text-slate-400 shadow-inner transition-colors duration-300 group-hover:border-brand-200 group-hover:bg-brand-50 group-hover:text-brand-600"

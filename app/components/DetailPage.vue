@@ -264,7 +264,7 @@ useHead(() => ({
               <span
                 class="flex h-11 w-11 items-center justify-center rounded-xl border border-brand-100 bg-brand-50 text-brand-600 shadow-inner transition-colors duration-300 group-hover:bg-brand-600 group-hover:text-white"
               >
-                <AppIcon :name="b.icon" class="h-5 w-5" />
+                <AppIcon :name="b.icon" class="h-5 w-5 transition-colors duration-300 group-hover:text-white" />
               </span>
               <h3 class="mt-4 font-display text-base font-bold text-slate-900">{{ b.title }}</h3>
               <p class="mt-1.5 text-sm leading-relaxed text-slate-600">{{ b.text }}</p>
@@ -350,7 +350,7 @@ useHead(() => ({
             <span
               class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-brand-100 bg-brand-50 text-brand-600 shadow-inner transition-colors duration-300 group-hover:bg-brand-600 group-hover:text-white"
             >
-              <AppIcon :name="r.icon" class="h-5 w-5" />
+              <AppIcon :name="r.icon" class="h-5 w-5 transition-colors duration-300 group-hover:text-white" />
             </span>
             <span class="min-w-0">
               <span class="block font-display text-[15px] font-bold text-slate-900 group-hover:text-brand-700">

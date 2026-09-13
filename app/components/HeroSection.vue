@@ -9,32 +9,32 @@ const cardStyles = [
     bg: 'bg-white',
     border: 'border-slate-200/85 hover:border-brand-300',
     topBar: 'bg-gradient-to-r from-brand-500 to-sky-500',
-    iconBg: 'bg-brand-50 border border-brand-100/80 shadow-inner',
-    iconColor: 'text-brand-600',
+    iconBg: 'bg-brand-50 border border-brand-100/80 shadow-inner group-hover:bg-brand-600 group-hover:border-brand-600',
+    iconColor: 'text-brand-600 group-hover:text-white',
     titleHover: 'group-hover:text-brand-700'
   },
   {
     bg: 'bg-white',
     border: 'border-slate-200/85 hover:border-sky-300',
     topBar: 'bg-gradient-to-r from-sky-500 to-cyan-500',
-    iconBg: 'bg-sky-50 border border-sky-100/80 shadow-inner',
-    iconColor: 'text-sky-600',
+    iconBg: 'bg-sky-50 border border-sky-100/80 shadow-inner group-hover:bg-sky-600 group-hover:border-sky-600',
+    iconColor: 'text-sky-600 group-hover:text-white',
     titleHover: 'group-hover:text-sky-700'
   },
   {
     bg: 'bg-white',
     border: 'border-slate-200/85 hover:border-emerald-300',
     topBar: 'bg-gradient-to-r from-emerald-500 to-teal-500',
-    iconBg: 'bg-emerald-50 border border-emerald-100/80 shadow-inner',
-    iconColor: 'text-emerald-600',
+    iconBg: 'bg-emerald-50 border border-emerald-100/80 shadow-inner group-hover:bg-emerald-600 group-hover:border-emerald-600',
+    iconColor: 'text-emerald-600 group-hover:text-white',
     titleHover: 'group-hover:text-emerald-700'
   },
   {
     bg: 'bg-white',
     border: 'border-slate-200/85 hover:border-indigo-300',
     topBar: 'bg-gradient-to-r from-indigo-500 to-brand-500',
-    iconBg: 'bg-indigo-50 border border-indigo-100/80 shadow-inner',
-    iconColor: 'text-indigo-600',
+    iconBg: 'bg-indigo-50 border border-indigo-100/80 shadow-inner group-hover:bg-indigo-600 group-hover:border-indigo-600',
+    iconColor: 'text-indigo-600 group-hover:text-white',
     titleHover: 'group-hover:text-indigo-700'
   }
 ]
@@ -162,7 +162,7 @@ const cardStyles = [
                 class="flex h-12 w-12 items-center justify-center rounded-xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-md"
                 :class="[cardStyles[i].iconBg, cardStyles[i].iconColor]"
               >
-                <AppIcon :name="card.icon" class="h-6 w-6" />
+                <AppIcon :name="card.icon" class="h-6 w-6 transition-colors duration-300 group-hover:text-white" />
               </span>
 
               <!-- Text -->

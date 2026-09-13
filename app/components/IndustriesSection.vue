@@ -5,10 +5,10 @@ const { t } = useI18n()
 const { industries } = useContent()
 
 const colors = [
-  { topBar: 'bg-gradient-to-r from-brand-500 to-sky-500', iconBg: 'bg-brand-50 border border-brand-100/80 shadow-inner', iconColor: 'text-brand-600' },
-  { topBar: 'bg-gradient-to-r from-slate-500 to-indigo-500', iconBg: 'bg-slate-50 border border-slate-200/80 shadow-inner', iconColor: 'text-slate-700' },
-  { topBar: 'bg-gradient-to-r from-sky-500 to-cyan-500', iconBg: 'bg-sky-50 border border-sky-100/80 shadow-inner', iconColor: 'text-sky-600' },
-  { topBar: 'bg-gradient-to-r from-emerald-500 to-teal-500', iconBg: 'bg-emerald-50 border border-emerald-100/80 shadow-inner', iconColor: 'text-emerald-600' }
+  { topBar: 'bg-gradient-to-r from-brand-500 to-sky-500', iconBg: 'bg-brand-50 border border-brand-100/80 shadow-inner group-hover:bg-brand-600 group-hover:border-brand-600', iconColor: 'text-brand-600 group-hover:text-white' },
+  { topBar: 'bg-gradient-to-r from-slate-500 to-indigo-500', iconBg: 'bg-slate-50 border border-slate-200/80 shadow-inner group-hover:bg-slate-700 group-hover:border-slate-700', iconColor: 'text-slate-700 group-hover:text-white' },
+  { topBar: 'bg-gradient-to-r from-sky-500 to-cyan-500', iconBg: 'bg-sky-50 border border-sky-100/80 shadow-inner group-hover:bg-sky-600 group-hover:border-sky-600', iconColor: 'text-sky-600 group-hover:text-white' },
+  { topBar: 'bg-gradient-to-r from-emerald-500 to-teal-500', iconBg: 'bg-emerald-50 border border-emerald-100/80 shadow-inner group-hover:bg-emerald-600 group-hover:border-emerald-600', iconColor: 'text-emerald-600 group-hover:text-white' }
 ]
 </script>
 
@@ -40,7 +40,7 @@ const colors = [
               class="flex h-14 w-14 items-center justify-center rounded-2xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-md"
               :class="[colors[i % colors.length].iconBg, colors[i % colors.length].iconColor]"
             >
-              <AppIcon :name="industry.icon" class="h-7 w-7" />
+              <AppIcon :name="industry.icon" class="h-7 w-7 transition-colors duration-300 group-hover:text-white" />
             </span>
             <span
               class="font-display text-sm font-bold leading-snug text-slate-800 transition-colors group-hover:text-brand-700"

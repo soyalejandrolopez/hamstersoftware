@@ -6,26 +6,26 @@ const { stats } = useContent()
 const cardAccents = [
   {
     topBar: 'bg-gradient-to-r from-brand-500 to-blue-600',
-    iconBg: 'bg-brand-50 border border-brand-100/80 shadow-inner',
-    iconColor: 'text-brand-600',
+    iconBg: 'bg-brand-50 border border-brand-100/80 shadow-inner group-hover:bg-brand-600 group-hover:border-brand-600',
+    iconColor: 'text-brand-600 group-hover:text-white',
     numGradient: 'from-brand-700 via-brand-600 to-blue-700'
   },
   {
     topBar: 'bg-gradient-to-r from-sky-500 to-cyan-500',
-    iconBg: 'bg-sky-50 border border-sky-100/80 shadow-inner',
-    iconColor: 'text-sky-600',
+    iconBg: 'bg-sky-50 border border-sky-100/80 shadow-inner group-hover:bg-sky-600 group-hover:border-sky-600',
+    iconColor: 'text-sky-600 group-hover:text-white',
     numGradient: 'from-sky-700 via-sky-600 to-cyan-700'
   },
   {
     topBar: 'bg-gradient-to-r from-emerald-500 to-teal-500',
-    iconBg: 'bg-emerald-50 border border-emerald-100/80 shadow-inner',
-    iconColor: 'text-emerald-600',
+    iconBg: 'bg-emerald-50 border border-emerald-100/80 shadow-inner group-hover:bg-emerald-600 group-hover:border-emerald-600',
+    iconColor: 'text-emerald-600 group-hover:text-white',
     numGradient: 'from-emerald-700 via-emerald-600 to-teal-700'
   },
   {
     topBar: 'bg-gradient-to-r from-indigo-500 to-violet-500',
-    iconBg: 'bg-indigo-50 border border-indigo-100/80 shadow-inner',
-    iconColor: 'text-indigo-600',
+    iconBg: 'bg-indigo-50 border border-indigo-100/80 shadow-inner group-hover:bg-indigo-600 group-hover:border-indigo-600',
+    iconColor: 'text-indigo-600 group-hover:text-white',
     numGradient: 'from-indigo-700 via-indigo-600 to-slate-800'
   }
 ]
@@ -48,7 +48,7 @@ const cardAccents = [
                   class="flex h-11 w-11 items-center justify-center rounded-xl transition-transform duration-300 group-hover:scale-110 group-hover:shadow-md"
                   :class="[cardAccents[i % 4].iconBg, cardAccents[i % 4].iconColor]"
                 >
-                  <AppIcon :name="s.icon" class="h-5 w-5" />
+                  <AppIcon :name="s.icon" class="h-5 w-5 transition-colors duration-300 group-hover:text-white" />
                 </span>
                 <span class="h-2 w-2 rounded-full bg-slate-200 opacity-60 transition-colors group-hover:bg-brand-500" />
               </div>
