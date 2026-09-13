@@ -2458,6 +2458,67 @@
           "a": "We configure quorum clustering (Corosync), replicated shared storage pools (Ceph/ZFS), and automated HA managers that restore and boot instances on healthy nodes in seconds."
         }
       ]
+    },
+    {
+      "name": "IMEI & After-Sales Control",
+      "icon": "smartphone",
+      "subtitle": "Traceability, warranties & RMA service",
+      "slug": "imei-aftersales-control",
+      "description": "Comprehensive system for smartphone IMEI number control, device lifecycle tracking, warranty management, and after-sales RMA repairs.",
+      "overview": "We build and deploy specialized enterprise platforms for distributors, smartphone importers, telecom carriers, and electronic service centers. Our system records, verifies, and audits each IMEI and serial number from customs entry or assembly through warehouse dispatch, point-of-sale, and after-sales support. It automates warranty validation, workshop intake, technical diagnosis, parts quoting, and live status notifications to customers via WhatsApp and SMS.",
+      "features": [
+        "Bulk IMEI registration and automated validation (Luhn algorithm, GSMA, blacklists & homologation)",
+        "End-to-end device traceability: inventory intake, warehouse transfers, retail dispatch, and customer delivery",
+        "Dynamic warranty tracking based on purchase dates, vendors, or device brands",
+        "Technical Service / RMA module: intake work orders, repair lifecycle states, and diagnostic checklists",
+        "Spare parts inventory management, model-specific parts stock, and labor cost calculations",
+        "Customer self-service tracking portal with real-time WhatsApp / SMS status alerts"
+      ],
+      "benefits": [
+        {
+          "icon": "shield",
+          "title": "Fraud & Duplicity Prevention",
+          "text": "Algorithmic validation and strict IMEI auditing to prevent duplicate records, warranty fraud, and unapproved devices."
+        },
+        {
+          "icon": "zap",
+          "title": "Rapid Repair Workflows",
+          "text": "Optimized technician pipelines that slash diagnostic, repair turnaround, and customer delivery times."
+        },
+        {
+          "icon": "trending-up",
+          "title": "Customer Trust & Loyalty",
+          "text": "Total transparency on warranty status and repair progress, elevating brand reputation and repurchase rates."
+        },
+        {
+          "icon": "database",
+          "title": "Complete Device History",
+          "text": "Permanent digital lifecycle passport for each unit containing sales history, past repairs, assigned technicians, and replaced parts."
+        }
+      ],
+      "tech": [
+        "Vue.js",
+        "Node.js",
+        "PostgreSQL",
+        "Redis",
+        "Barcode / QR Scanner",
+        "WhatsApp Cloud API",
+        "Docker"
+      ],
+      "faq": [
+        {
+          "q": "Can it integrate with 1D/2D barcode and handheld barcode scanners for bulk intakes?",
+          "a": "Yes, the platform is engineered for rapid handheld scanner input, mobile collector terminals, and high-volume Excel/CSV batch imports."
+        },
+        {
+          "q": "How does the system verify if a unit is currently under warranty?",
+          "a": "Upon scanning the IMEI, the engine immediately cross-references the initial invoice date, brand warranty terms, and policy exceptions to confirm active coverage."
+        },
+        {
+          "q": "Can customers track their repair status online without calling support?",
+          "a": "Yes, every repair order generates an encrypted tracking link and QR code showing live progress steps, photos, technician diagnosis notes, and estimated delivery dates."
+        }
+      ]
     }
   ],
   "casesSection": {

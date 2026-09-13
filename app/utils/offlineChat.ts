@@ -183,6 +183,13 @@ export function getOfflineChatReply(query: string, locale: string = 'es'): strin
       : "Implementamos infraestructura IaaS empresarial con Proxmox VE y ZSVirt, clústeres en alta disponibilidad, almacenamiento Ceph/ZFS y migración de máquinas virtuales con soberanía total y sin costos imprevistos.\n\nEscríbenos por WhatsApp al +57 302 579 0274 para cotizar tu infraestructura."
   }
 
+  // 25. Control de IMEI / Posventa / Garantías / Servicio Técnico RMA
+  if (q.includes('imei') || q.includes('posventa') || q.includes('postventa') || q.includes('garantia') || q.includes('rma') || q.includes('reparacion') || q.includes('servicio tecnico') || q.includes('after-sales') || q.includes('warranty')) {
+    return isEn
+      ? "We develop custom IMEI tracking & after-sales management platforms: device traceability, automated warranty verification, RMA repair tickets, and WhatsApp status updates for mobile distributors and tech service centers.\n\nChat with us on WhatsApp at +57 302 579 0274 for a platform demo."
+      : "Desarrollamos sistemas de control de IMEI y gestión posventa: trazabilidad de terminales, validación automática de garantías, órdenes de servicio técnico (RMA) y notificaciones al cliente por WhatsApp.\n\nContáctanos por WhatsApp al +57 302 579 0274 para conocer una demostración."
+  }
+
   // Fallback amigable
   return isEn
     ? "Thanks for reaching out! To give you the exact details and a personalized quote for your project, chat directly with our team on WhatsApp: +57 302 579 0274 or email us at info@hamstersoftware.com."

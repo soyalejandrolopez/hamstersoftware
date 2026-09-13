@@ -2458,6 +2458,67 @@
           "a": "Configuramos clústeres con quórum (Corosync), almacenamiento replicado compartido (Ceph/ZFS) y políticas de failover automático que reubican y levantan las máquinas en nodos sanos en segundos."
         }
       ]
+    },
+    {
+      "name": "Control IMEI & Posventa",
+      "icon": "smartphone",
+      "subtitle": "Trazabilidad, garantías y servicio técnico",
+      "slug": "imei-aftersales-control",
+      "description": "Sistema integral para control de números IMEI, trazabilidad de dispositivos, gestión de garantías, órdenes de servicio técnico y atención posventa.",
+      "overview": "Desarrollamos e implementamos plataformas especializadas para distribuidores, importadores, operadoras y servicios técnicos de telefonía móvil y electrónica. Nuestro sistema permite registrar, validar y rastrear cada número IMEI y número de serie desde la importación o ensamble hasta la venta final y el servicio posventa, automatizando la gestión de garantías, la recepción en taller, el diagnóstico técnico, la cotización de repuestos y la notificación en tiempo real al cliente vía WhatsApp y SMS.",
+      "features": [
+        "Registro masivo y validación de IMEI (Luhn, GSMA, listas negras y homologación)",
+        "Trazabilidad completa: ingreso a inventario, bodega, despacho, punto de venta y cliente final",
+        "Gestión de garantías dinámicas por fecha de compra, proveedor o marca",
+        "Módulo de servicio técnico (RMA): órdenes de ingreso, estados de reparación y checklist de diagnóstico",
+        "Control de repuestos, stock de partes por modelo y costos de mano de obra",
+        "Portal de consulta para clientes finales y notificaciones automáticas por WhatsApp / SMS"
+      ],
+      "benefits": [
+        {
+          "icon": "shield",
+          "title": "Prevención de Fraude y Duplicidad",
+          "text": "Validación algorítmica y control estricto de números IMEI para evitar duplicados, fraudes de garantía y equipos no homologados."
+        },
+        {
+          "icon": "zap",
+          "title": "Atención Técnica Ágil",
+          "text": "Flujos de trabajo optimizados que reducen los tiempos de diagnóstico, reparación y entrega en centros de servicio."
+        },
+        {
+          "icon": "trending-up",
+          "title": "Fidelización de Clientes",
+          "text": "Transparencia absoluta en el estado de garantías y reparaciones, mejorando la satisfacción y recompra del usuario."
+        },
+        {
+          "icon": "database",
+          "title": "Historial Clínico del Dispositivo",
+          "text": "Hoja de vida digital de cada terminal con todo su historial de ventas, reparaciones previas, técnicos asignados y repuestos instalados."
+        }
+      ],
+      "tech": [
+        "Vue.js",
+        "Node.js",
+        "PostgreSQL",
+        "Redis",
+        "Escáner Código de Barras / QR",
+        "API WhatsApp Cloud",
+        "Docker"
+      ],
+      "faq": [
+        {
+          "q": "¿Se puede integrar con lectores de códigos de barras y pistolas 2D para ingresos masivos?",
+          "a": "Sí, el sistema está optimizado para pistolas lectoras 1D/2D, terminales móviles colectores de datos e importación masiva mediante plantillas Excel o CSV."
+        },
+        {
+          "q": "¿Cómo valida el sistema si un equipo está en garantía?",
+          "a": "Al ingresar el IMEI, el sistema cruza de inmediato la fecha de venta, el tiempo de garantía otorgado por el fabricante/tienda y las condiciones de la póliza, determinando si aplica garantía o cobro de reparación."
+        },
+        {
+          "q": "¿El cliente puede ver el estado de su reparación sin llamar?",
+          "a": "Sí, cada orden genera un enlace único y código QR donde el cliente puede ver el avance en tiempo real (Recibido, En Diagnóstico, En Espera de Repuesto, Listo para Entrega) con fotos y notas del técnico."
+        }
+      ]
     }
   ],
   "casesSection": {
