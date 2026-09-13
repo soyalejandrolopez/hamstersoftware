@@ -2743,5 +2743,17 @@
   },
   "common": {
     "viewMore": "View more"
+  },
+  "contextMenu": {
+    "services": "Explore Services",
+    "solutions": "View Solutions",
+    "viewCode": "View ASCII Code",
+    "contact": "Contact via WhatsApp",
+    "copyUrl": "Copy page link",
+    "copied": "Link copied!",
+    "scrollTop": "Scroll to top",
+    "codeModalTitle": "Hamster Software — ASCII Art",
+    "codeModalClose": "Close",
+    "codeModalCopy": "Copy code"
   }
 }

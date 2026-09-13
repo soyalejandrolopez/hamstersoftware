@@ -42,5 +42,6 @@ useHead({
     </main>
     <AppFooter />
     <ChatWidget />
+    <ContextMenu />
   </div>
 </template>

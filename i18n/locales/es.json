@@ -2743,5 +2743,17 @@
   },
   "common": {
     "viewMore": "Ver más"
+  },
+  "contextMenu": {
+    "services": "Explorar Servicios",
+    "solutions": "Ver Soluciones",
+    "viewCode": "Ver código ASCII",
+    "contact": "Contactar por WhatsApp",
+    "copyUrl": "Copiar enlace de página",
+    "copied": "¡Enlace copiado!",
+    "scrollTop": "Subir al inicio",
+    "codeModalTitle": "Hamster Software — Arte ASCII",
+    "codeModalClose": "Cerrar",
+    "codeModalCopy": "Copiar código"
   }
 }
