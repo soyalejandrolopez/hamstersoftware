@@ -1717,6 +1717,7 @@
         }
       ],
       "tech": [
+        "AzuraCast",
         "Icecast",
         "Liquidsoap",
         "HLS",

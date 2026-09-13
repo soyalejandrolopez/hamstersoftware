@@ -148,7 +148,7 @@ PRODUCTS_ES = {
             {'icon': 'zap', 'title': 'Estabilidad', 'text': 'Redundancia de servidores para evitar cortes de señal.'},
             {'icon': 'users', 'title': 'Audiencia medida', 'text': 'Conoce a tus oyentes: dónde están, cuándo escuchan y qué consumen.'}
         ],
-        'tech': ['Icecast', 'Liquidsoap', 'HLS', 'FFmpeg', 'WebRTC', 'React'],
+        'tech': ['AzuraCast', 'Icecast', 'Liquidsoap', 'HLS', 'FFmpeg', 'WebRTC', 'React'],
         'faq': [
             {'q': '¿Puedo transmitir con mi equipo actual?', 'a': 'Sí. Nos integramos a tus consolas, micrófonos y software existentes; no necesitas cambiar tu estudio.'},
             {'q': '¿Cuántos oyentes simultáneos soporta?', 'a': 'La infraestructura escala según tu audiencia; desde decenas hasta decenas de miles de oyentes.'},
@@ -740,7 +740,7 @@ PRODUCTS_EN = {
             {'icon': 'zap', 'title': 'Stability', 'text': 'Server redundancy to avoid signal outages.'},
             {'icon': 'users', 'title': 'Measured audience', 'text': 'Know your listeners: where they are, when they listen, what they consume.'}
         ],
-        'tech': ['Icecast', 'Liquidsoap', 'HLS', 'FFmpeg', 'WebRTC', 'React'],
+        'tech': ['AzuraCast', 'Icecast', 'Liquidsoap', 'HLS', 'FFmpeg', 'WebRTC', 'React'],
         'faq': [
             {'q': 'Can I broadcast with my current equipment?', 'a': 'Yes. We integrate with your existing consoles, microphones and software; no studio changes needed.'},
             {'q': 'How many concurrent listeners does it support?', 'a': 'The infrastructure scales with your audience, from dozens to tens of thousands of listeners.'},
