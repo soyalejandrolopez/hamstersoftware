@@ -15,7 +15,14 @@
     "letsTalk": "Let's talk",
     "changeLanguage": "Change language",
     "openMenu": "Open menu",
-    "closeMenu": "Close menu"
+    "closeMenu": "Close menu",
+    "categories": {
+      "all": "All Services",
+      "dataAi": "Data, AI & Machine Learning",
+      "software": "Web, Mobile & Custom Systems",
+      "cloudInfra": "Cloud, Servers & DevOps",
+      "automation": "Enterprise IT & Automation"
+    }
   },
   "hero": {
     "eyebrow": "Software development company",

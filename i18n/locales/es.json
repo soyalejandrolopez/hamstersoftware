@@ -15,7 +15,14 @@
     "letsTalk": "Hablemos",
     "changeLanguage": "Cambiar idioma",
     "openMenu": "Abrir menú",
-    "closeMenu": "Cerrar menú"
+    "closeMenu": "Cerrar menú",
+    "categories": {
+      "all": "Todos los servicios",
+      "dataAi": "Datos, IA & Machine Learning",
+      "software": "Desarrollo Web, Móvil & Sistemas",
+      "cloudInfra": "Cloud, Servidores & DevOps",
+      "automation": "Automatización & TI Empresarial"
+    }
   },
   "hero": {
     "eyebrow": "Empresa de desarrollo de software",

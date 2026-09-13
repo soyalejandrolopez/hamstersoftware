@@ -7,6 +7,95 @@ const { products, services } = useContent()
 const openMenu = ref<string | null>(null)
 const mobileOpen = ref(false)
 const mobileAccordion = ref<string | null>(null)
+const activeServiceCategory = ref<'all' | 'dataAi' | 'software' | 'cloudInfra' | 'automation'>('all')
+
+const serviceCategoryMap: Record<string, 'dataAi' | 'software' | 'cloudInfra' | 'automation'> = {
+  // Datos & IA
+  'ingenieria-de-datos': 'dataAi',
+  'extraccion-de-datos-etl': 'dataAi',
+  'visualizacion-de-datos': 'dataAi',
+  'mineria-y-gestion-de-datos': 'dataAi',
+  'machine-learning': 'dataAi',
+  'modelos-de-lenguaje-pequeno-slms': 'dataAi',
+  'bases-de-datos-vectoriales': 'dataAi',
+  'chatbots-y-asistentes-virtuales': 'dataAi',
+  'redes-neuronales-y-deep-learning': 'dataAi',
+  'analitica-avanzada-de-negocios': 'dataAi',
+
+  // Desarrollo de Software y Apps
+  'software-de-escritorio': 'software',
+  'desarrollo-movil': 'software',
+  'sistemas-bajo-demanda': 'software',
+  'desarrollo-web': 'software',
+
+  // Cloud, Infraestructura y DevOps
+  'nube-y-arquitectura-cloud': 'cloudInfra',
+  'computacion-y-servidores': 'cloudInfra',
+  'devops-y-cicd': 'cloudInfra',
+
+  // Automatización y Gestión de TI
+  'automatizacion-empresarial-rpa': 'automation',
+  'operaciones-de-negocios-bpm': 'automation',
+  'gestion-de-activos-de-ti': 'automation',
+  'automatizacion-de-ti': 'automation'
+}
+
+const serviceCategories = computed(() => {
+  const all = services.value || []
+
+  const dataAiServices = all.filter(
+    (s) => serviceCategoryMap[s.id] === 'dataAi' || (!serviceCategoryMap[s.id] && (s.slug.includes('data') || s.slug.includes('learning') || s.slug.includes('ai') || s.slug.includes('analytics') || s.slug.includes('chatbots') || s.slug.includes('etl')))
+  )
+
+  const softwareServices = all.filter(
+    (s) => serviceCategoryMap[s.id] === 'software' || (s.slug.includes('web') || s.slug.includes('mobile') || s.slug.includes('desktop') || s.slug.includes('on-demand'))
+  )
+
+  const cloudServices = all.filter(
+    (s) => serviceCategoryMap[s.id] === 'cloudInfra' || (s.slug.includes('cloud') || s.slug.includes('servers') || s.slug.includes('devops'))
+  )
+
+  const automationServices = all.filter(
+    (s) => serviceCategoryMap[s.id] === 'automation' || (s.slug.includes('automation') || s.slug.includes('bpm') || s.slug.includes('it-assets'))
+  )
+
+  return [
+    {
+      key: 'dataAi' as const,
+      label: t('nav.categories.dataAi'),
+      icon: 'brain',
+      badgeClass: 'border-purple-200/80 bg-purple-50 text-purple-600',
+      services: dataAiServices
+    },
+    {
+      key: 'software' as const,
+      label: t('nav.categories.software'),
+      icon: 'code',
+      badgeClass: 'border-blue-200/80 bg-blue-50 text-blue-600',
+      services: softwareServices
+    },
+    {
+      key: 'cloudInfra' as const,
+      label: t('nav.categories.cloudInfra'),
+      icon: 'cloud',
+      badgeClass: 'border-sky-200/80 bg-sky-50 text-sky-600',
+      services: cloudServices
+    },
+    {
+      key: 'automation' as const,
+      label: t('nav.categories.automation'),
+      icon: 'zap',
+      badgeClass: 'border-amber-200/80 bg-amber-50 text-amber-600',
+      services: automationServices
+    }
+  ]
+})
+
+const filteredServices = computed(() => {
+  if (activeServiceCategory.value === 'all') return services.value
+  const found = serviceCategories.value.find((c) => c.key === activeServiceCategory.value)
+  return found ? found.services : services.value
+})
 
 const navItems = computed(() => [
   { key: 'soluciones', label: t('nav.soluciones'), children: products.value },
@@ -132,47 +221,172 @@ onBeforeUnmount(() => {
               <AppIcon name="arrow-right" class="h-3 w-3" />
             </NuxtLinkLocale>
           </div>
-          <div v-if="openMenu === 'soluciones'" class="grid grid-cols-4 gap-x-6 gap-y-2">
+          <!-- Contenido Mega Menú: Soluciones (18 items) -->
+          <div v-if="openMenu === 'soluciones'" class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
             <NuxtLinkLocale
               v-for="p in products"
               :key="p.name"
               :to="`/soluciones/${p.slug}`"
-              class="group flex items-start gap-3 rounded-2xl border border-transparent p-3.5 transition-all hover:border-slate-200/80 hover:bg-slate-50/80 hover:shadow-relief-sm"
+              class="group flex items-start gap-3.5 rounded-2xl border border-slate-100 bg-white/70 p-3 transition-all duration-200 hover:-translate-y-0.5 hover:border-brand-200 hover:bg-slate-50/80 hover:shadow-relief-sm"
               @click="closeAll"
             >
               <span
-                class="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-brand-100 bg-brand-50 text-brand-600 shadow-inner transition-colors duration-200 group-hover:border-brand-600 group-hover:bg-brand-600 group-hover:text-white"
+                class="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-brand-100/80 bg-brand-50/70 text-brand-600 shadow-inner transition-colors duration-200 group-hover:border-brand-600 group-hover:bg-brand-600 group-hover:text-white"
               >
                 <AppIcon :name="p.icon" class="h-5 w-5" />
               </span>
-              <span>
-                <span class="block text-sm font-bold text-slate-900 group-hover:text-brand-700">
+              <span class="min-w-0">
+                <span class="block truncate text-sm font-bold text-slate-900 group-hover:text-brand-700">
                   {{ p.name }}
                 </span>
-                <span class="mt-0.5 block text-xs text-slate-500">{{ p.subtitle }}</span>
+                <span class="mt-0.5 block line-clamp-1 text-xs text-slate-500">{{ p.subtitle }}</span>
               </span>
             </NuxtLinkLocale>
           </div>
-          <div v-else class="grid grid-cols-3 gap-x-6 gap-y-2">
-            <NuxtLinkLocale
-              v-for="s in services"
-              :key="s.id"
-              :to="`/servicios/${s.slug}`"
-              class="group flex items-start gap-3 rounded-2xl border border-transparent p-3.5 transition-all hover:border-slate-200/80 hover:bg-slate-50/80 hover:shadow-relief-sm"
-              @click="closeAll"
-            >
-              <span
-                class="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-brand-100 bg-brand-50 text-brand-600 shadow-inner transition-colors duration-200 group-hover:border-brand-600 group-hover:bg-brand-600 group-hover:text-white"
+
+          <!-- Contenido Mega Menú: Servicios (22 items organizados por categorías de ingeniería) -->
+          <div v-else class="space-y-6">
+            <!-- Tabs / Selector de categoría rápida -->
+            <div class="flex flex-wrap items-center gap-2 border-b border-slate-100 pb-3">
+              <button
+                type="button"
+                class="inline-flex items-center gap-1.5 rounded-xl px-3.5 py-1.5 text-xs font-semibold transition-all duration-200"
+                :class="
+                  activeServiceCategory === 'all'
+                    ? 'bg-brand-600 text-white shadow-relief-sm'
+                    : 'bg-slate-100/80 text-slate-600 hover:bg-slate-200/70 hover:text-slate-900'
+                "
+                @click="activeServiceCategory = 'all'"
               >
-                <AppIcon :name="s.icon" class="h-5 w-5" />
-              </span>
-              <span class="block text-sm font-bold text-slate-900 group-hover:text-brand-700">
-                {{ s.title }}
-              </span>
-            </NuxtLinkLocale>
+                <AppIcon name="layers" class="h-3.5 w-3.5" />
+                {{ t('nav.categories.all') }}
+                <span
+                  class="ml-1 rounded-full px-1.5 py-0.2 text-[10px]"
+                  :class="activeServiceCategory === 'all' ? 'bg-white/20 text-white' : 'bg-slate-200 text-slate-700'"
+                >
+                  {{ services.length }}
+                </span>
+              </button>
+
+              <button
+                v-for="cat in serviceCategories"
+                :key="cat.key"
+                type="button"
+                class="inline-flex items-center gap-1.5 rounded-xl px-3.5 py-1.5 text-xs font-semibold transition-all duration-200"
+                :class="
+                  activeServiceCategory === cat.key
+                    ? 'bg-brand-600 text-white shadow-relief-sm'
+                    : 'bg-slate-100/80 text-slate-600 hover:bg-slate-200/70 hover:text-slate-900'
+                "
+                @click="activeServiceCategory = cat.key"
+              >
+                <AppIcon :name="cat.icon" class="h-3.5 w-3.5" />
+                {{ cat.label }}
+                <span
+                  class="ml-1 rounded-full px-1.5 py-0.2 text-[10px]"
+                  :class="activeServiceCategory === cat.key ? 'bg-white/20 text-white' : 'bg-slate-200 text-slate-700'"
+                >
+                  {{ cat.services.length }}
+                </span>
+              </button>
+            </div>
+
+            <!-- Vista 1: Todas las categorías en columnas estructuradas -->
+            <div
+              v-if="activeServiceCategory === 'all'"
+              class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4"
+            >
+              <div
+                v-for="cat in serviceCategories"
+                :key="cat.key"
+                class="flex flex-col rounded-2xl border border-slate-100/80 bg-slate-50/50 p-4 transition-all hover:border-slate-200 hover:bg-slate-50"
+              >
+                <!-- Cabecera de Categoría -->
+                <div class="mb-3.5 flex items-center gap-2.5 border-b border-slate-200/60 pb-2.5">
+                  <span
+                    class="flex h-7 w-7 items-center justify-center rounded-lg border text-xs shadow-inner"
+                    :class="cat.badgeClass"
+                  >
+                    <AppIcon :name="cat.icon" class="h-4 w-4" />
+                  </span>
+                  <div>
+                    <h4 class="font-display text-xs font-bold uppercase tracking-wider text-slate-900">
+                      {{ cat.label }}
+                    </h4>
+                    <span class="text-[11px] text-slate-500 font-medium">
+                      {{ cat.services.length }} servicios especializados
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Lista de Servicios en esta categoría -->
+                <div class="space-y-1">
+                  <NuxtLinkLocale
+                    v-for="s in cat.services"
+                    :key="s.id"
+                    :to="`/servicios/${s.slug}`"
+                    class="group flex items-center justify-between rounded-xl p-2 transition-all duration-200 hover:bg-white hover:shadow-relief-sm"
+                    @click="closeAll"
+                  >
+                    <div class="flex min-w-0 items-center gap-2.5">
+                      <span
+                        class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border border-slate-200/70 bg-white text-slate-500 transition-colors duration-200 group-hover:border-brand-600 group-hover:bg-brand-600 group-hover:text-white"
+                      >
+                        <AppIcon :name="s.icon" class="h-3.5 w-3.5" />
+                      </span>
+                      <span class="truncate text-xs font-semibold text-slate-700 group-hover:text-brand-700">
+                        {{ s.title }}
+                      </span>
+                    </div>
+                    <AppIcon
+                      name="arrow-right"
+                      class="h-3 w-3 shrink-0 text-slate-300 opacity-0 transition-all duration-200 group-hover:translate-x-0.5 group-hover:text-brand-600 group-hover:opacity-100"
+                    />
+                  </NuxtLinkLocale>
+                </div>
+              </div>
+            </div>
+
+            <!-- Vista 2: Filtrado por categoría específica con tarjetas enriquecidas -->
+            <div
+              v-else
+              class="grid grid-cols-1 gap-3.5 sm:grid-cols-2 lg:grid-cols-3"
+            >
+              <NuxtLinkLocale
+                v-for="s in filteredServices"
+                :key="s.id"
+                :to="`/servicios/${s.slug}`"
+                class="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-slate-200/80 bg-white p-4 shadow-relief-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-brand-300 hover:shadow-relief-card"
+                @click="closeAll"
+              >
+                <div class="flex items-start gap-3.5">
+                  <span
+                    class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-brand-100 bg-brand-50 text-brand-600 shadow-inner transition-colors duration-200 group-hover:border-brand-600 group-hover:bg-brand-600 group-hover:text-white"
+                  >
+                    <AppIcon :name="s.icon" class="h-5 w-5" />
+                  </span>
+                  <div class="min-w-0 flex-1">
+                    <div class="flex items-center justify-between gap-2">
+                      <span class="font-display text-sm font-bold text-slate-900 group-hover:text-brand-700">
+                        {{ s.title }}
+                      </span>
+                      <AppIcon
+                        name="arrow-up-right"
+                        class="h-4 w-4 text-slate-300 transition-colors group-hover:text-brand-600"
+                      />
+                    </div>
+                    <p class="mt-1 line-clamp-2 text-xs leading-relaxed text-slate-500">
+                      {{ s.description }}
+                    </p>
+                  </div>
+                </div>
+              </NuxtLinkLocale>
+            </div>
           </div>
+
+          <!-- Banner inferior del mega menú -->
           <div
-            class="mt-6 flex items-center justify-between gap-4 rounded-2xl border border-brand-200/90 bg-gradient-to-r from-brand-50/90 to-sky-50/90 px-6 py-4 shadow-relief-sm"
+            class="mt-6 flex items-center justify-between gap-4 rounded-2xl border border-brand-200/90 bg-gradient-to-r from-brand-50/90 to-sky-50/90 px-6 py-3.5 shadow-relief-sm"
           >
             <p class="text-sm text-slate-700">
               <span class="font-bold text-slate-900">{{ t('nav.notFoundTitle') }}</span>
