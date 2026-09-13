@@ -48,31 +48,31 @@ onBeforeUnmount(() => document.removeEventListener('click', onDocumentClick))
   <!-- Variante escritorio: dropdown -->
   <div v-else ref="root" class="relative">
     <button
-      class="flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-600 transition-colors hover:border-brand-300 hover:text-brand-700"
+      class="flex items-center gap-1.5 rounded-full border border-slate-700/80 bg-slate-900/80 px-3 py-1.5 text-xs font-semibold text-white transition-colors hover:border-brand-400 hover:text-brand-300"
       :aria-expanded="open"
       aria-haspopup="true"
       :aria-label="t('nav.changeLanguage')"
       @click.stop="open = !open"
     >
-      <AppIcon name="globe" class="h-3.5 w-3.5" />
+      <AppIcon name="globe" class="h-3.5 w-3.5 text-brand-400" />
       {{ locale === 'es' ? 'ES' : 'EN' }}
       <AppIcon
         name="chevron-down"
-        class="h-3.5 w-3.5 transition-transform duration-200"
-        :class="open ? 'rotate-180' : ''"
+        class="h-3.5 w-3.5 text-slate-400 transition-transform duration-200"
+        :class="open ? 'rotate-180 text-brand-400' : ''"
       />
     </button>
 
     <Transition name="dropdown">
       <div
         v-if="open"
-        class="absolute right-0 top-full z-50 mt-2 w-40 overflow-hidden rounded-xl border border-slate-200 bg-white py-1.5 shadow-xl shadow-slate-900/10"
+        class="absolute right-0 top-full z-50 mt-2 w-40 overflow-hidden rounded-xl border border-slate-800 bg-slate-950/98 py-1.5 shadow-2xl shadow-black/80 backdrop-blur-xl"
       >
         <button
           v-for="opt in options"
           :key="opt.code"
-          class="flex w-full items-center justify-between px-4 py-2 text-left text-sm transition-colors hover:bg-slate-50"
-          :class="locale === opt.code ? 'font-semibold text-brand-700' : 'text-slate-600'"
+          class="flex w-full items-center justify-between px-4 py-2 text-left text-sm transition-colors hover:bg-slate-900"
+          :class="locale === opt.code ? 'font-semibold text-brand-400' : 'text-white'"
           @click="switchTo(opt.code)"
         >
           {{ opt.label }}
