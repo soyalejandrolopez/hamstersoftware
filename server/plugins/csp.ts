@@ -37,6 +37,8 @@ export default defineNitroPlugin((nitroApp) => {
     htmlContext.body = applyNonce(htmlContext.body)
     htmlContext.bodyAppend = applyNonce(htmlContext.bodyAppend)
 
+
+
     setHeader(
       event,
       'Content-Security-Policy',
@@ -54,5 +56,19 @@ export default defineNitroPlugin((nitroApp) => {
         "frame-ancestors 'self'"
       ].join('; ')
     )
+  })
+
+  nitroApp.hooks.hook('render:response', (response) => {
+    if (typeof response.body === 'string' && response.body.includes('<!DOCTYPE html>')) {
+      const asciiBanner = `<!--
+██╗  ██╗ █████╗ ███╗   ███╗███████╗████████╗███████╗██████╗     ███████╗ ██████╗ ███████╗████████╗██╗    ██╗ █████╗ ██████╗ ███████╗
+██║  ██║██╔══██╗████╗ ████║██╔════╝╚══██╔══╝██╔════╝██╔══██╗    ██╔════╝██╔═══██╗██╔════╝╚══██╔══╝██║    ██║██╔══██╗██╔══██╗██╔════╝
+███████║███████║██╔████╔██║███████╗   ██║   █████╗  ██████╔╝    ███████╗██║   ██║█████╗     ██║   ██║ █╗ ██║███████║██████╔╝█████╗  
+██╔══██║██╔══██║██║╚██╔╝██║╚════██║   ██║   ██╔══╝  ██╔══██╗    ╚════██║██║   ██║██╔══╝     ██║   ██║███╗██║██╔══██║██╔══██╗██╔══╝  
+██║  ██║██║  ██║██║ ╚═╝ ██║███████║   ██║   ███████╗██║  ██║    ███████║╚██████╔╝██║        ██║   ╚███╔███╔╝██║  ██║██║  ██║███████╗
+╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝   ╚═╝   ╚══════╝╚═╝  ╚═╝    ╚══════╝ ╚═════╝ ╚═╝        ╚═╝    ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+-->\n`
+      response.body = asciiBanner + response.body
+    }
   })
 })
