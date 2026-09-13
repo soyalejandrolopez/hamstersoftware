@@ -205,13 +205,20 @@ onBeforeUnmount(() => {
     <Transition name="dropdown">
       <div
         v-if="openMenu && !mobileOpen"
-        class="absolute inset-x-0 top-full hidden border-b border-slate-200/80 bg-white shadow-2xl shadow-slate-900/15 lg:block"
+        class="absolute inset-x-0 top-full hidden max-h-[calc(100vh-4.5rem)] overflow-y-auto border-b border-slate-200/80 bg-white/98 shadow-2xl shadow-slate-900/15 backdrop-blur-md lg:block"
       >
-        <div class="container-site py-8">
-          <div class="mb-6 flex items-center justify-between gap-4 border-b border-slate-100 pb-3">
-            <p class="font-display text-sm font-bold uppercase tracking-wider text-slate-900">
-              {{ openMenu === 'soluciones' ? t('nav.soluciones') : t('nav.servicios') }}
-            </p>
+        <div class="container-site py-5">
+          <!-- Cabecera del mega menú compacta -->
+          <div class="mb-4 flex items-center justify-between gap-4 border-b border-slate-100 pb-2.5">
+            <div class="flex items-center gap-2">
+              <span class="flex h-2 w-2 rounded-full bg-brand-600 animate-pulse"></span>
+              <p class="font-display text-xs font-bold uppercase tracking-wider text-slate-900">
+                {{ openMenu === 'soluciones' ? t('nav.soluciones') : t('nav.servicios') }}
+              </p>
+              <span class="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] font-semibold text-slate-500">
+                {{ openMenu === 'soluciones' ? products.length : services.length }}
+              </span>
+            </div>
             <NuxtLinkLocale
               :to="openMenu === 'soluciones' ? '/soluciones' : '/servicios'"
               class="inline-flex items-center gap-1.5 rounded-full border border-brand-200/70 bg-brand-50 px-3 py-1 text-xs font-bold text-brand-700 shadow-relief-sm transition-all hover:bg-brand-100"
@@ -221,47 +228,48 @@ onBeforeUnmount(() => {
               <AppIcon name="arrow-right" class="h-3 w-3" />
             </NuxtLinkLocale>
           </div>
+
           <!-- Contenido Mega Menú: Soluciones (18 items) -->
-          <div v-if="openMenu === 'soluciones'" class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+          <div v-if="openMenu === 'soluciones'" class="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
             <NuxtLinkLocale
               v-for="p in products"
               :key="p.name"
               :to="`/soluciones/${p.slug}`"
-              class="group flex items-start gap-3.5 rounded-2xl border border-slate-100 bg-white/70 p-3 transition-all duration-200 hover:-translate-y-0.5 hover:border-brand-200 hover:bg-slate-50/80 hover:shadow-relief-sm"
+              class="group flex items-center gap-2.5 rounded-xl border border-transparent p-2 transition-all duration-150 hover:border-brand-200 hover:bg-brand-50/50 hover:shadow-relief-sm"
               @click="closeAll"
             >
               <span
-                class="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-brand-100/80 bg-brand-50/70 text-brand-600 shadow-inner transition-colors duration-200 group-hover:border-brand-600 group-hover:bg-brand-600 group-hover:text-white"
+                class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-brand-100/80 bg-brand-50/80 text-brand-600 transition-colors duration-150 group-hover:border-brand-600 group-hover:bg-brand-600 group-hover:text-white"
               >
-                <AppIcon :name="p.icon" class="h-5 w-5" />
+                <AppIcon :name="p.icon" class="h-4 w-4" />
               </span>
-              <span class="min-w-0">
-                <span class="block truncate text-sm font-bold text-slate-900 group-hover:text-brand-700">
+              <span class="min-w-0 flex-1">
+                <span class="block truncate text-xs font-bold text-slate-800 group-hover:text-brand-700">
                   {{ p.name }}
                 </span>
-                <span class="mt-0.5 block line-clamp-1 text-xs text-slate-500">{{ p.subtitle }}</span>
+                <span class="block truncate text-[10px] text-slate-400">{{ p.subtitle }}</span>
               </span>
             </NuxtLinkLocale>
           </div>
 
-          <!-- Contenido Mega Menú: Servicios (22 items organizados por categorías de ingeniería) -->
-          <div v-else class="space-y-6">
+          <!-- Contenido Mega Menú: Servicios (22 items organizados en 4 pilares tecnológicos) -->
+          <div v-else class="space-y-4">
             <!-- Tabs / Selector de categoría rápida -->
-            <div class="flex flex-wrap items-center gap-2 border-b border-slate-100 pb-3">
+            <div class="flex flex-wrap items-center gap-1.5 border-b border-slate-100 pb-2.5">
               <button
                 type="button"
-                class="inline-flex items-center gap-1.5 rounded-xl px-3.5 py-1.5 text-xs font-semibold transition-all duration-200"
+                class="inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1 text-xs font-semibold transition-all duration-150"
                 :class="
                   activeServiceCategory === 'all'
                     ? 'bg-brand-600 text-white shadow-relief-sm'
-                    : 'bg-slate-100/80 text-slate-600 hover:bg-slate-200/70 hover:text-slate-900'
+                    : 'bg-slate-100 text-slate-600 hover:bg-slate-200/80 hover:text-slate-900'
                 "
                 @click="activeServiceCategory = 'all'"
               >
-                <AppIcon name="layers" class="h-3.5 w-3.5" />
+                <AppIcon name="layers" class="h-3 w-3" />
                 {{ t('nav.categories.all') }}
                 <span
-                  class="ml-1 rounded-full px-1.5 py-0.2 text-[10px]"
+                  class="ml-0.5 rounded-full px-1.5 py-0.2 text-[10px]"
                   :class="activeServiceCategory === 'all' ? 'bg-white/20 text-white' : 'bg-slate-200 text-slate-700'"
                 >
                   {{ services.length }}
@@ -272,18 +280,18 @@ onBeforeUnmount(() => {
                 v-for="cat in serviceCategories"
                 :key="cat.key"
                 type="button"
-                class="inline-flex items-center gap-1.5 rounded-xl px-3.5 py-1.5 text-xs font-semibold transition-all duration-200"
+                class="inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1 text-xs font-semibold transition-all duration-150"
                 :class="
                   activeServiceCategory === cat.key
                     ? 'bg-brand-600 text-white shadow-relief-sm'
-                    : 'bg-slate-100/80 text-slate-600 hover:bg-slate-200/70 hover:text-slate-900'
+                    : 'bg-slate-100 text-slate-600 hover:bg-slate-200/80 hover:text-slate-900'
                 "
                 @click="activeServiceCategory = cat.key"
               >
-                <AppIcon :name="cat.icon" class="h-3.5 w-3.5" />
+                <AppIcon :name="cat.icon" class="h-3 w-3" />
                 {{ cat.label }}
                 <span
-                  class="ml-1 rounded-full px-1.5 py-0.2 text-[10px]"
+                  class="ml-0.5 rounded-full px-1.5 py-0.2 text-[10px]"
                   :class="activeServiceCategory === cat.key ? 'bg-white/20 text-white' : 'bg-slate-200 text-slate-700'"
                 >
                   {{ cat.services.length }}
@@ -291,108 +299,106 @@ onBeforeUnmount(() => {
               </button>
             </div>
 
-            <!-- Vista 1: Todas las categorías en columnas estructuradas -->
+            <!-- Vista 1: Todas las 4 columnas de categorías (Compacto y equilibrado) -->
             <div
               v-if="activeServiceCategory === 'all'"
-              class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4"
+              class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4"
             >
               <div
                 v-for="cat in serviceCategories"
                 :key="cat.key"
-                class="flex flex-col rounded-2xl border border-slate-100/80 bg-slate-50/50 p-4 transition-all hover:border-slate-200 hover:bg-slate-50"
+                class="flex flex-col rounded-xl border border-slate-100/90 bg-slate-50/40 p-3 transition-all hover:border-slate-200 hover:bg-slate-50"
               >
                 <!-- Cabecera de Categoría -->
-                <div class="mb-3.5 flex items-center gap-2.5 border-b border-slate-200/60 pb-2.5">
-                  <span
-                    class="flex h-7 w-7 items-center justify-center rounded-lg border text-xs shadow-inner"
-                    :class="cat.badgeClass"
-                  >
-                    <AppIcon :name="cat.icon" class="h-4 w-4" />
-                  </span>
-                  <div>
-                    <h4 class="font-display text-xs font-bold uppercase tracking-wider text-slate-900">
+                <div class="mb-2 flex items-center justify-between border-b border-slate-200/60 pb-2">
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="flex h-6 w-6 items-center justify-center rounded-md border text-[10px] shadow-inner"
+                      :class="cat.badgeClass"
+                    >
+                      <AppIcon :name="cat.icon" class="h-3.5 w-3.5" />
+                    </span>
+                    <h4 class="font-display text-[11px] font-bold uppercase tracking-wider text-slate-900">
                       {{ cat.label }}
                     </h4>
-                    <span class="text-[11px] text-slate-500 font-medium">
-                      {{ cat.services.length }} servicios especializados
-                    </span>
                   </div>
+                  <span class="rounded bg-white px-1.5 py-0.5 text-[10px] font-bold text-slate-400 shadow-inner">
+                    {{ cat.services.length }}
+                  </span>
                 </div>
 
                 <!-- Lista de Servicios en esta categoría -->
-                <div class="space-y-1">
+                <div class="space-y-0.5">
                   <NuxtLinkLocale
                     v-for="s in cat.services"
                     :key="s.id"
                     :to="`/servicios/${s.slug}`"
-                    class="group flex items-center justify-between rounded-xl p-2 transition-all duration-200 hover:bg-white hover:shadow-relief-sm"
+                    class="group flex items-center justify-between rounded-lg px-2 py-1.5 transition-all duration-150 hover:bg-white hover:shadow-relief-sm"
                     @click="closeAll"
                   >
-                    <div class="flex min-w-0 items-center gap-2.5">
+                    <div class="flex min-w-0 items-center gap-2">
                       <span
-                        class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border border-slate-200/70 bg-white text-slate-500 transition-colors duration-200 group-hover:border-brand-600 group-hover:bg-brand-600 group-hover:text-white"
+                        class="flex h-5 w-5 shrink-0 items-center justify-center rounded border border-slate-200/70 bg-white text-slate-500 transition-colors duration-150 group-hover:border-brand-600 group-hover:bg-brand-600 group-hover:text-white"
                       >
-                        <AppIcon :name="s.icon" class="h-3.5 w-3.5" />
+                        <AppIcon :name="s.icon" class="h-3 w-3" />
                       </span>
-                      <span class="truncate text-xs font-semibold text-slate-700 group-hover:text-brand-700">
+                      <span class="truncate text-[12px] font-medium text-slate-700 group-hover:font-semibold group-hover:text-brand-700">
                         {{ s.title }}
                       </span>
                     </div>
                     <AppIcon
                       name="arrow-right"
-                      class="h-3 w-3 shrink-0 text-slate-300 opacity-0 transition-all duration-200 group-hover:translate-x-0.5 group-hover:text-brand-600 group-hover:opacity-100"
+                      class="h-2.5 w-2.5 shrink-0 text-slate-300 opacity-0 transition-all duration-150 group-hover:translate-x-0.5 group-hover:text-brand-600 group-hover:opacity-100"
                     />
                   </NuxtLinkLocale>
                 </div>
               </div>
             </div>
 
-            <!-- Vista 2: Filtrado por categoría específica con tarjetas enriquecidas -->
+            <!-- Vista 2: Filtrado por categoría específica con tarjetas compactas -->
             <div
               v-else
-              class="grid grid-cols-1 gap-3.5 sm:grid-cols-2 lg:grid-cols-3"
+              class="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-3"
             >
               <NuxtLinkLocale
                 v-for="s in filteredServices"
                 :key="s.id"
                 :to="`/servicios/${s.slug}`"
-                class="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-slate-200/80 bg-white p-4 shadow-relief-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-brand-300 hover:shadow-relief-card"
+                class="group flex items-start gap-3 rounded-xl border border-slate-200/70 bg-white p-3 shadow-relief-sm transition-all duration-150 hover:-translate-y-0.5 hover:border-brand-300 hover:shadow-relief-card"
                 @click="closeAll"
               >
-                <div class="flex items-start gap-3.5">
-                  <span
-                    class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-brand-100 bg-brand-50 text-brand-600 shadow-inner transition-colors duration-200 group-hover:border-brand-600 group-hover:bg-brand-600 group-hover:text-white"
-                  >
-                    <AppIcon :name="s.icon" class="h-5 w-5" />
-                  </span>
-                  <div class="min-w-0 flex-1">
-                    <div class="flex items-center justify-between gap-2">
-                      <span class="font-display text-sm font-bold text-slate-900 group-hover:text-brand-700">
-                        {{ s.title }}
-                      </span>
-                      <AppIcon
-                        name="arrow-up-right"
-                        class="h-4 w-4 text-slate-300 transition-colors group-hover:text-brand-600"
-                      />
-                    </div>
-                    <p class="mt-1 line-clamp-2 text-xs leading-relaxed text-slate-500">
-                      {{ s.description }}
-                    </p>
+                <span
+                  class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-brand-100 bg-brand-50 text-brand-600 shadow-inner transition-colors duration-150 group-hover:border-brand-600 group-hover:bg-brand-600 group-hover:text-white"
+                >
+                  <AppIcon :name="s.icon" class="h-4 w-4" />
+                </span>
+                <div class="min-w-0 flex-1">
+                  <div class="flex items-center justify-between gap-1.5">
+                    <span class="font-display text-xs font-bold text-slate-900 group-hover:text-brand-700">
+                      {{ s.title }}
+                    </span>
+                    <AppIcon
+                      name="arrow-up-right"
+                      class="h-3 w-3 text-slate-300 transition-colors group-hover:text-brand-600"
+                    />
                   </div>
+                  <p class="mt-0.5 line-clamp-2 text-[11px] leading-snug text-slate-500">
+                    {{ s.description }}
+                  </p>
                 </div>
               </NuxtLinkLocale>
             </div>
           </div>
 
-          <!-- Banner inferior del mega menú -->
+          <!-- Banner inferior del mega menú compacto -->
           <div
-            class="mt-6 flex items-center justify-between gap-4 rounded-2xl border border-brand-200/90 bg-gradient-to-r from-brand-50/90 to-sky-50/90 px-6 py-3.5 shadow-relief-sm"
+            class="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-brand-200/80 bg-gradient-to-r from-brand-50/90 to-sky-50/90 px-4 py-2.5 shadow-relief-sm"
           >
-            <p class="text-sm text-slate-700">
+            <p class="text-xs text-slate-700">
               <span class="font-bold text-slate-900">{{ t('nav.notFoundTitle') }}</span>
               {{ t('nav.notFoundDesc') }}
             </p>
-            <a href="#contacto" class="btn btn-primary btn-md shrink-0" @click="closeAll">
+            <a href="#contacto" class="btn btn-primary btn-sm shrink-0 px-3 py-1.5 text-xs" @click="closeAll">
               {{ t('nav.letsTalk') }}
             </a>
           </div>
