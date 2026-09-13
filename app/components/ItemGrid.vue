@@ -36,31 +36,35 @@ const cardColors = [
         style="background: linear-gradient(90deg, #2563eb, #06b6d4)"
       />
 
-      <div class="flex items-start justify-between">
+      <div class="flex items-start justify-between gap-3">
+        <div class="flex items-center gap-3.5 min-w-0">
+          <span
+            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-slate-100 shadow-inner transition-all duration-300 group-hover:scale-105 group-hover:shadow-md group-hover:!text-white"
+            :class="[
+              cardColors[i % cardColors.length].iconBg,
+              cardColors[i % cardColors.length].iconColor,
+              cardColors[i % cardColors.length].hoverBg
+            ]"
+          >
+            <AppIcon :name="item.icon" class="h-6 w-6 transition-colors duration-300 group-hover:text-white" />
+          </span>
+          <div class="min-w-0">
+            <h3 class="font-display text-lg font-bold text-slate-900 transition-colors group-hover:text-brand-700 leading-snug">
+              {{ item.name }}
+            </h3>
+            <p v-if="item.subtitle" class="text-xs font-semibold uppercase tracking-wider text-brand-600 truncate">
+              {{ item.subtitle }}
+            </p>
+          </div>
+        </div>
         <span
-          class="flex h-12 w-12 items-center justify-center rounded-xl border border-slate-100 shadow-inner transition-all duration-300 group-hover:scale-105 group-hover:shadow-md group-hover:!text-white"
-          :class="[
-            cardColors[i % cardColors.length].iconBg,
-            cardColors[i % cardColors.length].iconColor,
-            cardColors[i % cardColors.length].hoverBg
-          ]"
-        >
-          <AppIcon :name="item.icon" class="h-6 w-6 transition-colors duration-300 group-hover:text-white" />
-        </span>
-        <span
-          class="rounded-lg border border-slate-200/60 bg-slate-50/80 px-2.5 py-1 font-display text-xs font-bold text-slate-400 shadow-inner transition-colors duration-300 group-hover:border-brand-200 group-hover:bg-brand-50 group-hover:text-brand-600"
+          class="shrink-0 rounded-lg border border-slate-200/60 bg-slate-50/80 px-2.5 py-1 font-display text-xs font-bold text-slate-400 shadow-inner transition-colors duration-300 group-hover:border-brand-200 group-hover:bg-brand-50 group-hover:text-brand-600"
         >
           {{ String(i + 1).padStart(2, '0') }}
         </span>
       </div>
 
-      <h3 class="mt-5 font-display text-lg font-bold text-slate-900 transition-colors group-hover:text-brand-700">
-        {{ item.name }}
-      </h3>
-      <p v-if="item.subtitle" class="mt-1 text-xs font-semibold uppercase tracking-wider text-brand-600">
-        {{ item.subtitle }}
-      </p>
-      <p v-if="item.description" class="mt-2.5 text-sm leading-relaxed text-slate-600">
+      <p v-if="item.description" class="mt-4 text-sm leading-relaxed text-slate-600">
         {{ item.description }}
       </p>
 

@@ -157,22 +157,24 @@ const cardStyles = [
               <!-- Top micro accent bar -->
               <div class="absolute inset-x-0 top-0 h-1 opacity-80" :class="cardStyles[i].topBar" />
 
-              <!-- Tactile Icon Badge -->
-              <span
-                class="flex h-12 w-12 items-center justify-center rounded-xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-md"
-                :class="[cardStyles[i].iconBg, cardStyles[i].iconColor]"
-              >
-                <AppIcon :name="card.icon" class="h-6 w-6 transition-colors duration-300 group-hover:text-white" />
-              </span>
+              <!-- Tactile Icon Badge & Title side by side -->
+              <div class="flex items-center gap-3.5">
+                <span
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-md"
+                  :class="[cardStyles[i].iconBg, cardStyles[i].iconColor]"
+                >
+                  <AppIcon :name="card.icon" class="h-6 w-6 transition-colors duration-300 group-hover:text-white" />
+                </span>
+                <h3
+                  class="font-display text-base font-bold text-slate-900 transition-colors leading-snug"
+                  :class="cardStyles[i].titleHover"
+                >
+                  {{ card.title }}
+                </h3>
+              </div>
 
               <!-- Text -->
-              <h3
-                class="mt-4 font-display text-base font-bold text-slate-900 transition-colors"
-                :class="cardStyles[i].titleHover"
-              >
-                {{ card.title }}
-              </h3>
-              <p class="mt-1.5 text-sm leading-relaxed text-slate-600">
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">
                 {{ card.desc }}
               </p>
 

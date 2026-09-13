@@ -261,13 +261,15 @@ useHead(() => ({
               :key="b.title"
               class="group rounded-2xl border border-slate-200/85 bg-white p-6 shadow-relief-card transition-all duration-300 hover:-translate-y-1 hover:border-brand-300 hover:shadow-relief-card-hover"
             >
-              <span
-                class="flex h-11 w-11 items-center justify-center rounded-xl border border-brand-100 bg-brand-50 text-brand-600 shadow-inner transition-colors duration-300 group-hover:bg-brand-600 group-hover:text-white"
-              >
-                <AppIcon :name="b.icon" class="h-5 w-5 transition-colors duration-300 group-hover:text-white" />
-              </span>
-              <h3 class="mt-4 font-display text-base font-bold text-slate-900">{{ b.title }}</h3>
-              <p class="mt-1.5 text-sm leading-relaxed text-slate-600">{{ b.text }}</p>
+              <div class="flex items-center gap-3.5">
+                <span
+                  class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-brand-100 bg-brand-50 text-brand-600 shadow-inner transition-colors duration-300 group-hover:bg-brand-600 group-hover:text-white"
+                >
+                  <AppIcon :name="b.icon" class="h-5 w-5 transition-colors duration-300 group-hover:text-white" />
+                </span>
+                <h3 class="font-display text-base font-bold text-slate-900 leading-snug">{{ b.title }}</h3>
+              </div>
+              <p class="mt-3 text-sm leading-relaxed text-slate-600">{{ b.text }}</p>
             </div>
           </div>
         </div>
