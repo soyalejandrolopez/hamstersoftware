@@ -112,7 +112,7 @@ const schema = computed(() => {
 })
 
 useHead(() => ({
-  script: [{ type: 'application/ld+json', children: JSON.stringify(schema.value) }]
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(schema.value) }]
 }))
 </script>
 

@@ -41,9 +41,9 @@ const cardColors = [
           <span
             class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-slate-100 shadow-inner transition-all duration-300 group-hover:scale-105 group-hover:shadow-md group-hover:!text-white"
             :class="[
-              cardColors[i % cardColors.length].iconBg,
-              cardColors[i % cardColors.length].iconColor,
-              cardColors[i % cardColors.length].hoverBg
+              cardColors[i % cardColors.length]!.iconBg,
+              cardColors[i % cardColors.length]!.iconColor,
+              cardColors[i % cardColors.length]!.hoverBg
             ]"
           >
             <AppIcon :name="item.icon" class="h-6 w-6 transition-colors duration-300 group-hover:text-white" />

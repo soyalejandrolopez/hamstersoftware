@@ -47,10 +47,10 @@ const accents = [
                 <span
                   class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-slate-100 shadow-inner transition-all duration-300 group-hover:scale-105 group-hover:shadow-md group-hover:!text-white"
                   :class="[
-                    accents[i % accents.length].iconBg,
-                    accents[i % accents.length].iconColor,
-                    accents[i % accents.length].hoverBg,
-                    accents[i % accents.length].hoverShadow
+                    accents[i % accents.length]!.iconBg,
+                    accents[i % accents.length]!.iconColor,
+                    accents[i % accents.length]!.hoverBg,
+                    accents[i % accents.length]!.hoverShadow
                   ]"
                 >
                   <AppIcon :name="service.icon" class="h-6 w-6 transition-colors duration-300 group-hover:text-white" />

@@ -34,11 +34,11 @@ const colors = [
             class="group relative flex items-center gap-3.5 overflow-hidden rounded-2xl border border-slate-200/85 bg-white p-5 shadow-relief-card transition-all duration-300 hover:-translate-y-1.5 hover:border-brand-300/80 hover:shadow-relief-card-hover"
           >
             <!-- Top micro gradient border -->
-            <div class="absolute inset-x-0 top-0 h-1 opacity-70" :class="colors[i % colors.length].topBar" />
+            <div class="absolute inset-x-0 top-0 h-1 opacity-70" :class="colors[i % colors.length]!.topBar" />
 
             <span
               class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-md"
-              :class="[colors[i % colors.length].iconBg, colors[i % colors.length].iconColor]"
+              :class="[colors[i % colors.length]!.iconBg, colors[i % colors.length]!.iconColor]"
             >
               <AppIcon :name="industry.icon" class="h-6 w-6 transition-colors duration-300 group-hover:text-white" />
             </span>

@@ -5,12 +5,12 @@ const { locale, setLocale, t } = useI18n()
 const open = ref(false)
 const root = ref<HTMLElement | null>(null)
 
-const options = [
+const options: { code: 'es' | 'en'; label: string; short: string }[] = [
   { code: 'es', label: 'Español', short: 'ES' },
   { code: 'en', label: 'English', short: 'EN' }
 ]
 
-async function switchTo(code: string) {
+async function switchTo(code: 'es' | 'en') {
   open.value = false
   if (code !== locale.value) {
     await setLocale(code)

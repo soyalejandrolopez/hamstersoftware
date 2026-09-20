@@ -2,12 +2,12 @@
 const { locale } = useI18n()
 
 // Head reactivo al idioma: canonical, og:locale y enlaces alternates
-const localeHead = useLocaleHead({ addDirAttribute: true, addSeoAttributes: true })
+const localeHead = useLocaleHead()
 const switchLocalePath = useSwitchLocalePath()
 
 const { public: { siteUrl } } = useRuntimeConfig()
 
-const localeOptions = [
+const localeOptions: { code: 'es' | 'en'; iso: string }[] = [
   { code: 'es', iso: 'es-CO' },
   { code: 'en', iso: 'en-US' }
 ]
@@ -22,7 +22,7 @@ useHead(() => ({
       rel: 'alternate',
       hreflang: l.code,
       href: `${siteUrl}${switchLocalePath(l.code) ?? ''}`
-    }))
+    } as any))
   ],
   meta: [...(localeHead.value.meta ?? [])]
 }))

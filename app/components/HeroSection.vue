@@ -38,6 +38,13 @@ const cardStyles = [
     titleHover: 'group-hover:text-indigo-700'
   }
 ]
+
+const serviceCardsWithStyles = computed(() => {
+  return (hero.value.serviceCards || []).map((card, i) => ({
+    ...card,
+    style: cardStyles[i % cardStyles.length]!
+  }))
+})
 </script>
 
 <template>
@@ -148,26 +155,26 @@ const cardStyles = [
         <RevealOnScroll :delay="100">
           <div class="mx-auto grid max-w-5xl grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
             <a
-              v-for="(card, i) in hero.serviceCards"
+              v-for="card in serviceCardsWithStyles"
               :key="card.title"
               href="#servicios"
               class="group relative flex flex-col overflow-hidden rounded-2xl border p-6 shadow-relief-card transition-all duration-300 hover:-translate-y-1.5 hover:shadow-relief-card-hover"
-              :class="[cardStyles[i].bg, cardStyles[i].border]"
+              :class="[card.style.bg, card.style.border]"
             >
               <!-- Top micro accent bar -->
-              <div class="absolute inset-x-0 top-0 h-1 opacity-80" :class="cardStyles[i].topBar" />
+              <div class="absolute inset-x-0 top-0 h-1 opacity-80" :class="card.style.topBar" />
 
               <!-- Tactile Icon Badge & Title side by side -->
               <div class="flex items-center gap-3.5">
                 <span
                   class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl transition-all duration-300 group-hover:scale-110 group-hover:shadow-md"
-                  :class="[cardStyles[i].iconBg, cardStyles[i].iconColor]"
+                  :class="[card.style.iconBg, card.style.iconColor]"
                 >
                   <AppIcon :name="card.icon" class="h-6 w-6 transition-colors duration-300 group-hover:text-white" />
                 </span>
                 <h3
                   class="font-display text-base font-bold text-slate-900 transition-colors leading-snug"
-                  :class="cardStyles[i].titleHover"
+                  :class="card.style.titleHover"
                 >
                   {{ card.title }}
                 </h3>

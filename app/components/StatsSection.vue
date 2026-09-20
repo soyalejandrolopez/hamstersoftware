@@ -41,12 +41,12 @@ const cardAccents = [
               class="group relative flex flex-col overflow-hidden rounded-2xl border border-slate-200/85 bg-white p-6 shadow-relief-card transition-all duration-300 hover:-translate-y-1.5 hover:shadow-relief-card-hover"
             >
               <!-- Top micro accent bar -->
-              <div class="absolute inset-x-0 top-0 h-1 opacity-75" :class="cardAccents[i % 4].topBar" />
+              <div class="absolute inset-x-0 top-0 h-1 opacity-75" :class="cardAccents[i % 4]!.topBar" />
 
               <div class="flex items-center justify-between">
                 <span
                   class="flex h-11 w-11 items-center justify-center rounded-xl transition-transform duration-300 group-hover:scale-110 group-hover:shadow-md"
-                  :class="[cardAccents[i % 4].iconBg, cardAccents[i % 4].iconColor]"
+                  :class="[cardAccents[i % 4]!.iconBg, cardAccents[i % 4]!.iconColor]"
                 >
                   <AppIcon :name="s.icon" class="h-5 w-5 transition-colors duration-300 group-hover:text-white" />
                 </span>
@@ -55,7 +55,7 @@ const cardAccents = [
 
               <p
                 class="mt-5 bg-gradient-to-r bg-clip-text font-display text-4xl font-extrabold tracking-tight text-transparent sm:text-5xl"
-                :class="cardAccents[i % 4].numGradient"
+                :class="cardAccents[i % 4]!.numGradient"
               >
                 <AnimatedNumber :value="s.value" />{{ s.suffix }}
               </p>

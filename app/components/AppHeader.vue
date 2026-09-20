@@ -430,13 +430,13 @@ onBeforeUnmount(() => {
             <div v-if="'children' in item && mobileAccordion === item.key" class="pb-3">
               <NuxtLinkLocale
                 v-for="child in item.children"
-                :key="child.id || child.name"
+                :key="child.slug"
                 :to="item.key === 'servicios' ? `/servicios/${child.slug}` : `/soluciones/${child.slug}`"
                 class="flex items-center gap-2.5 rounded-xl px-3 py-2 text-sm font-bold text-slate-800 hover:bg-slate-100 hover:text-brand-600"
                 @click="closeAll"
               >
                 <AppIcon :name="child.icon" class="h-4 w-4 shrink-0 text-brand-600" />
-                <span class="truncate text-slate-800">{{ child.name || child.title }}</span>
+                <span class="truncate text-slate-800">{{ 'name' in child ? child.name : child.title }}</span>
               </NuxtLinkLocale>
               <NuxtLinkLocale
                 :to="item.key === 'servicios' ? '/servicios' : '/soluciones'"

@@ -48,7 +48,7 @@ const orgSchema = computed(() => ({
 }))
 
 useHead(() => ({
-  script: [{ type: 'application/ld+json', children: JSON.stringify(orgSchema.value) }]
+  script: [{ type: 'application/ld+json', innerHTML: JSON.stringify(orgSchema.value) }]
 }))
 </script>
 
